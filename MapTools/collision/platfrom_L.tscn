@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://btlsaxo2y6pgr"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_jr2cj"]
+left_to_right = 0.0
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("PrismMesh_jr2cj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+polygon = PackedVector2Array(-0.5, 0.5, -0.5, -0.5, 0.5, -0.5)

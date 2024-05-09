@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsmlerd8sun6a"]
+
+[ext_resource type="PackedScene" uid="uid://bs1xotbmrlfim" path="res://Player/player.tscn" id="1_4yh1v"]
+[ext_resource type="PackedScene" uid="uid://ltp2eshqo2qq" path="res://MapTools/world_environment_room.tscn" id="2_ht5n4"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_8coap"]
+
+[node name="__map" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_4yh1v")]
+
+[node name="WorldEnvironment_ROOM" parent="." instance=ExtResource("2_ht5n4")]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_8coap")

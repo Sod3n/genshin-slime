@@ -1,3 +1,6 @@
+PhantomCamera3D
+PhantomCameraHost
+Camera3D
 CollisionPolygon3D
 StaticBody3D
 MeshInstance3D
@@ -10,5 +13,3 @@ CharacterBody3D
 Panel
 Area3D
 Node3D
-DirectionalLight3D
-WorldEnvironment

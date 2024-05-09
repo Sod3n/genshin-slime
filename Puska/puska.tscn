@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cgejjb2nk1pgc"]
+
+[node name="Puska" type="CharacterBody3D"]

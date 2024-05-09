@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs1xotbmrlfim"]
+
+[ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_5cssm"]
+[ext_resource type="Script" path="res://Player/player.gd" id="1_jw4od"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u55ea"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_jw4od")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0)
+texture = ExtResource("1_5cssm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_u55ea")
+
+[node name="Camera_header" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Camera_header"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7, 14)
+fov = 60.0
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="TargetMove" type="Marker3D" parent="."]

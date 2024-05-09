@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pmoqcokt1pc"]
+
+[ext_resource type="Texture2D" uid="uid://cm3lg034yc033" path="res://grap_resurce/textures/tile_texture_test2.png" id="1_tth7o"]
+
+[resource]
+albedo_texture = ExtResource("1_tth7o")
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2

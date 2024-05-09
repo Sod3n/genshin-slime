@@ -21,7 +21,7 @@ script = ExtResource("9_mxqtj")
 cull_mask = 1048575
 h_offset = 0.0
 v_offset = 0.0
-fov = 75.0
+fov = 60.0
 
 [node name="test_room" instance=ExtResource("1_mxjce")]
 
@@ -40,13 +40,14 @@ transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 9, -9, 1, 3)
 material_override = ExtResource("5_lqo4h")
 
 [node name="MainCamera3D" type="Camera3D" parent="." index="6"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 5, 4)
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 6.06851, 8.14693)
+fov = 60.0
 
 [node name="PhantomCameraHost" type="Node" parent="MainCamera3D" index="0"]
 script = ExtResource("6_ewsdk")
 
 [node name="PhantomCamera3D" type="Node3D" parent="." index="7" node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 5, 4)
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 6.06355, 8.13628)
 script = ExtResource("7_26ktm")
 priority = 30
 follow_mode = 2
@@ -54,6 +55,10 @@ follow_target = NodePath("../Player")
 tween_resource = SubResource("Resource_yhrnb")
 tween_on_load = false
 camera_3d_resource = SubResource("Resource_gf2ij")
-follow_offset = Vector3(0, 4, 4)
+follow_offset = Vector3(0, 5, 8)
 follow_damping = true
-follow_damping_value = Vector3(0.3, 0.3, 0.3)
+follow_damping_value = Vector3(0.4, 0.4, 0.4)
+follow_distance = 4.0
+dead_zone_width = 0.5
+dead_zone_height = 0.186
+spring_length = 4.0

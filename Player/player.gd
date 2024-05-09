@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var agent = $NavigationAgent3D
-
+@onready var interactable_finder = $TargetMove/InteractableFinder
 
 const SPEED = 7.0
 const SPEED_RUN = 12.0
@@ -23,3 +23,10 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		var interactables = interactable_finder.get_overlapping_areas()
+		if interactables.size() > 0:
+			interactables[0].action()
+			return

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk7b6vnk7eoxr"]
+
+[ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_w4bnp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f4xg5"]
+size = Vector3(1.38525, 2.58276, 1)
+
+[node name="TestNpc" type="StaticBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0)
+texture = ExtResource("1_w4bnp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
+visible = false
+shape = SubResource("BoxShape3D_f4xg5")

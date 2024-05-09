@@ -1,0 +1,528 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8oobd"]
+
+[resource]
+script = ExtResource("1_8oobd")
+using_states = PackedStringArray()
+titles = {
+"pick_apple": "35",
+"start": "3"
+}
+character_names = PackedStringArray("Nathan", "Coco")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "start",
+"type": &"title"
+},
+"12": {
+"id": "12",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "QuestSystem"
+}, {
+"type": "dot"
+}, {
+"function": "call_quest_method",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}]), Array[Dictionary]([{
+"type": "string",
+"value": "_update_objective"
+}]), Array[Dictionary]([{
+"type": &"array",
+"value": Array[Array]([])
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "13",
+"parent_id": "7",
+"type": &"mutation"
+},
+"13": {
+"id": "13",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "complete_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_apple"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "30",
+"parent_id": "7",
+"type": &"mutation"
+},
+"14": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"next_id_after": "30",
+"notes": "",
+"parent_id": "5",
+"tags": PackedStringArray(),
+"text": "Keep it",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Keep it",
+"type": &"response"
+},
+"15": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "But they're mine.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "But they're mine.",
+"type": &"dialogue"
+},
+"16": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "30",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "Fair enough.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Fair enough.",
+"type": &"dialogue"
+},
+"17": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "app"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "gave"
+}, {
+"type": "colon"
+}])
+},
+"id": "17",
+"next_conditional_id": "19",
+"next_id": "18",
+"next_id_after": "30",
+"type": &"condition"
+},
+"18": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "30",
+"notes": "",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Thanks again for the apples.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks again for the apples.",
+"type": &"dialogue"
+},
+"19": {
+"id": "19",
+"next_conditional_id": "30",
+"next_id": "20",
+"next_id_after": "30",
+"type": &"condition"
+},
+"20": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_apple"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "20",
+"next_conditional_id": "23",
+"next_id": "21",
+"next_id_after": "30",
+"parent_id": "19",
+"type": &"condition"
+},
+"21": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"notes": "",
+"parent_id": "20",
+"tags": PackedStringArray(),
+"text": "How many apples have you found?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How many apples have you found?",
+"type": &"dialogue"
+},
+"22": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "30",
+"notes": "",
+"parent_id": "20",
+"tags": PackedStringArray(),
+"text": "{{apple_count}}!",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "apple_count"
+}]),
+"value_in_text": "{{apple_count}}"
+}]),
+"translation_key": "{{apple_count}}!",
+"type": &"dialogue"
+},
+"23": {
+"id": "23",
+"next_conditional_id": "30",
+"next_id": "24",
+"next_id_after": "30",
+"parent_id": "19",
+"type": &"condition"
+},
+"24": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"parent_id": "23",
+"tags": PackedStringArray(),
+"text": "I sure wish I had an apple. Apparently there's an apple tree around here somewhere.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I sure wish I had an apple. Apparently there's an apple tree around here somewhere.",
+"type": &"dialogue"
+},
+"25": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"notes": "",
+"parent_id": "23",
+"tags": PackedStringArray(),
+"text": "Help Nathan?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Help Nathan?",
+"type": &"dialogue"
+},
+"26": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"next_id_after": "30",
+"notes": "",
+"parent_id": "23",
+"responses": PackedStringArray("26", "28"),
+"tags": PackedStringArray(),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": &"response"
+},
+"27": {
+"id": "27",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_apple"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "30",
+"parent_id": "26",
+"type": &"mutation"
+},
+"28": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"next_id_after": "30",
+"notes": "",
+"parent_id": "23",
+"tags": PackedStringArray(),
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": &"response"
+},
+"29": {
+"id": "29",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "28",
+"type": &"goto"
+},
+"3": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hi Coco.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi Coco.",
+"type": &"dialogue"
+},
+"30": {
+"id": "30",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"33": {
+"id": "33",
+"next_id": "35",
+"text": "pick_apple",
+"type": &"title"
+},
+"35": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "36",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "It's an apple tree.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "It's an apple tree.",
+"type": &"dialogue"
+},
+"36": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_apple"
+}])])
+}, {
+"type": "and_or",
+"value": "and"
+}, {
+"type": "variable",
+"value": "apple_count"
+}, {
+"type": "comparison",
+"value": "<"
+}, {
+"type": "number",
+"value": 5
+}, {
+"type": "colon"
+}])
+},
+"id": "36",
+"next_conditional_id": "40",
+"next_id": "37",
+"next_id_after": "40",
+"type": &"condition"
+},
+"37": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"notes": "",
+"parent_id": "36",
+"tags": PackedStringArray(),
+"text": "I'll just take one.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'll just take one.",
+"type": &"dialogue"
+},
+"38": {
+"id": "38",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "QuestSystem"
+}, {
+"type": "dot"
+}, {
+"function": "call_quest_method",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}]), Array[Dictionary]([{
+"type": "string",
+"value": "update"
+}]), Array[Dictionary]([{
+"type": &"array",
+"value": Array[Array]([])
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "40",
+"parent_id": "36",
+"type": &"mutation"
+},
+"4": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hi Coco 2.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi Coco 2.",
+"type": &"dialogue"
+},
+"40": {
+"id": "40",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"5": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "app"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "has"
+}, {
+"type": "colon"
+}])
+},
+"id": "5",
+"next_conditional_id": "17",
+"next_id": "6",
+"next_id_after": "30",
+"type": &"condition"
+},
+"6": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"parent_id": "5",
+"tags": PackedStringArray(),
+"text": "I have 5 apples.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I have 5 apples.",
+"type": &"dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"next_id_after": "30",
+"notes": "",
+"parent_id": "5",
+"responses": PackedStringArray("7", "14"),
+"tags": PackedStringArray(),
+"text": "Give to Nathan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Give to Nathan",
+"type": &"response"
+},
+"8": {
+"character": "Coco",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "7",
+"tags": PackedStringArray(),
+"text": "Here you go.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here you go.",
+"type": &"dialogue"
+},
+"9": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "12",
+"notes": "",
+"parent_id": "7",
+"tags": PackedStringArray(),
+"text": "Thanks.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks.",
+"type": &"dialogue"
+}
+}
+raw_text = "~ start
+
+Nathan: Hi Coco.
+Nathan: Hi Coco 2.
+if app == \"has\":
+	Coco: I have 5 apples.
+	- Give to Nathan
+		Coco: Here you go.
+		Nathan: Thanks.
+		
+		# Here we manually set the quest objective_complete check
+		do QuestSystem.call_quest_method(1, \"_update_objective\", [])
+		do complete_quest(\"get_apple\")
+	- Keep it
+		Coco: But they're mine.
+		Nathan: Fair enough.
+elif app == \"gave\":
+	Nathan: Thanks again for the apples.
+else:
+	if is_quest_active(\"get_apple\"):
+		Nathan: How many apples have you found?
+		Coco: {{apple_count}}!
+	else:
+		Nathan: I sure wish I had an apple. Apparently there's an apple tree around here somewhere.
+		Help Nathan?
+		- Yes
+			do start_quest(\"get_apple\")
+		- No
+			=> END
+=> END
+
+
+~ pick_apple
+
+Coco: It's an apple tree.
+if is_quest_active(\"get_apple\") and apple_count < 5:
+	Coco: I'll just take one.
+	do QuestSystem.call_quest_method(1, \"update\", [])
+
+=> END"
+metadata/dialogue_manager_version = "2.39.0"

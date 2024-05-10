@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bi81snnay1jjn"]
+
+[ext_resource type="Script" path="res://quests/get_materials_quest.gd" id="1_o53if"]
+
+[resource]
+script = ExtResource("1_o53if")
+id = 4
+quest_name = "Собери материалы для обряда"
+quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_objective = ""

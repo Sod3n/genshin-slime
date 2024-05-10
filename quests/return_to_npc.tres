@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bgxwmurb3wvj5"]
+
+[ext_resource type="Script" path="res://quests/return_to_npc_quest.gd" id="1_1oca3"]
+
+[resource]
+script = ExtResource("1_1oca3")
+id = 3
+quest_name = "Вернись к НПС 1"
+quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_objective = ""

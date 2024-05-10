@@ -38,3 +38,10 @@ if is_quest_active("get_apple") and apple_count < 5:
 	do QuestSystem.call_quest_method(1, "update", [])
 
 => END
+
+
+~ not_enough_space
+
+Не достаточно место в инвентаре.
+
+=> END

@@ -14,7 +14,8 @@ func _process(_delta: float) -> void:
 		return
 	else:
 		%CurrentQuest.text = "Current Quest: %s" % _quest.quest_name
-		%Progress.text = "%s/5" % State.apple_count
+		%Progress.text = _quest.get_progress()
+		
 
 func set_current_quest(quest: Quest) -> void:
 	_quest = quest

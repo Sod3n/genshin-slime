@@ -49,3 +49,10 @@ func _on_btn_sort(ctrl_inventory) -> void:
 func _on_btn_unequip() -> void:
 	ctrl_slot.item_slot.clear()
 
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("inventory"):
+		if self.visible:
+			self.hide()
+		else:
+			self.show()
+

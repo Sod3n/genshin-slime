@@ -88,14 +88,13 @@ shape = SubResource("BoxShape3D_lrihb")
 [node name="Armor" type="Node" parent="TestItem2/RemoveItem" index="1"]
 script = ExtResource("13_7uwgw")
 protoset = ExtResource("14_yy1te")
-prototype_id = "item_2x2"
+prototype_id = "book"
 
 [node name="TestItem" parent="." index="10" instance=ExtResource("11_ov1t8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.92362, 0.971131, -6.15236)
 
-[node name="PickUp" type="Area3D" parent="TestItem" index="1" node_paths=PackedStringArray("inventory_item")]
+[node name="PickUp" type="Area3D" parent="TestItem" index="1"]
 script = ExtResource("12_6fii3")
-inventory_item = NodePath("Armor")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TestItem/PickUp" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
@@ -104,4 +103,4 @@ shape = SubResource("BoxShape3D_lrihb")
 [node name="Armor" type="Node" parent="TestItem/PickUp" index="1"]
 script = ExtResource("13_7uwgw")
 protoset = ExtResource("14_yy1te")
-prototype_id = "item_2x2"
+prototype_id = "book"

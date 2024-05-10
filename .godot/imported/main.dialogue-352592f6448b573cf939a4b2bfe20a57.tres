@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8oobd"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r4avv"]
 
 [resource]
-script = ExtResource("1_8oobd")
+script = ExtResource("1_r4avv")
 using_states = PackedStringArray()
 titles = {
+"not_enough_space": "45",
 "pick_apple": "35",
 "start": "3"
 }
@@ -409,6 +410,30 @@ lines = {
 "next_id": "end",
 "type": &"goto"
 },
+"43": {
+"id": "43",
+"next_id": "45",
+"text": "not_enough_space",
+"type": &"title"
+},
+"45": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "47",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Не достаточно место в инвентаре.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Не достаточно место в инвентаре.",
+"type": &"dialogue"
+},
+"47": {
+"id": "47",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
 "5": {
 "condition": {
 "expression": Array[Dictionary]([{
@@ -523,6 +548,13 @@ Coco: It's an apple tree.
 if is_quest_active(\"get_apple\") and apple_count < 5:
 	Coco: I'll just take one.
 	do QuestSystem.call_quest_method(1, \"update\", [])
+
+=> END
+
+
+~ not_enough_space
+
+Не достаточно место в инвентаре.
 
 => END"
 metadata/dialogue_manager_version = "2.39.0"

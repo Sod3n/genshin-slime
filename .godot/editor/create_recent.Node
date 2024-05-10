@@ -12,4 +12,3 @@ MeshInstance3D
 NavigationAgent3D
 NavigationLink3D
 NavigationRegion3D
-CharacterBody3D

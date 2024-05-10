@@ -1,5 +1,8 @@
 extends Node
 
-var apple_status: String = ""
-var apple_count: int = 0
-var app: String = "st"
+var book_status: String = ""
+var book_count: int = 0
+
+var sticks_count : int = 0
+var candles_count : int = 0
+var grass_count : int = 0

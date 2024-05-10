@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bw2w8es3j0ne7"]
+[gd_scene load_steps=26 format=3 uid="uid://bw2w8es3j0ne7"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_c7qa3"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_8iut0"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="14_u3tmw"]
 [ext_resource type="Resource" uid="uid://ddrmqwl3guset" path="res://tests/data/item_definitions_grid.tres" id="15_k7min"]
 [ext_resource type="Resource" uid="uid://bi81snnay1jjn" path="res://quests/get_materials.tres" id="20_3a3at"]
+[ext_resource type="PackedScene" uid="uid://cvshfbif53gna" path="res://MapTools/collision/door.tscn" id="21_ggshb"]
 
 [sub_resource type="Resource" id="Resource_yhrnb"]
 script = ExtResource("8_nknif")
@@ -42,10 +43,10 @@ size = Vector3(1.38525, 2.58276, 1)
 
 [node name="test_room" instance=ExtResource("1_c7qa3")]
 
-[node name="GUI" parent="." index="0" instance=ExtResource("2_ef523")]
-
-[node name="InventoryGridTransfer" parent="." index="1" instance=ExtResource("2_lrwhm")]
+[node name="InventoryGridTransfer" parent="." index="0" instance=ExtResource("2_lrwhm")]
 visible = false
+
+[node name="GUI" parent="." index="1" instance=ExtResource("2_ef523")]
 
 [node name="Player" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -303,3 +304,7 @@ shape = SubResource("BoxShape3D_n1jdi")
 script = ExtResource("14_u3tmw")
 protoset = ExtResource("15_k7min")
 prototype_id = "grass"
+
+[node name="Door" parent="." index="13" instance=ExtResource("21_ggshb")]
+transform = Transform3D(2.37798, 0, 0, 0, 2.37798, 0, 0, 0, 2.37798, 6.58095, 0.5, -30.6557)
+state_variable = "quest_1_completed"

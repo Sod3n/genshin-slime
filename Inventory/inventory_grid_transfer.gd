@@ -2,15 +2,10 @@ extends Control
 
 const info_offset: Vector2 = Vector2(20, 0)
 
-@onready var ctrl_inventory_left := $VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft
-@onready var ctrl_inventory_right := $VBoxContainer/HBoxContainer/VBoxContainer2/PanelContainer2/CtrlInventoryGridRight
-@onready var btn_sort_left: Button = $VBoxContainer/HBoxContainer/VBoxContainer/BtnSortLeft
-@onready var btn_sort_right: Button = $VBoxContainer/HBoxContainer/VBoxContainer2/BtnSortRight
-@onready var ctrl_slot: CtrlItemSlot = $VBoxContainer/HBoxContainer/VBoxContainer3/PanelContainer/CtrlItemSlot
-@onready var btn_unequip: Button = $VBoxContainer/HBoxContainer/VBoxContainer3/BtnUnequip
-@onready var lbl_info: Label = $LblInfo
-@onready var v_box_container = $VBoxContainer
-@onready var inventory_grid_left = $InventoryGridLeft
+@onready var ctrl_inventory_left := %CtrlInventoryGridLeft
+
+@onready var inventory_grid_left = %InventoryGridLeft
+@onready var lbl_info = %LblInfo
 
 
 func _ready() -> void:
@@ -34,11 +29,7 @@ func _on_item_mouse_exited(_item: InventoryItem) -> void:
 	lbl_info.hide()
 
 
-func _input(event: InputEvent) -> void:
-	if !(event is InputEventMouseMotion):
-		return
-
-	lbl_info.set_global_position(get_global_mouse_position() + info_offset)
+	
 
 
 func _on_btn_sort(ctrl_inventory) -> void:
@@ -46,13 +37,26 @@ func _on_btn_sort(ctrl_inventory) -> void:
 		print("Warning: InventoryGrid.sort() returned false!")
 
 
-func _on_btn_unequip() -> void:
-	ctrl_slot.item_slot.clear()
-
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("inventory"):
 		if self.visible:
 			self.hide()
 		else:
 			self.show()
+			
+	if self.visible:
+		self.grab_focus()
+		self.focus_mode = Control.FOCUS_ALL
+	
+func _input(event: InputEvent) -> void:
+	if !(event is InputEventMouseMotion):
+		return
+
+	lbl_info.set_global_position(get_global_mouse_position() + info_offset)
+
+
+func _on_gui_input(event):
+	get_viewport().set_input_as_handled()
+	self.accept_event()
+	_unhandled_input(event)
 

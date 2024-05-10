@@ -1,10 +1,10 @@
 ~ start
 
-if is_quest_completed("return_to_npc"):
-	=> second_part
-
 if is_quest_completed("get_materials"):
 	=> second_part_completed
+
+if is_quest_completed("return_to_npc"):
+	=> second_part
 
 if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
 	НПС 1: Привет, спутник.
@@ -54,5 +54,6 @@ else:
 => END
 
 ~ second_part_completed
-
+do quest_1_completed = true
+НПС 1: Можешь проходить дальше.
 => END

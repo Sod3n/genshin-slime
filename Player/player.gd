@@ -29,6 +29,9 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+func _input(event):
+	input_vector = Vector2.ZERO
+
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var interactables = interactable_finder.get_overlapping_areas()

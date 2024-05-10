@@ -7,7 +7,7 @@ script = ExtResource("1_pq6db")
 using_states = PackedStringArray()
 titles = {
 "second_part": "32",
-"second_part_completed": "58",
+"second_part_completed": "57",
 "start": "3"
 }
 character_names = PackedStringArray("НПС 1")
@@ -277,7 +277,7 @@ lines = {
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "return_to_npc"
+"value": "get_materials"
 }])])
 }, {
 "type": "colon"
@@ -429,7 +429,7 @@ lines = {
 "4": {
 "id": "4",
 "is_snippet": false,
-"next_id": "32",
+"next_id": "57",
 "parent_id": "3",
 "type": &"goto"
 },
@@ -573,7 +573,7 @@ lines = {
 "47": {
 "id": "47",
 "is_snippet": false,
-"next_id": "58",
+"next_id": "57",
 "parent_id": "45",
 "type": &"goto"
 },
@@ -655,12 +655,42 @@ lines = {
 },
 "56": {
 "id": "56",
-"next_id": "58",
+"next_id": "57",
 "text": "second_part_completed",
 "type": &"title"
 },
+"57": {
+"id": "57",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "quest_1_completed"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "58",
+"type": &"mutation"
+},
 "58": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
 "id": "58",
+"next_id": "59",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Можешь проходить дальше.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Можешь проходить дальше.",
+"type": &"dialogue"
+},
+"59": {
+"id": "59",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
@@ -672,7 +702,7 @@ lines = {
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "get_materials"
+"value": "return_to_npc"
 }])])
 }, {
 "type": "colon"
@@ -687,7 +717,7 @@ lines = {
 "7": {
 "id": "7",
 "is_snippet": false,
-"next_id": "58",
+"next_id": "32",
 "parent_id": "6",
 "type": &"goto"
 },
@@ -727,11 +757,11 @@ lines = {
 }
 raw_text = "~ start
 
-if is_quest_completed(\"return_to_npc\"):
-	=> second_part
-
 if is_quest_completed(\"get_materials\"):
 	=> second_part_completed
+
+if is_quest_completed(\"return_to_npc\"):
+	=> second_part
 
 if  not is_quest_active(\"get_book\") and not is_quest_completed(\"get_book\"):
 	НПС 1: Привет, спутник.
@@ -781,6 +811,7 @@ else:
 => END
 
 ~ second_part_completed
-
+do quest_1_completed = true
+НПС 1: Можешь проходить дальше.
 => END"
 metadata/dialogue_manager_version = "2.39.0"

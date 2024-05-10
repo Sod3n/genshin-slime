@@ -25,3 +25,15 @@ res://tests/data/item_definitions_grid.tres
 res://QuestsNDialogue/dialogue/balloon.tscn
 res://QuestsNDialogue/dialogue/balloon.gd
 res://Inventory/pickup.gd
+res://Inventory/remove_item.gd
+res://MapTools/collision/door.tscn
+res://scripts/door.gd
+res://Inventory/inventory_grid_transfer.gd
+res://addons/gloot/core/constraints/constraint_manager.gd
+res://addons/gloot/core/constraints/grid_constraint.gd
+res://Inventory/block_input.gd
+res://Player/player.gd
+res://QuestsNDialogue/helper/actionable.gd
+res://addons/gloot/ui/ctrl_dragable.gd
+res://addons/gloot/ui/ctrl_drop_zone.gd
+res://addons/gloot/ui/ctrl_inventory_grid_basic.gd

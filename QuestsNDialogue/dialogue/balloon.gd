@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 
-@onready var balloon: ColorRect = $Balloon
+@onready var balloon: Control = $Balloon
 @onready var margin: MarginContainer = $Balloon/Margin
 @onready var character_label: RichTextLabel = $Balloon/Margin/VBox/CharacterLabel
 @onready var dialogue_label := $Balloon/Margin/VBox/DialogueLabel
@@ -85,7 +85,6 @@ var dialogue_line: DialogueLine:
 func _ready() -> void:
 	response_template.hide()
 	balloon.hide()
-	balloon.custom_minimum_size.x = balloon.get_viewport_rect().size.x
 
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 
@@ -153,9 +152,6 @@ func get_responses() -> Array:
 		items.append(child)
 
 	return items
-
-
-
 
 
 ### Signals

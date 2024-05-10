@@ -11,4 +11,5 @@ const Balloon = preload("res://QuestsNDialogue/dialogue/balloon.tscn")
 func action() -> void:
 	var balloon: Node = Balloon.instantiate()
 	get_tree().current_scene.add_child(balloon)
+	
 	balloon.start(dialogue_resource, dialogue_start)

@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var inventory_item : InventoryItem
+@onready var inventory_item = $"./item"
 
 func action() -> void:
 	var item = InventoryInstance.value.get_item_by_id(inventory_item.prototype_id)

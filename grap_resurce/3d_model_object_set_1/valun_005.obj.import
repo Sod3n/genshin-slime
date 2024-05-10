@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bmj3fq5h8vsny"
+path="res://.godot/imported/valun_005.obj-50f92aa5dbc5bddb118b562dc0ff7899.mesh"
+
+[deps]
+
+files=["res://.godot/imported/valun_005.obj-50f92aa5dbc5bddb118b562dc0ff7899.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/valun_005.obj"
+dest_files=["res://.godot/imported/valun_005.obj-50f92aa5dbc5bddb118b562dc0ff7899.mesh", "res://.godot/imported/valun_005.obj-50f92aa5dbc5bddb118b562dc0ff7899.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

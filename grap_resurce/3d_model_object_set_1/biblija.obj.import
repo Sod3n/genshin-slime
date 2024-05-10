@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhdv0f00uv70k"
+path="res://.godot/imported/biblija.obj-5e35ba2dbf4c43f2d91354456a0022a9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/biblija.obj-5e35ba2dbf4c43f2d91354456a0022a9.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/biblija.obj"
+dest_files=["res://.godot/imported/biblija.obj-5e35ba2dbf4c43f2d91354456a0022a9.mesh", "res://.godot/imported/biblija.obj-5e35ba2dbf4c43f2d91354456a0022a9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

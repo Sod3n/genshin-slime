@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dneb05ni7jqk7"
+path="res://.godot/imported/trava.obj-177721a1497f02133a206ffd1b3ecb63.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trava.obj-177721a1497f02133a206ffd1b3ecb63.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/trava.obj"
+dest_files=["res://.godot/imported/trava.obj-177721a1497f02133a206ffd1b3ecb63.mesh", "res://.godot/imported/trava.obj-177721a1497f02133a206ffd1b3ecb63.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

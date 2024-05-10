@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1pu06oehs6pb"
+path="res://.godot/imported/pesok_perehod_malyj.obj-eb31140a4cd808694fa32ded4d92a379.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pesok_perehod_malyj.obj-eb31140a4cd808694fa32ded4d92a379.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/pesok_perehod_malyj.obj"
+dest_files=["res://.godot/imported/pesok_perehod_malyj.obj-eb31140a4cd808694fa32ded4d92a379.mesh", "res://.godot/imported/pesok_perehod_malyj.obj-eb31140a4cd808694fa32ded4d92a379.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

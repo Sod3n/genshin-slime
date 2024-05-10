@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhixa3246j2jb"
+path="res://.godot/imported/domik_001.obj-b672d2e63de202f085c5e484a43d4849.mesh"
+
+[deps]
+
+files=["res://.godot/imported/domik_001.obj-b672d2e63de202f085c5e484a43d4849.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_2/domik_001.obj"
+dest_files=["res://.godot/imported/domik_001.obj-b672d2e63de202f085c5e484a43d4849.mesh", "res://.godot/imported/domik_001.obj-b672d2e63de202f085c5e484a43d4849.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

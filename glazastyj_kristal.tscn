@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://yjnunf2qaxrb"]
+
+[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_js71j"]
+[ext_resource type="ArrayMesh" uid="uid://7j8r8xbx6vsi" path="res://grap_resurce/3d_model_object_set_1/glazastyj_kristal.obj" id="2_8sy2c"]
+
+[node name="GlazastyjKristal" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38264, 5.96046e-08, 0.558041)
+material_override = ExtResource("1_js71j")
+mesh = ExtResource("2_8sy2c")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.833506, 0)
+light_color = Color(1, 0.12549, 1, 1)
+omni_range = 0.945525
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05131, 0)
+light_color = Color(1, 0.12549, 1, 1)
+omni_range = 0.945525

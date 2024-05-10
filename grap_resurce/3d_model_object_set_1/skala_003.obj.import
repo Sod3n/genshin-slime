@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://creksy7yxffl5"
+path="res://.godot/imported/skala_003.obj-ae96e7c8dd85f6d3fd676a1448318930.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skala_003.obj-ae96e7c8dd85f6d3fd676a1448318930.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/skala_003.obj"
+dest_files=["res://.godot/imported/skala_003.obj-ae96e7c8dd85f6d3fd676a1448318930.mesh", "res://.godot/imported/skala_003.obj-ae96e7c8dd85f6d3fd676a1448318930.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

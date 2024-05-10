@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://7vctm0o5bnrc"]
+
+[ext_resource type="Texture2D" uid="uid://ctr44bd75ctvq" path="res://grap_resurce/textures/tile_set_1.png" id="1_d6iqx"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_d6iqx")
+texture_filter = 2

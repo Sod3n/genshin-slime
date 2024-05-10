@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfb8jmjg0nopo"
+path="res://.godot/imported/zemlja.obj-f19e203f84b381a9531b089c2f26cf6b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/zemlja.obj-f19e203f84b381a9531b089c2f26cf6b.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/zemlja.obj"
+dest_files=["res://.godot/imported/zemlja.obj-f19e203f84b381a9531b089c2f26cf6b.mesh", "res://.godot/imported/zemlja.obj-f19e203f84b381a9531b089c2f26cf6b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

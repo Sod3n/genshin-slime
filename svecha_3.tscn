@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://qj72462cwpgk"]
+
+[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_vfxoi"]
+[ext_resource type="ArrayMesh" uid="uid://b1v5a4xnxy7vl" path="res://grap_resurce/3d_model_object_set_1/svecha_3.obj" id="2_hichv"]
+
+[node name="Svecha3" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5999, 5.96046e-08, -9.52948)
+material_override = ExtResource("1_vfxoi")
+mesh = ExtResource("2_hichv")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.354923, 0)
+light_color = Color(0.894663, 0.881132, 1.92523e-06, 1)
+light_size = 0.3
+omni_range = 0.413604

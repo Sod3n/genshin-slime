@@ -1,0 +1,111 @@
+[gd_scene load_steps=18 format=3 uid="uid://c6dhancjwf7ek"]
+
+[ext_resource type="Material" uid="uid://de0pmmeom20gy" path="res://grap_resurce/materials/material_tile.tres" id="1_jtx3r"]
+[ext_resource type="ArrayMesh" uid="uid://cqqn7q07h47yk" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_bolshoj.obj" id="2_wbcxo"]
+[ext_resource type="ArrayMesh" uid="uid://khlvcl826bu2" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_malyj.obj" id="3_bbnqb"]
+[ext_resource type="ArrayMesh" uid="uid://corkurro5jvoi" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_prjamoj.obj" id="4_yaypf"]
+[ext_resource type="ArrayMesh" uid="uid://b5l8mll827w67" path="res://grap_resurce/3d_model_object_set_1/pesok.obj" id="5_6f51v"]
+[ext_resource type="ArrayMesh" uid="uid://x66smwvrsnge" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_bolshoj.obj" id="6_fnwfl"]
+[ext_resource type="ArrayMesh" uid="uid://1pu06oehs6pb" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_malyj.obj" id="7_vogkq"]
+[ext_resource type="ArrayMesh" uid="uid://ct20nu5v7251i" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_prjamoj.obj" id="8_ro7dq"]
+[ext_resource type="ArrayMesh" uid="uid://dneb05ni7jqk7" path="res://grap_resurce/3d_model_object_set_1/trava.obj" id="9_k37t8"]
+[ext_resource type="ArrayMesh" uid="uid://2tklc3v6ftvb" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_bolshoj.obj" id="10_muyqm"]
+[ext_resource type="ArrayMesh" uid="uid://ckt76nxgcgvr4" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_malyj.obj" id="11_tqt4i"]
+[ext_resource type="ArrayMesh" uid="uid://dd77jg5iid3qe" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_prjamoj.obj" id="12_8b5rr"]
+[ext_resource type="ArrayMesh" uid="uid://cntyqqm33qm87" path="res://grap_resurce/3d_model_object_set_1/kamen.obj" id="13_l3mhc"]
+[ext_resource type="ArrayMesh" uid="uid://dfb8jmjg0nopo" path="res://grap_resurce/3d_model_object_set_1/zemlja.obj" id="14_yg2t7"]
+[ext_resource type="ArrayMesh" uid="uid://xpvr1jwkc81g" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_bolshoj.obj" id="15_0jsfe"]
+[ext_resource type="ArrayMesh" uid="uid://boihp2qkdoutg" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_malyj.obj" id="16_2vu2q"]
+[ext_resource type="ArrayMesh" uid="uid://b27eudtd730sr" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_prjamoj.obj" id="17_4b4qe"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="KamenPerehodBolshoj2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_jtx3r")
+mesh = ExtResource("2_wbcxo")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="KamenPerehodMalyj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_bbnqb")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="KamenPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_yaypf")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="KamenPerehodPrjamoj3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_jtx3r")
+mesh = ExtResource("4_yaypf")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="Pesok2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_6f51v")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="PesokPerehodBolshoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("6_fnwfl")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="PesokPerehodMalyj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_vogkq")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="PesokPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("8_ro7dq")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="Trava2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("9_k37t8")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="TravaPerehodBolshoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("10_muyqm")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="TravaPerehodMalyj2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_jtx3r")
+mesh = ExtResource("11_tqt4i")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="TravaPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000252962, 0, 0)
+mesh = ExtResource("12_8b5rr")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="Kamen2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("13_l3mhc")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="Zemlja2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("14_yg2t7")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="ZemljaPerehodBolshoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("15_0jsfe")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="ZemljaPerehodMalyj2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_jtx3r")
+mesh = ExtResource("16_2vu2q")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")
+
+[node name="ZemljaPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("17_4b4qe")
+skeleton = NodePath("../../..")
+surface_material_override/0 = ExtResource("1_jtx3r")

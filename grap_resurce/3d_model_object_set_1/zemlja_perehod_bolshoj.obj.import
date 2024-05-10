@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xpvr1jwkc81g"
+path="res://.godot/imported/zemlja_perehod_bolshoj.obj-02c111d87f2e49652f57be3af4bafc97.mesh"
+
+[deps]
+
+files=["res://.godot/imported/zemlja_perehod_bolshoj.obj-02c111d87f2e49652f57be3af4bafc97.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_bolshoj.obj"
+dest_files=["res://.godot/imported/zemlja_perehod_bolshoj.obj-02c111d87f2e49652f57be3af4bafc97.mesh", "res://.godot/imported/zemlja_perehod_bolshoj.obj-02c111d87f2e49652f57be3af4bafc97.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

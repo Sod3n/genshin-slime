@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq72r3l53moqb"
+path="res://.godot/imported/rostuschij_glaz_003.obj-7a42f7d2d54a7d7ce2733c0524902330.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rostuschij_glaz_003.obj-7a42f7d2d54a7d7ce2733c0524902330.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/rostuschij_glaz_003.obj"
+dest_files=["res://.godot/imported/rostuschij_glaz_003.obj-7a42f7d2d54a7d7ce2733c0524902330.mesh", "res://.godot/imported/rostuschij_glaz_003.obj-7a42f7d2d54a7d7ce2733c0524902330.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

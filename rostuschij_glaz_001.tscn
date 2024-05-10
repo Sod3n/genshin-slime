@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwwstorjda5ij"]
+
+[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_1c1eu"]
+[ext_resource type="ArrayMesh" uid="uid://dhloxe57quwo2" path="res://grap_resurce/3d_model_object_set_1/rostuschij_glaz_001.obj" id="2_4yuec"]
+
+[node name="RostuschijGlaz001" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.69399, 5.96046e-08, -6.87886)
+material_override = ExtResource("1_1c1eu")
+mesh = ExtResource("2_4yuec")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05307, 1.86042, -1.08444)
+light_color = Color(1, 0.768627, 1, 1)
+light_size = 0.71
+omni_range = 0.840951
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.930385, 0.167797, -0.325928, 0.049035, 0.824137, 0.564264, 0.363291, -0.540964, 0.758537, 0.79455, 1.83679, -0.643492)
+light_color = Color(1, 0.470588, 1, 1)
+light_energy = 1.246
+spot_range = 6.2607
+spot_angle = 46.791

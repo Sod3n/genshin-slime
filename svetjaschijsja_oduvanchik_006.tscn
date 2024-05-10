@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://2vquxfpa4iac"]
+
+[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_jl6ki"]
+[ext_resource type="ArrayMesh" uid="uid://bgvojp4vwym3u" path="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik_001.obj" id="2_pmc23"]
+
+[node name="SvetjaschijsjaOduvanchik006" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.8668, 1.78814e-07, -44.7579)
+material_override = ExtResource("1_jl6ki")
+mesh = ExtResource("2_pmc23")
+skeleton = NodePath("../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.63096, 0)
+light_color = Color(1, 0.0627451, 1, 1)
+spot_angle = 39.2266
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75466, 0.81296)

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwsttb1hofni"
+path="res://.godot/imported/svetjaschijsja_oduvanchik.obj-4c92cc53d6fd41700b9b957df2af545e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/svetjaschijsja_oduvanchik.obj-4c92cc53d6fd41700b9b957df2af545e.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik.obj"
+dest_files=["res://.godot/imported/svetjaschijsja_oduvanchik.obj-4c92cc53d6fd41700b9b957df2af545e.mesh", "res://.godot/imported/svetjaschijsja_oduvanchik.obj-4c92cc53d6fd41700b9b957df2af545e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqqn7q07h47yk"
+path="res://.godot/imported/kamen_perehod_bolshoj.obj-0c0ada6e231c5527e6d3a7cb0ed9cf28.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kamen_perehod_bolshoj.obj-0c0ada6e231c5527e6d3a7cb0ed9cf28.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/kamen_perehod_bolshoj.obj"
+dest_files=["res://.godot/imported/kamen_perehod_bolshoj.obj-0c0ada6e231c5527e6d3a7cb0ed9cf28.mesh", "res://.godot/imported/kamen_perehod_bolshoj.obj-0c0ada6e231c5527e6d3a7cb0ed9cf28.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

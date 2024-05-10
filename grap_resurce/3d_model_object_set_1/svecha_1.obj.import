@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpkxe0gm0gg3h"
+path="res://.godot/imported/svecha_1.obj-a5c331f3a196e2ac7be7185c3d7a58ca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/svecha_1.obj-a5c331f3a196e2ac7be7185c3d7a58ca.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/svecha_1.obj"
+dest_files=["res://.godot/imported/svecha_1.obj-a5c331f3a196e2ac7be7185c3d7a58ca.mesh", "res://.godot/imported/svecha_1.obj-a5c331f3a196e2ac7be7185c3d7a58ca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

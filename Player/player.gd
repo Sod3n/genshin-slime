@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var agent = $NavigationAgent3D
 @onready var interactable_finder = $TargetMove/InteractableFinder
 
-const SPEED = 7.0
+const SPEED = 12.0
 const SPEED_RUN = 12.0
 const JUMP_VELOCITY = 4.5
 const GRAV = 100

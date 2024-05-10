@@ -1,5 +1,10 @@
-Control
+StaticBody3D
 Node3D
+CollisionShape3D
+Area3D
+MeshInstance3D
+GridMap
+Control
 Node
 CanvasLayer
 HBoxContainer
@@ -7,8 +12,3 @@ BoxContainer
 PanelContainer
 Container
 NinePatchRect
-StaticBody3D
-MeshInstance3D
-CollisionShape3D
-Area3D
-Marker3D

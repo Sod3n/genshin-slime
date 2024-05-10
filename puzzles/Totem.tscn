@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bb6hyhxf6h348"]
+
+[ext_resource type="Script" path="res://puzzles/Totem.gd" id="1_exbic"]
+[ext_resource type="Script" path="res://action_signal.gd" id="2_fto0g"]
+[ext_resource type="Texture2D" uid="uid://b2hkcwwq10cut" path="res://icon.png" id="3_hg1vt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wd7kl"]
+size = Vector3(1, 0.992737, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6qx7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qbp48"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywco7"]
+albedo_texture = ExtResource("3_hg1vt")
+
+[node name="Totem" type="StaticBody3D"]
+script = ExtResource("1_exbic")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.512543, 0)
+shape = SubResource("BoxShape3D_wd7kl")
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("2_fto0g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503978, 0)
+shape = SubResource("BoxShape3D_e6qx7")
+
+[node name="State0" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="State0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.497085, 0)
+mesh = SubResource("BoxMesh_qbp48")
+
+[node name="State1" type="Node3D" parent="."]
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="State1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.497085, 0)
+material_override = SubResource("StandardMaterial3D_ywco7")
+mesh = SubResource("BoxMesh_qbp48")
+
+[node name="State2" type="Node3D" parent="."]
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="State2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.497085, 0)
+mesh = SubResource("BoxMesh_qbp48")
+
+[connection signal="on_action" from="Area3D" to="." method="_on_area_3d_on_action"]

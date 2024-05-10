@@ -90,6 +90,7 @@ prototype_id = "book"
 
 [node name="LblInfo" type="Label" parent="."]
 unique_name_in_owner = true
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 14.0

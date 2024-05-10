@@ -1,0 +1,32 @@
+~ start
+
+if is_quest_completed("solve_puzzle") or is_quest_active("solve_puzzle"):
+	=> second_part
+
+if  not is_quest_active("check_chest") and not is_quest_completed("check_chest"):
+	НПС 2: Привет, спутник.
+	НПС 2: Можешь проверить сундук.
+	do start_quest("check_chest")
+else:
+	if is_quest_completed("check_chest"):
+		НПС 2: Там ничего нет!? Печалька(
+		НПС 2: Проверь тогда тотемы.
+		do start_quest("solve_puzzle")
+	else:
+		НПС 2: Нашёл книги?
+		НПС 2: Ничего, я тебя не тороплю
+
+=> END
+
+~ second_part
+
+НПС 2: Да.
+
+=> END
+
+~ check_chest
+
+Вы осматриваете сундук. Там ничего нет
+do update_quest("check_chest")
+
+=> END

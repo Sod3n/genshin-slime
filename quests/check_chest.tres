@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://caludgw0ibr4a"]
+
+[ext_resource type="Script" path="res://quests/solve_puzzle_quest.gd" id="1_kueat"]
+
+[resource]
+script = ExtResource("1_kueat")
+id = 6
+quest_name = "Проверить cундук"
+quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_objective = ""

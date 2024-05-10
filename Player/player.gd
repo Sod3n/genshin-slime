@@ -10,6 +10,9 @@ const GRAV = 100
 
 var run = false
 
+func _ready():
+	pass
+
 func _physics_process(delta):
 	if !is_on_floor():
 		velocity.y-= GRAV * delta
@@ -23,3 +26,8 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("save_data"):
+		SaveManager.save()
+	if Input.is_action_just_pressed("load_data"):
+		SaveManager.load()

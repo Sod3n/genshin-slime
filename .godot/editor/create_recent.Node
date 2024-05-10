@@ -1,3 +1,4 @@
+Node3D
 PhantomCamera3D
 PhantomCameraHost
 Camera3D
@@ -12,4 +13,3 @@ NavigationRegion3D
 CharacterBody3D
 Panel
 Area3D
-Node3D

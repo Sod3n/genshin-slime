@@ -1,11 +1,6 @@
 res://maps/test_room.tscn
 res://grap_resurce/materials/test_material_tiles.tres
-res://grap_resurce/materials/test_material_tiles2.tres
 res://maps/__map.tscn
 res://Player/player.tscn
 res://MapTools/world_environment_room.tscn
-res://MapTools/triger.tscn
-res://ui/inventary.tscn
-res://Puska/puska.tscn
-res://MapTools/collision/platform.tscn
-res://MapTools/collision/platfrom_L.tscn
+res://maps/map_test_2.tscn

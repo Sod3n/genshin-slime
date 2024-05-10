@@ -1,3 +1,5 @@
+res://MapTools/trigers
+res://scripts
 res://images
 res://Inventory
 res://QuestsNDialogue
@@ -7,7 +9,6 @@ res://QuestsNDialogue/dialogue
 res://grap_resurce/materials
 res://MapTools/collision
 res://Puska
-res://scripts
 res://ui
 res://MapTools
 res://maps

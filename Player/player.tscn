@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs1xotbmrlfim"]
+[gd_scene load_steps=6 format=3 uid="uid://bs1xotbmrlfim"]
 
 [ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_5cssm"]
 [ext_resource type="Script" path="res://Player/player.gd" id="1_jw4od"]
@@ -8,7 +8,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_t5c1t"]
 size = Vector3(3.02933, 2.08997, 2.48172)
 
-[node name="Player" type="CharacterBody3D"]
+[sub_resource type="Curve3D" id="Curve3D_j2cc0"]
+
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_jw4od")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
@@ -28,3 +30,6 @@ shape = SubResource("CapsuleShape3D_u55ea")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TargetMove/InteractableFinder"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0614166, 0.802917, 0.0179901)
 shape = SubResource("BoxShape3D_t5c1t")
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_j2cc0")

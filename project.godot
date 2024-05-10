@@ -24,6 +24,7 @@ QuestSystem="*res://addons/quest_system/quest_manager.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Shortcuts="*res://QuestsNDialogue/shortcuts.gd"
 InventoryInstance="*res://Inventory/inventory_instance.gd"
+SaveManager="*res://scripts/SaveManager.gd"
 
 [dialogue_manager]
 

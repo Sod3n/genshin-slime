@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bfdrbbsynapcw"]
+[gd_scene load_steps=14 format=3 uid="uid://bfdrbbsynapcw"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_mxjce"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_t21kk"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="7_26ktm"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="8_n1jyy"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="9_mxqtj"]
+[ext_resource type="PackedScene" uid="uid://dewj0p1ykkx80" path="res://MapTools/trigers/__triger.tscn" id="10_38xpy"]
 
 [sub_resource type="Resource" id="Resource_yhrnb"]
 script = ExtResource("8_n1jyy")
@@ -22,6 +23,9 @@ cull_mask = 1048575
 h_offset = 0.0
 v_offset = 0.0
 fov = 60.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ijfln"]
+radius = 1.88938
 
 [node name="test_room" instance=ExtResource("1_mxjce")]
 
@@ -62,3 +66,11 @@ follow_distance = 4.0
 dead_zone_width = 0.5
 dead_zone_height = 0.186
 spring_length = 4.0
+
+[node name="__triger" parent="." index="8" instance=ExtResource("10_38xpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.45369, 1.9217, 2.97078)
+entered = true
+body_name = "Player"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="__triger" index="0"]
+shape = SubResource("SphereShape3D_ijfln")

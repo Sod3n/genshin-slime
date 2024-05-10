@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_cjor7")
-id = 5
+id = 0
 quest_name = "Проверить тотемы"
-quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_description = ""
 quest_objective = ""

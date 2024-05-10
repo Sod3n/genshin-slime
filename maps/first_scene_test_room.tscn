@@ -26,24 +26,24 @@
 [ext_resource type="Script" path="res://puzzles/EqualTotemPuzzleOne.gd" id="23_o3rvr"]
 [ext_resource type="PackedScene" uid="uid://bb6hyhxf6h348" path="res://puzzles/Totem.tscn" id="23_smf7c"]
 
-[sub_resource type="Resource" id="Resource_yhrnb"]
-script = ExtResource("8_nknif")
-duration = 1.0
-transition = 0
-ease = 2
-
-[sub_resource type="Resource" id="Resource_gf2ij"]
-script = ExtResource("9_vqkct")
-cull_mask = 1048575
-h_offset = 0.0
-v_offset = 0.0
-fov = 60.0
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_n1jdi"]
 size = Vector3(1, 2.70129, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l2jh5"]
 size = Vector3(1.38525, 2.58276, 1)
+
+[sub_resource type="Resource" id="Resource_tmt85"]
+script = ExtResource("8_nknif")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="Resource" id="Resource_o4c5h"]
+script = ExtResource("9_vqkct")
+cull_mask = 1048575
+h_offset = 0.0
+v_offset = 0.0
+fov = 60.0
 
 [node name="test_room" instance=ExtResource("1_c7qa3")]
 
@@ -66,31 +66,7 @@ material_override = ExtResource("3_j78hn")
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 9, -9, 1, 3)
 material_override = ExtResource("5_m7d6f")
 
-[node name="MainCamera3D" type="Camera3D" parent="." index="7"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
-fov = 60.0
-
-[node name="PhantomCameraHost" type="Node" parent="MainCamera3D" index="0"]
-script = ExtResource("6_423nu")
-
-[node name="PhantomCamera3D" type="Node3D" parent="." index="8" node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
-script = ExtResource("7_ie5u3")
-priority = 30
-follow_mode = 5
-follow_target = NodePath("../Player")
-tween_resource = SubResource("Resource_yhrnb")
-tween_on_load = false
-camera_3d_resource = SubResource("Resource_gf2ij")
-follow_offset = Vector3(0, 5, 8)
-follow_damping = true
-follow_damping_value = Vector3(0.4, 0.4, 0.4)
-follow_distance = 4.0
-dead_zone_width = 0.5
-dead_zone_height = 0.186
-spring_length = 4.0
-
-[node name="Books" type="Node" parent="." index="9"]
+[node name="Books" type="Node" parent="." index="7"]
 
 [node name="TestItemBook" parent="Books" index="0" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6892, 0.490538, -27.4034)
@@ -143,7 +119,7 @@ script = ExtResource("14_u3tmw")
 protoset = ExtResource("15_k7min")
 prototype_id = "book"
 
-[node name="TestNpc1" parent="." index="10" instance=ExtResource("11_hrecj")]
+[node name="TestNpc1" parent="." index="8" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -30.5934)
 
 [node name="Area3D" type="Area3D" parent="TestNpc1" index="2"]
@@ -154,7 +130,7 @@ dialogue_resource = ExtResource("13_7e5iy")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
 shape = SubResource("BoxShape3D_l2jh5")
 
-[node name="TestNpc2" parent="." index="11" instance=ExtResource("11_hrecj")]
+[node name="TestNpc2" parent="." index="9" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -60.2866)
 
 [node name="Area3D" type="Area3D" parent="TestNpc2" index="2"]
@@ -165,7 +141,7 @@ dialogue_resource = ExtResource("20_ajybk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
 shape = SubResource("BoxShape3D_l2jh5")
 
-[node name="TestNpc3" parent="." index="12" instance=ExtResource("11_hrecj")]
+[node name="TestNpc3" parent="." index="10" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6864, 0.5, -60.2866)
 
 [node name="Area3D" type="Area3D" parent="TestNpc3" index="2"]
@@ -177,7 +153,7 @@ dialogue_start = "check_chest"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
 shape = SubResource("BoxShape3D_l2jh5")
 
-[node name="Materials" type="Node" parent="." index="13"]
+[node name="Materials" type="Node" parent="." index="11"]
 
 [node name="TestItemStick" parent="Materials" index="0" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -27.4034)
@@ -332,11 +308,11 @@ script = ExtResource("14_u3tmw")
 protoset = ExtResource("15_k7min")
 prototype_id = "grass"
 
-[node name="Door" parent="." index="14" instance=ExtResource("21_ggshb")]
+[node name="Door" parent="." index="12" instance=ExtResource("21_ggshb")]
 transform = Transform3D(2.37798, 0, 0, 0, 2.37798, 0, 0, 0, 2.37798, 6.58095, 0.5, -30.6557)
 state_variable = "quest_1_completed"
 
-[node name="EqualTotemPuzzles" parent="." index="15" node_paths=PackedStringArray("totems") instance=ExtResource("22_fhsan")]
+[node name="EqualTotemPuzzles" parent="." index="13" node_paths=PackedStringArray("totems") instance=ExtResource("22_fhsan")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3553, 0.5, -59.1904)
 script = ExtResource("23_o3rvr")
 totems = [NodePath("Totem"), NodePath("Totem2"), NodePath("Totem3"), NodePath("Totem4")]
@@ -360,3 +336,27 @@ state_number = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5682, 0, -0.0854454)
 totems = [NodePath("../Totem")]
 state_number = 2
+
+[node name="MainCamera3D" type="Camera3D" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+fov = 60.0
+
+[node name="PhantomCameraHost" type="Node" parent="MainCamera3D" index="0"]
+script = ExtResource("6_423nu")
+
+[node name="PhantomCamera3D" type="Node3D" parent="." index="15" node_paths=PackedStringArray("follow_target")]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+script = ExtResource("7_ie5u3")
+priority = 30
+follow_mode = 5
+follow_target = NodePath("../Player")
+tween_resource = SubResource("Resource_tmt85")
+tween_on_load = false
+camera_3d_resource = SubResource("Resource_o4c5h")
+follow_offset = Vector3(0, 5, 8)
+follow_damping = true
+follow_damping_value = Vector3(0.4, 0.4, 0.4)
+follow_distance = 4.0
+dead_zone_width = 0.5
+dead_zone_height = 0.186
+spring_length = 4.0

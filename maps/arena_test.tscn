@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4sjmnpmxdq1c"]
+[gd_scene load_steps=6 format=3 uid="uid://odfbuy1u8k72"]
 
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="1_hwq3f"]
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="2_ygd17"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_ygd17"]
 [ext_resource type="ArrayMesh" uid="uid://bwrf75dwtvkrd" path="res://grap_resurce/3d_model_object_set_1/jaschik_002.obj" id="3_6oyse"]
 [ext_resource type="ArrayMesh" uid="uid://doq7oqq7bld77" path="res://grap_resurce/3d_model_object_set_1/jaschik_003.obj" id="4_0sijl"]
 

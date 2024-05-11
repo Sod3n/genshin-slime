@@ -43,7 +43,6 @@ func loading():
 func _ready():
 	SaveManager.connect("game_loading", loading)
 	SaveManager.connect("game_saving", saving)
-func _ready():
 	pass
 
 func _physics_process(delta):
@@ -79,7 +78,3 @@ func _unhandled_input(_event: InputEvent) -> void:
 			return
 			
 	input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	if Input.is_action_just_pressed("save_data"):
-		SaveManager.save()
-	if Input.is_action_just_pressed("load_data"):
-		SaveManager.load()

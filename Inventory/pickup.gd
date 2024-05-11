@@ -17,7 +17,8 @@ func action() -> void:
 	
 	if free_space.success:
 		InventoryInstance.value.create_and_add_item_at(inventory_item.prototype_id, free_space.position)
-		update_quest.update()
+		if update_quest != null:
+			update_quest.update()
 		var balloon: Node = Balloon.instantiate()
 		get_tree().current_scene.add_child(balloon)
 		balloon.start(MainDialogue, "collect_item")

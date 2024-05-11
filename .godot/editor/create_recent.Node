@@ -1,4 +1,6 @@
+Node
 AnimationPlayer
+AnimatedSprite3D
 Node3D
 CollisionShape3D
 Area3D
@@ -9,7 +11,4 @@ StaticBody3D
 MeshInstance3D
 GridMap
 Control
-Node
 CanvasLayer
-HBoxContainer
-BoxContainer

@@ -16,7 +16,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-0.383, 0.2, 0.558), Vector3(-0.383, -0.2, 0.558)]
+"values": [Vector3(-0.383, 0.2, 0.558), Vector3(-0.383, 0, 0.558)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v7ilc"]
@@ -27,7 +27,7 @@ _data = {
 [node name="GlazastyjKristal" type="Node3D"]
 
 [node name="GlazastyjKristal" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.383, 0.135502, 0.558)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.383, 0.0894642, 0.558)
 material_override = ExtResource("1_js71j")
 mesh = ExtResource("2_8sy2c")
 skeleton = NodePath("../..")
@@ -47,3 +47,4 @@ libraries = {
 "": SubResource("AnimationLibrary_v7ilc")
 }
 autoplay = "idle"
+speed_scale = 0.3

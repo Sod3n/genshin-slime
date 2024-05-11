@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://c14b00yefs25o"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_gdker"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_gnexv"]
+[ext_resource type="PackedScene" uid="uid://c322o015mq0uy" path="res://koster_fire_on.tscn" id="2_xjtfb"]
+[ext_resource type="ArrayMesh" uid="uid://dm278kt87gvt" path="res://grap_resurce/3d_model_object_set_2/koster.obj" id="4_mr4mu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_beu55"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
+size = Vector3(0, 0, 0)
+
+[node name="Bonfire" type="Node3D"]
+script = ExtResource("1_gdker")
+
+[node name="Opened" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Opened"]
+shape = SubResource("BoxShape3D_beu55")
+
+[node name="Koster_Fire_on" parent="Opened" instance=ExtResource("2_xjtfb")]
+transform = Transform3D(-0.999966, -0.00325083, -0.00755037, -0.00325098, 0.999995, 7.02003e-06, 0.00755031, 3.15715e-05, -0.999972, 0, -0.503608, 0)
+
+[node name="Closed" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Closed"]
+shape = SubResource("BoxShape3D_mgri7")
+
+[node name="Koster3" type="MeshInstance3D" parent="Closed"]
+transform = Transform3D(-0.999966, -0.00325083, -0.00755037, -0.00325098, 0.999995, 7.02003e-06, 0.00755031, 3.15715e-05, -0.999972, 0, -0.521472, 0)
+material_override = ExtResource("2_gnexv")
+mesh = ExtResource("4_mr4mu")

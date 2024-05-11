@@ -1,8 +1,27 @@
 ~ start
 
+if is_quest_completed("solve_puzzle"):
+	...
+	=> END
+
+if is_quest_completed("get_materials"):
+	if is_quest_active("find_note"):
+		if remove_items("book"):
+			do update_quest("find_note")
+			...
+			do start_quest("solve_puzzle")
+		else
+			...
+	
+	do update_quest("return_to_npc_two")
+	do start_quest("find_note")
+	
+	=> END
+
+
+
 if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
-	НПС 1: Привет, спутник.
-	НПС 1: Можешь принести вещи для обряда?
+	Розмерта: Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?
 	do start_quest("get_book")
 else:
 	if is_quest_active("return_to_npc"):
@@ -17,7 +36,16 @@ else:
 => END
 
 ~ open_town
-Вы используете ключ и открываете ворота.
-do town_opened = true
-do update_quest("get_into_town")
+if remove_items("key"):
+	Вы используете ключ и открываете ворота.
+	do town_opened = true
+	do update_quest("get_into_town")
+else:
+	Кажется, здесь нужен ключ. Надо поискать в округе.
+=> END
+
+~ open_castle
+if is_quest_completed("solve_puzzle"):
+	...
+
 => END

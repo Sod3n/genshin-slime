@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://dm4fjvxooalth"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_r1wuw"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_nx8rg"]
+[ext_resource type="ArrayMesh" uid="uid://cstb1k4u4nhr2" path="res://grap_resurce/3d_model_object_set_1/korobka_003.obj" id="3_l0atv"]
+[ext_resource type="ArrayMesh" uid="uid://dvjt07h82moll" path="res://grap_resurce/3d_model_object_set_1/korobka_001.obj" id="4_jsofl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_beu55"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
+size = Vector3(0, 0, 0)
+
+[node name="Door" type="Node3D"]
+script = ExtResource("1_r1wuw")
+
+[node name="Opened" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Opened"]
+shape = SubResource("BoxShape3D_beu55")
+
+[node name="Korobka001" type="MeshInstance3D" parent="Opened"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.32139, 0, -0.468525, 0)
+material_override = ExtResource("2_nx8rg")
+mesh = ExtResource("4_jsofl")
+skeleton = NodePath("../..")
+
+[node name="Closed" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Closed"]
+shape = SubResource("BoxShape3D_mgri7")
+
+[node name="Korobka011" type="MeshInstance3D" parent="Closed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.527238, 0)
+material_override = ExtResource("2_nx8rg")
+mesh = ExtResource("3_l0atv")

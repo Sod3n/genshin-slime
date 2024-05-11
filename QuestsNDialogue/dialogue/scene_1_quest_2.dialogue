@@ -4,11 +4,12 @@ if is_quest_completed("get_materials"):
 	=> END
 
 if is_quest_active("get_materials"):
-	if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle"), remove_items("grass")):
+	if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle")):
 		Вы отдаёте часть материалов.
 		do update_quest("get_materials")
 		if is_quest_completed("get_materials"):
 			НПС 1: Преисполнейще благодарю.
+			do bonfire_up = true
 			do start_quest("return_to_npc_two")
 		else:
 			НПС 1: Продолжай в том же духе!
@@ -21,36 +22,8 @@ do start_quest("get_materials")
 
 => END
 
-
-~ start2
-
-if is_quest_completed("solve_puzzle") or is_quest_active("solve_puzzle"):
-	=> second_part
-
-if  not is_quest_active("check_chest") and not is_quest_completed("check_chest"):
-	НПС 2: Привет, спутник.
-	НПС 2: Можешь проверить сундук.
-	do start_quest("check_chest")
-else:
-	if is_quest_completed("check_chest"):
-		НПС 2: Там ничего нет!? Печалька(
-		НПС 2: Проверь тогда тотемы.
-		do start_quest("solve_puzzle")
-	else:
-		НПС 2: Нашёл книги?
-		НПС 2: Ничего, я тебя не тороплю
-
-=> END
-
 ~ second_part
 
 НПС 2: Да.
 
-=> END
-
-~ check_chest
-
-Вы осматриваете сундук. Там ничего нет
-do update_quest("check_chest")
-do remove_items("key")
 => END

@@ -1,13 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvshfbif53gna"]
+[gd_scene load_steps=6 format=3 uid="uid://cvshfbif53gna"]
 
 [ext_resource type="Script" path="res://scripts/door.gd" id="1_8xj2t"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_eb0nt"]
+[ext_resource type="ArrayMesh" uid="uid://c2nvecwatddlk" path="res://grap_resurce/3d_model_object_set_2/zabor_002.obj" id="3_241qb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_beu55"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_qjgim"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
-size = Vector3(0, 0, 0)
 
 [node name="Door" type="Node3D"]
 script = ExtResource("1_8xj2t")
@@ -16,10 +15,8 @@ script = ExtResource("1_8xj2t")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Opened"]
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 shape = SubResource("BoxShape3D_beu55")
-
-[node name="Platform" type="MeshInstance3D" parent="Opened"]
-mesh = SubResource("BoxMesh_qjgim")
 
 [node name="Closed" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
@@ -27,5 +24,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Closed"]
 shape = SubResource("BoxShape3D_mgri7")
 
-[node name="Platform" type="MeshInstance3D" parent="Closed"]
-mesh = SubResource("BoxMesh_qjgim")
+[node name="Zabor087" type="MeshInstance3D" parent="Closed"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.577851, 0)
+material_override = ExtResource("2_eb0nt")
+mesh = ExtResource("3_241qb")
+skeleton = NodePath("../..")

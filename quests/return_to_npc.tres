@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_1oca3")
 id = 3
-quest_name = "Вернись к НПС 1"
+quest_name = "Надо вернуться к Айне"
 quest_description = "Nathan'd like to have an apple. Help him to find one."
 quest_objective = ""

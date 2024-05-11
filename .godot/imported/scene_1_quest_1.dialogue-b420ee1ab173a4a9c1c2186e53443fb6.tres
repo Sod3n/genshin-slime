@@ -1,15 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_2yaim"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r46sd"]
 
 [resource]
-script = ExtResource("1_2yaim")
+script = ExtResource("1_r46sd")
 using_states = PackedStringArray()
 titles = {
-"open_town": "20",
+"open_castle": "48",
+"open_town": "39",
 "start": "3"
 }
-character_names = PackedStringArray("НПС 1")
+character_names = PackedStringArray("Розмерта", "НПС 1")
 first_title = "3"
 lines = {
 "1": {
@@ -22,35 +23,31 @@ lines = {
 "id": "10",
 "mutation": {
 "expression": Array[Dictionary]([{
-"function": "remove_items",
+"function": "update_quest",
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "book"
+"value": "find_note"
 }])])
 }]),
 "is_blocking": true
 },
 "next_id": "11",
-"parent_id": "8",
+"parent_id": "9",
 "type": &"mutation"
 },
 "11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "11",
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "update_quest",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "return_to_npc"
-}])])
-}]),
-"is_blocking": true
-},
 "next_id": "12",
-"parent_id": "8",
-"type": &"mutation"
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": &"dialogue"
 },
 "12": {
 "id": "12",
@@ -60,114 +57,78 @@ lines = {
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "find_key"
+"value": "solve_puzzle"
 }])])
 }]),
 "is_blocking": true
 },
-"next_id": "17",
-"parent_id": "8",
+"next_id": "16",
+"parent_id": "9",
 "type": &"mutation"
 },
 "13": {
 "id": "13",
-"next_conditional_id": "17",
+"next_conditional_id": "16",
 "next_id": "14",
-"next_id_after": "17",
-"parent_id": "7",
+"next_id_after": "16",
+"parent_id": "8",
 "type": &"condition"
 },
 "14": {
-"character": "НПС 1",
-"character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "15",
-"notes": "",
-"parent_id": "13",
-"tags": PackedStringArray(),
-"text": "Нашёл книги?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Нашёл книги?",
-"type": &"dialogue"
-},
-"15": {
-"character": "НПС 1",
-"character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "17",
-"notes": "",
-"parent_id": "13",
-"tags": PackedStringArray(),
-"text": "Ничего, я тебя не тороплю",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Ничего, я тебя не тороплю",
-"type": &"dialogue"
-},
-"17": {
-"id": "17",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
-},
-"19": {
-"id": "19",
-"next_id": "20",
-"text": "open_town",
-"type": &"title"
-},
-"20": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "20",
-"next_id": "21",
+"id": "14",
+"next_id": "16",
 "notes": "",
+"parent_id": "13",
 "tags": PackedStringArray(),
-"text": "Вы используете ключ и открываете ворота.",
+"text": "...",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Вы используете ключ и открываете ворота.",
+"translation_key": "...",
 "type": &"dialogue"
 },
-"21": {
-"id": "21",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "town_opened"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "variable",
-"value": "true"
-}]),
-"is_blocking": true
-},
-"next_id": "22",
-"type": &"mutation"
-},
-"22": {
-"id": "22",
+"16": {
+"id": "16",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "update_quest",
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "get_into_town"
+"value": "return_to_npc_two"
 }])])
 }]),
 "is_blocking": true
 },
-"next_id": "23",
+"next_id": "17",
+"parent_id": "7",
 "type": &"mutation"
 },
-"23": {
-"id": "23",
+"17": {
+"id": "17",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "find_note"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "19",
+"parent_id": "7",
+"type": &"mutation"
+},
+"19": {
+"id": "19",
 "is_snippet": false,
 "next_id": "end",
+"parent_id": "7",
 "type": &"goto"
 },
-"3": {
+"23": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "not"
@@ -194,40 +155,27 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "3",
-"next_conditional_id": "7",
-"next_id": "4",
-"next_id_after": "17",
+"id": "23",
+"next_conditional_id": "26",
+"next_id": "24",
+"next_id_after": "36",
 "type": &"condition"
 },
-"4": {
-"character": "НПС 1",
+"24": {
+"character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "4",
-"next_id": "5",
+"id": "24",
+"next_id": "25",
 "notes": "",
-"parent_id": "3",
+"parent_id": "23",
 "tags": PackedStringArray(),
-"text": "Привет, спутник.",
+"text": "Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Привет, спутник.",
+"translation_key": "Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?",
 "type": &"dialogue"
 },
-"5": {
-"character": "НПС 1",
-"character_replacements": Array[Dictionary]([]),
-"id": "5",
-"next_id": "6",
-"notes": "",
-"parent_id": "3",
-"tags": PackedStringArray(),
-"text": "Можешь принести вещи для обряда?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Можешь принести вещи для обряда?",
-"type": &"dialogue"
-},
-"6": {
-"id": "6",
+"25": {
+"id": "25",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -239,18 +187,18 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "17",
-"parent_id": "3",
+"next_id": "36",
+"parent_id": "23",
 "type": &"mutation"
 },
-"7": {
-"id": "7",
-"next_conditional_id": "17",
-"next_id": "8",
-"next_id_after": "17",
+"26": {
+"id": "26",
+"next_conditional_id": "36",
+"next_id": "27",
+"next_id_after": "36",
 "type": &"condition"
 },
-"8": {
+"27": {
 "condition": {
 "expression": Array[Dictionary]([{
 "function": "is_quest_active",
@@ -263,32 +211,384 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "8",
-"next_conditional_id": "13",
-"next_id": "9",
-"next_id_after": "17",
-"parent_id": "7",
+"id": "27",
+"next_conditional_id": "32",
+"next_id": "28",
+"next_id_after": "36",
+"parent_id": "26",
 "type": &"condition"
 },
-"9": {
+"28": {
 "character": "НПС 1",
 "character_replacements": Array[Dictionary]([]),
-"id": "9",
-"next_id": "10",
+"id": "28",
+"next_id": "29",
 "notes": "",
-"parent_id": "8",
+"parent_id": "27",
 "tags": PackedStringArray(),
 "text": "Спасибо за помощь!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Спасибо за помощь!",
 "type": &"dialogue"
+},
+"29": {
+"id": "29",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "book"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "30",
+"parent_id": "27",
+"type": &"mutation"
+},
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "solve_puzzle"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "3",
+"next_conditional_id": "7",
+"next_id": "4",
+"next_id_after": "7",
+"type": &"condition"
+},
+"30": {
+"id": "30",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "update_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_npc"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "31",
+"parent_id": "27",
+"type": &"mutation"
+},
+"31": {
+"id": "31",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "find_key"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "36",
+"parent_id": "27",
+"type": &"mutation"
+},
+"32": {
+"id": "32",
+"next_conditional_id": "36",
+"next_id": "33",
+"next_id_after": "36",
+"parent_id": "26",
+"type": &"condition"
+},
+"33": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"notes": "",
+"parent_id": "32",
+"tags": PackedStringArray(),
+"text": "Нашёл книги?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Нашёл книги?",
+"type": &"dialogue"
+},
+"34": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "36",
+"notes": "",
+"parent_id": "32",
+"tags": PackedStringArray(),
+"text": "Ничего, я тебя не тороплю",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ничего, я тебя не тороплю",
+"type": &"dialogue"
+},
+"36": {
+"id": "36",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"38": {
+"id": "38",
+"next_id": "39",
+"text": "open_town",
+"type": &"title"
+},
+"39": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "key"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "39",
+"next_conditional_id": "43",
+"next_id": "40",
+"next_id_after": "45",
+"type": &"condition"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": &"dialogue"
+},
+"40": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "41",
+"notes": "",
+"parent_id": "39",
+"tags": PackedStringArray(),
+"text": "Вы используете ключ и открываете ворота.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Вы используете ключ и открываете ворота.",
+"type": &"dialogue"
+},
+"41": {
+"id": "41",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "town_opened"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "42",
+"parent_id": "39",
+"type": &"mutation"
+},
+"42": {
+"id": "42",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "update_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_into_town"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "45",
+"parent_id": "39",
+"type": &"mutation"
+},
+"43": {
+"id": "43",
+"next_conditional_id": "45",
+"next_id": "44",
+"next_id_after": "45",
+"type": &"condition"
+},
+"44": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "44",
+"next_id": "45",
+"notes": "",
+"parent_id": "43",
+"tags": PackedStringArray(),
+"text": "Кажется, здесь нужен ключ. Надо поискать в округе.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Кажется, здесь нужен ключ. Надо поискать в округе.",
+"type": &"dialogue"
+},
+"45": {
+"id": "45",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"47": {
+"id": "47",
+"next_id": "48",
+"text": "open_castle",
+"type": &"title"
+},
+"48": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "solve_puzzle"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "48",
+"next_conditional_id": "51",
+"next_id": "49",
+"next_id_after": "51",
+"type": &"condition"
+},
+"49": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "49",
+"next_id": "51",
+"notes": "",
+"parent_id": "48",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": &"dialogue"
+},
+"5": {
+"id": "5",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "3",
+"type": &"goto"
+},
+"51": {
+"id": "51",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"7": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "7",
+"next_conditional_id": "23",
+"next_id": "8",
+"next_id_after": "23",
+"type": &"condition"
+},
+"8": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "find_note"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "8",
+"next_conditional_id": "16",
+"next_id": "9",
+"next_id_after": "16",
+"parent_id": "7",
+"type": &"condition"
+},
+"9": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "book"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "9",
+"next_conditional_id": "13",
+"next_id": "10",
+"next_id_after": "16",
+"parent_id": "8",
+"type": &"condition"
 }
 }
 raw_text = "~ start
 
+if is_quest_completed(\"solve_puzzle\"):
+	...
+	=> END
+
+if is_quest_completed(\"get_materials\"):
+	if is_quest_active(\"find_note\"):
+		if remove_items(\"book\"):
+			do update_quest(\"find_note\")
+			...
+			do start_quest(\"solve_puzzle\")
+		else
+			...
+	
+	do update_quest(\"return_to_npc_two\")
+	do start_quest(\"find_note\")
+	
+	=> END
+
+
+
 if  not is_quest_active(\"get_book\") and not is_quest_completed(\"get_book\"):
-	НПС 1: Привет, спутник.
-	НПС 1: Можешь принести вещи для обряда?
+	Розмерта: Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?
 	do start_quest(\"get_book\")
 else:
 	if is_quest_active(\"return_to_npc\"):
@@ -303,8 +603,17 @@ else:
 => END
 
 ~ open_town
-Вы используете ключ и открываете ворота.
-do town_opened = true
-do update_quest(\"get_into_town\")
+if remove_items(\"key\"):
+	Вы используете ключ и открываете ворота.
+	do town_opened = true
+	do update_quest(\"get_into_town\")
+else:
+	Кажется, здесь нужен ключ. Надо поискать в округе.
+=> END
+
+~ open_castle
+if is_quest_completed(\"solve_puzzle\"):
+	...
+
 => END"
 metadata/dialogue_manager_version = "2.39.0"

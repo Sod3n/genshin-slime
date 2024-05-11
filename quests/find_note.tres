@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://8wi4mieryp7c"]
+
+[ext_resource type="Script" path="res://quests/find_key_quest.gd" id="1_o04wt"]
+
+[resource]
+script = ExtResource("1_o04wt")
+id = 12
+quest_name = "Вернуть записку"
+quest_description = ""
+quest_objective = ""

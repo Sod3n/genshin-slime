@@ -1,9 +1,9 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://72mfacqf4jmi"]
 
-[ext_resource type="Script" path="res://quests/find_key_quest.gd" id="1_rdj4w"]
+[ext_resource type="Script" path="res://quests/get_into_town_quest.gd" id="1_vl0eo"]
 
 [resource]
-script = ExtResource("1_rdj4w")
+script = ExtResource("1_vl0eo")
 id = 8
 quest_name = "Попадите в город."
 quest_description = ""

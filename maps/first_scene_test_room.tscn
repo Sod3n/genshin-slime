@@ -56,7 +56,7 @@ material_override = ExtResource("5_m7d6f")
 [node name="TestItemBook" parent="Books" index="0" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6892, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Books/TestItemBook" index="1"]
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("14_gkqr0")
 is_destroy_on_pick_up = true
@@ -73,7 +73,7 @@ prototype_id = "book"
 [node name="TestItemBook2" parent="Books" index="1" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2582, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Books/TestItemBook2" index="1"]
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook2" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("14_gkqr0")
 is_destroy_on_pick_up = true
@@ -90,7 +90,7 @@ prototype_id = "book"
 [node name="TestItemBook3" parent="Books" index="2" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8123, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Books/TestItemBook3" index="1"]
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook3" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("14_gkqr0")
 is_destroy_on_pick_up = true
@@ -109,7 +109,7 @@ prototype_id = "book"
 [node name="TestItemKey" parent="Key" index="0" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.7095, 0.490538, -23.7115)
 
-[node name="PickUp" type="Area3D" parent="Key/TestItemKey" index="1"]
+[node name="PickUp" type="Area3D" parent="Key/TestItemKey" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("13_bsfts")
 is_destroy_on_pick_up = true
@@ -126,7 +126,7 @@ prototype_id = "book"
 [node name="TestNpc1" parent="." index="9" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -30.5934)
 
-[node name="Area3D" type="Area3D" parent="TestNpc1" index="2"]
+[node name="Area3D" type="Area3D" parent="TestNpc1" index="1"]
 script = ExtResource("12_uc7bx")
 dialogue_resource = ExtResource("13_7e5iy")
 
@@ -137,7 +137,7 @@ shape = SubResource("BoxShape3D_l2jh5")
 [node name="TestNpc2" parent="." index="10" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -60.2866)
 
-[node name="Area3D" type="Area3D" parent="TestNpc2" index="2"]
+[node name="Area3D" type="Area3D" parent="TestNpc2" index="1"]
 script = ExtResource("12_uc7bx")
 dialogue_resource = ExtResource("20_ajybk")
 
@@ -148,7 +148,7 @@ shape = SubResource("BoxShape3D_l2jh5")
 [node name="TestNpc3" parent="." index="11" instance=ExtResource("11_hrecj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6864, 0.5, -60.2866)
 
-[node name="Area3D" type="Area3D" parent="TestNpc3" index="2"]
+[node name="Area3D" type="Area3D" parent="TestNpc3" index="1"]
 script = ExtResource("12_uc7bx")
 dialogue_resource = ExtResource("20_ajybk")
 dialogue_start = "check_chest"
@@ -162,7 +162,7 @@ shape = SubResource("BoxShape3D_l2jh5")
 [node name="TestItemStick" parent="Materials" index="0" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -179,7 +179,7 @@ prototype_id = "stick"
 [node name="TestItemStick2" parent="Materials" index="1" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick2" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick2" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -196,7 +196,7 @@ prototype_id = "stick"
 [node name="TestItemStick3" parent="Materials" index="2" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7975, 0.490538, -27.4034)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick3" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick3" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -213,7 +213,7 @@ prototype_id = "stick"
 [node name="TestItemStick4" parent="Materials" index="3" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -31.577)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick4" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick4" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -230,7 +230,7 @@ prototype_id = "candle"
 [node name="TestItemStick5" parent="Materials" index="4" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -31.577)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick5" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick5" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -247,7 +247,7 @@ prototype_id = "candle"
 [node name="TestItemStick6" parent="Materials" index="5" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0023, 0.490538, -31.577)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick6" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick6" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -264,7 +264,7 @@ prototype_id = "candle"
 [node name="TestItemStick7" parent="Materials" index="6" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -36.2776)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick7" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick7" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -281,7 +281,7 @@ prototype_id = "grass"
 [node name="TestItemStick8" parent="Materials" index="7" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -36.2776)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick8" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick8" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -298,7 +298,7 @@ prototype_id = "grass"
 [node name="TestItemStick9" parent="Materials" index="8" instance=ExtResource("12_xm7bm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0023, 0.490538, -36.2776)
 
-[node name="PickUp" type="Area3D" parent="Materials/TestItemStick9" index="1"]
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick9" index="0"]
 script = ExtResource("13_8o4ft")
 update_quest = ExtResource("20_3a3at")
 is_destroy_on_pick_up = true
@@ -338,12 +338,11 @@ totems = [NodePath("../Totem")]
 state_number = 3
 
 [node name="MainCamera3D2" parent="." index="15"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 6, 8)
 
 [node name="PhantomCamera3D2" parent="." index="16"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 6, 8)
 follow_offset = Vector3(1, 5, 8)
-dead_zone_width = 0.3
 
 [node name="GridMap" type="GridMap" parent="." index="17"]
 mesh_library = ExtResource("22_m28b3")

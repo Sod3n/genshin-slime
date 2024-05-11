@@ -62,7 +62,7 @@ _data = {
 "RUN": SubResource("Animation_pg7op")
 }
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_jw4od")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -87,7 +87,6 @@ texture_filter = 0
 texture = ExtResource("2_vuyvd")
 hframes = 4
 vframes = 3
-frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

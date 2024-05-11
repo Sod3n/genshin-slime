@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgejjb2nk1pgc"]
+[gd_scene load_steps=5 format=3 uid="uid://cgejjb2nk1pgc"]
 
 [ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_2h3ic"]
 [ext_resource type="Script" path="res://Puska/puska.gd" id="1_yd072"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_075yj"]
 height = 2.39389
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jarl7"]
+size = Vector3(2, 1, 1)
 
 [node name="Puska" type="CharacterBody3D"]
 script = ExtResource("1_yd072")
@@ -24,4 +27,8 @@ shape = SubResource("CapsuleShape3D_075yj")
 
 [node name="MovePoint" type="Marker3D" parent="move_point"]
 
-[node name="Eye" type="Node3D" parent="."]
+[node name="EYE_ZONE" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="EYE_ZONE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+shape = SubResource("BoxShape3D_jarl7")

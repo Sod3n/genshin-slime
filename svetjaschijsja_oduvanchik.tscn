@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpmhf7ae8sr8g"]
 
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_c5j55"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_c5j55"]
 [ext_resource type="ArrayMesh" uid="uid://dwsttb1hofni" path="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik.obj" id="2_gi1kp"]
 
 [node name="SvetjaschijsjaOduvanchik" type="MeshInstance3D"]

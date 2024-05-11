@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dye2h6w3seer8"]
 
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_hyevd"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_hyevd"]
 [ext_resource type="ArrayMesh" uid="uid://crqtomaoj00lx" path="res://grap_resurce/3d_model_object_set_1/kamushek_002.obj" id="2_gt8cr"]
 [ext_resource type="ArrayMesh" uid="uid://bi58aq6j2sb62" path="res://grap_resurce/3d_model_object_set_1/kamushek_003.obj" id="3_vutd4"]
 

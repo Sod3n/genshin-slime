@@ -24,6 +24,7 @@ QuestSystem="*res://addons/quest_system/quest_manager.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Shortcuts="*res://QuestsNDialogue/shortcuts.gd"
 InventoryInstance="*res://Inventory/inventory_instance.gd"
+SceneManagment="*res://scripts/SceneManagment.gd"
 
 [dialogue_manager]
 
@@ -31,8 +32,8 @@ general/states=["State", "Shortcuts"]
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=960
+window/size/viewport_height=480
 window/size/mode=2
 window/stretch/mode="viewport"
 

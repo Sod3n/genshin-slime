@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3 uid="uid://qffwvf5bw7y4"]
+
+[ext_resource type="FontFile" uid="uid://dv7jb8as17oqs" path="res://fonts/Laptev_Brush.otf" id="1_0ch4g"]
+[ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="2_4ie8r"]
+
+[node name="Dead" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0705882, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.650001, 2.04556e-06, 5.77569e-07, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -333.0
+offset_top = -282.0
+offset_right = 333.003
+offset_bottom = -164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0ch4g")
+theme_override_font_sizes/font_size = 128
+text = "ТЫ ПРОИГРАЛ"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -291.0
+offset_top = 116.0
+offset_right = -149.0
+offset_bottom = 178.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("1_0ch4g")
+theme_override_font_sizes/font_size = 24
+text = "возрадится"
+flat = true
+metadata/_edit_group_ = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4ie8r")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1

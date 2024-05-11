@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Genshin-slime"
-run/main_scene="res://maps/first_scene_test_room.tscn"
+run/main_scene="res://Menu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -46,9 +46,11 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://add
 
 folder_colors={
 "res://MapTools/": "yellow",
+"res://Menu/": "purple",
 "res://Player/": "green",
 "res://grap_resurce/": "pink",
 "res://maps/": "red",
+"res://music/": "pink",
 "res://npc/": "purple",
 "res://scripts/": "blue"
 }

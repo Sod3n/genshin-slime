@@ -1,6 +1,6 @@
+Node3D
 Camera3D
 GridMap
-Node3D
 AnimatedSprite3D
 PhantomCameraHost
 StaticBody3D
@@ -12,4 +12,3 @@ Node
 CanvasLayer
 HBoxContainer
 BoxContainer
-PanelContainer

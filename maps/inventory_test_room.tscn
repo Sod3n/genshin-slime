@@ -99,3 +99,9 @@ shape = SubResource("BoxShape3D_lrihb")
 script = ExtResource("13_7uwgw")
 protoset = ExtResource("14_yy1te")
 prototype_id = "book"
+
+[node name="MainCamera3D2" parent="." index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+
+[node name="PhantomCamera3D2" parent="." index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)

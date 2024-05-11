@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bw2w8es3j0ne7"]
+[gd_scene load_steps=25 format=3 uid="uid://bw2w8es3j0ne7"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_c7qa3"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_8iut0"]
@@ -19,6 +19,7 @@
 [ext_resource type="Resource" uid="uid://cyf47xeobqsmg" path="res://QuestsNDialogue/dialogue/scene_1_quest_2.dialogue" id="20_ajybk"]
 [ext_resource type="PackedScene" uid="uid://cvshfbif53gna" path="res://MapTools/collision/door.tscn" id="21_ggshb"]
 [ext_resource type="PackedScene" uid="uid://53nhesf5x5p8" path="res://puzzles/EqualTotemPuzzles.tscn" id="22_fhsan"]
+[ext_resource type="MeshLibrary" uid="uid://cfh34umuylfpf" path="res://Water/water_tileset2.tres" id="22_m28b3"]
 [ext_resource type="Script" path="res://puzzles/EqualTotemPuzzleOne.gd" id="23_o3rvr"]
 [ext_resource type="PackedScene" uid="uid://bb6hyhxf6h348" path="res://puzzles/Totem.tscn" id="23_smf7c"]
 
@@ -296,29 +297,25 @@ transform = Transform3D(2.37798, 0, 0, 0, 2.37798, 0, 0, 0, 2.37798, 6.58095, 0.
 state_variable = "quest_1_completed"
 
 [node name="EqualTotemPuzzles" parent="." index="13" node_paths=PackedStringArray("totems") instance=ExtResource("22_fhsan")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3553, 0.5, -59.1904)
+transform = Transform3D(-0.999872, 0, -0.0160214, 0, 1, 0, 0.0160214, 0, -0.999872, -17.3553, 0.5, -59.1904)
 script = ExtResource("23_o3rvr")
-totems = [NodePath("Totem"), NodePath("Totem2"), NodePath("Totem3"), NodePath("Totem4")]
+totems = [NodePath("Totem"), NodePath("Totem2"), NodePath("Totem3")]
+target_state = 3
 
 [node name="Totem" parent="EqualTotemPuzzles" index="0" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54484, 0, -0.0854454)
 totems = [NodePath("../Totem2")]
-state_number = 2
+state_number = 3
 
 [node name="Totem2" parent="EqualTotemPuzzles" index="1" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.83384, 0, -0.0854454)
 totems = [NodePath("../Totem3")]
-state_number = 2
+state_number = 3
 
 [node name="Totem3" parent="EqualTotemPuzzles" index="2" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48307, 0, -0.0854454)
-totems = [NodePath("../Totem4")]
-state_number = 2
-
-[node name="Totem4" parent="EqualTotemPuzzles" index="3" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5682, 0, -0.0854454)
 totems = [NodePath("../Totem")]
-state_number = 2
+state_number = 3
 
 [node name="MainCamera3D2" parent="." index="14"]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
@@ -327,3 +324,6 @@ transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
 follow_offset = Vector3(1, 5, 8)
 dead_zone_width = 0.3
+
+[node name="GridMap" type="GridMap" parent="." index="16"]
+mesh_library = ExtResource("22_m28b3")

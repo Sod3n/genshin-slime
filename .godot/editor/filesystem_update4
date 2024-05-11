@@ -25,3 +25,13 @@ res://addons/gloot/core/inventory.gd
 res://quests/check_chest.tres
 res://scripts/SaveManager.gd
 res://Player/player.gd
+res://maps/Bereg_lvl1_test.tscn
+res://grap_resurce/materials/material_tile.tres
+res://grap_resurce/grid_map_objects/grid_map_objects_tilesets.tres
+res://maps/Bereg_lvl1.tscn
+res://Water/WaterShader.tres
+res://Water/WaterMaterial.tres
+res://Water/watertileset.tscn
+res://Water/water_tileset.tres
+res://Water/water_tileset2.tres
+res://puzzles/EqualTotemPuzzleOne.gd

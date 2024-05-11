@@ -43,8 +43,6 @@ func loading():
 func _ready():
 	SaveManager.connect("game_loading", loading)
 	SaveManager.connect("game_saving", saving)
-func _ready():
-	pass
 
 func _physics_process(delta):
 	

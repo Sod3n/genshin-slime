@@ -1,0 +1,763 @@
+[gd_scene load_steps=16 format=3 uid="uid://odfbuy1u8k72"]
+
+[ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="1_hwq3f"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_ygd17"]
+[ext_resource type="ArrayMesh" uid="uid://bwrf75dwtvkrd" path="res://grap_resurce/3d_model_object_set_1/jaschik_002.obj" id="3_6oyse"]
+[ext_resource type="ArrayMesh" uid="uid://doq7oqq7bld77" path="res://grap_resurce/3d_model_object_set_1/jaschik_003.obj" id="4_0sijl"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="5_aqel6"]
+[ext_resource type="PackedScene" uid="uid://cgejjb2nk1pgc" path="res://Puska/puska.tscn" id="5_vh51h"]
+[ext_resource type="PackedScene" uid="uid://bs1xotbmrlfim" path="res://Player/player.tscn" id="6_3yn8s"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_uyble"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="7_potg6"]
+[ext_resource type="PackedScene" uid="uid://ltp2eshqo2qq" path="res://MapTools/world_environment_room.tscn" id="7_wi1gi"]
+[ext_resource type="Script" path="res://Puska/patrul_system.gd" id="9_80ybb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6b54"]
+albedo_color = Color(0.0420037, 0, 0.00690086, 1)
+metallic = 0.43
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_b2ka4"]
+vertices = PackedVector3Array(-2.06137, 1, 0, -0.811373, 1, 0, -0.561373, 1, -1, -1.06137, 1, -3.25, -2.06137, 1, -3, 0.688627, 1, -1, 0.938627, 1, 0, 2.18863, 1, 0, 2.18863, 1, -3, 1.18863, 1, -3.25, -6.06137, 1, -3, -4.81137, 1, -3.25, -4.56137, 1, -5, -6.06137, 1, -6, 4.93863, 1, -3.25, 4.68863, 1, 3, 6.18863, 1, 3, 6.18863, 1, -6, 4.68863, 1, -5, 4.93863, 1, -3.25, 6.18863, 1, -6, -6.06137, 1, -6, -4.56137, 1, -5, -1.06137, 1, -4.75, 1.18863, 1, -4.75, 4.68863, 1, -5, 6.18863, 1, -6, -1.06137, 1, -3.25, -0.561373, 1, -1, 0.688627, 1, -1, 1.18863, 1, -3.25, 1.18863, 1, -4.75, -1.06137, 1, -4.75, 3.93863, 1, -3, 3.93863, 1, 3, 4.68863, 1, 3, 4.93863, 1, -3.25, -3.81137, 1, -3, -4.81137, 1, -3.25, -6.06137, 1, -3, -6.06137, 1, 6, -4.81137, 1, 3.25, 6.18863, 1, 3, 4.68863, 1, 3, 4.68863, 1, 5, 6.18863, 1, 6, -4.56137, 1, 5, -4.81137, 1, 3.25, -6.06137, 1, 6, -4.81137, 1, 3.25, -3.81137, 1, 3, -3.81137, 1, -3, -6.06137, 1, 6, 6.18863, 1, 6, 4.68863, 1, 5, -4.56137, 1, 5, 2.18863, 1, 0, 0.938627, 1, 0, 0.688627, 1, 1, 2.18863, 1, 3, -0.561373, 1, 1, -0.811373, 1, 0, -2.06137, 1, 0, -2.06137, 1, 3, 0.688627, 1, 1, -0.561373, 1, 1, -2.06137, 1, 3, 2.18863, 1, 3)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(2, 4, 3), PackedInt32Array(6, 5, 7), PackedInt32Array(7, 5, 8), PackedInt32Array(8, 5, 9), PackedInt32Array(11, 10, 12), PackedInt32Array(12, 10, 13), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 17), PackedInt32Array(20, 19, 18), PackedInt32Array(22, 21, 23), PackedInt32Array(23, 21, 24), PackedInt32Array(24, 21, 25), PackedInt32Array(25, 21, 26), PackedInt32Array(28, 27, 29), PackedInt32Array(29, 27, 30), PackedInt32Array(30, 27, 32), PackedInt32Array(30, 32, 31), PackedInt32Array(34, 33, 35), PackedInt32Array(35, 33, 36), PackedInt32Array(38, 37, 39), PackedInt32Array(39, 37, 41), PackedInt32Array(39, 41, 40), PackedInt32Array(43, 42, 44), PackedInt32Array(44, 42, 45), PackedInt32Array(48, 47, 46), PackedInt32Array(51, 50, 49), PackedInt32Array(55, 54, 52), PackedInt32Array(52, 54, 53), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 59), PackedInt32Array(61, 60, 62), PackedInt32Array(62, 60, 63), PackedInt32Array(64, 67, 65), PackedInt32Array(65, 67, 66)]
+
+[sub_resource type="Resource" id="Resource_33cw0"]
+script = ExtResource("6_uyble")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="Resource" id="Resource_wp22h"]
+script = ExtResource("7_potg6")
+cull_mask = 1048575
+h_offset = 0.0
+v_offset = 0.0
+fov = 60.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Platform2" parent="." instance=ExtResource("1_hwq3f")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, -10, 0, 5)
+material_override = SubResource("StandardMaterial3D_f6b54")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_b2ka4")
+
+[node name="Jaschik002" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 0)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik072" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik073" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik074" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik075" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik076" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik099" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik100" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik101" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik077" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik078" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik079" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik080" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik081" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik082" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik083" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik084" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik085" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik086" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik087" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik088" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik089" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik090" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik091" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 0)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik092" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik093" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik094" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik095" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik096" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik097" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("3_6oyse")
+skeleton = NodePath("../..")
+
+[node name="Jaschik003" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik004" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik005" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik006" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 0)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik007" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik008" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik009" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik010" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik011" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -5)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik012" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -6)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik013" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik014" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik015" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik017" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik018" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik019" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik020" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik021" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik022" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik023" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik024" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik025" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik026" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik027" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik028" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik029" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -6)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik030" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -5)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik031" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik032" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik033" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik034" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, -1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik035" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 0)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik036" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 1)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik037" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 2)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik038" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik039" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik040" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 5)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik041" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 6)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik042" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik043" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik044" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik045" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik046" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik047" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik048" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik049" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik050" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik051" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik052" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik053" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik054" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik055" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik056" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik057" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 6)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik058" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik098" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik059" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik060" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik061" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik062" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik063" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 3)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik064" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 4)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik065" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 5)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik066" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 6)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik067" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik068" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik069" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik070" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik071" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Jaschik016" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.5, -7)
+material_override = ExtResource("2_ygd17")
+mesh = ExtResource("4_0sijl")
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Platform" parent="NavigationRegion3D" instance=ExtResource("1_hwq3f")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_f6b54")
+
+[node name="PhantomCamera3D2" type="Node3D" parent="." node_paths=PackedStringArray("follow_target")]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, -9, 7.93311, 16.4537)
+script = ExtResource("5_aqel6")
+priority = 30
+follow_mode = 5
+follow_target = NodePath("../Player")
+tween_resource = SubResource("Resource_33cw0")
+camera_3d_resource = SubResource("Resource_wp22h")
+follow_offset = Vector3(0, 5, 8)
+follow_damping = true
+follow_damping_value = Vector3(0.4, 0.4, 0.4)
+follow_distance = 4.0
+dead_zone_width = 0.5
+dead_zone_height = 0.186
+spring_length = 4.0
+
+[node name="MainCamera3D2" type="Camera3D" parent="PhantomCamera3D2"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 4.06383, -2.64441)
+fov = 60.0
+
+[node name="Puska" parent="." instance=ExtResource("5_vh51h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.90102, 1.3, 2.12492)
+
+[node name="patrul_system" type="Node" parent="Puska"]
+script = ExtResource("9_80ybb")
+
+[node name="Marker3D" type="Marker3D" parent="Puska/patrul_system"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 5)
+
+[node name="Marker3D2" type="Marker3D" parent="Puska/patrul_system"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 5)
+
+[node name="Marker3D3" type="Marker3D" parent="Puska/patrul_system"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, -6)
+
+[node name="Marker3D4" type="Marker3D" parent="Puska/patrul_system"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, -6)
+
+[node name="WorldEnvironment_ROOM" parent="." instance=ExtResource("7_wi1gi")]
+
+[node name="Player" parent="." instance=ExtResource("6_3yn8s")]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -9, 1.24264, 4.82843)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 4, 0)

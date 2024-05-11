@@ -3,7 +3,9 @@ extends Quest
 
 
 func start():
-	InventoryInstance.value.create_and_add_item_at("key", Vector2i(0, 0))
+	var item = InventoryInstance.value.create_and_add_item_at("key", Vector2i(0, 0))
+	print("key")
+	print(item)
 	pass
 
 func update():

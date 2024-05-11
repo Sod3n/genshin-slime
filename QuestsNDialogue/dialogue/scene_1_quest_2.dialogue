@@ -28,5 +28,5 @@ else:
 
 Вы осматриваете сундук. Там ничего нет
 do update_quest("check_chest")
-
+do remove_items("key")
 => END

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bw2w8es3j0ne7"]
+[gd_scene load_steps=24 format=3 uid="uid://bw2w8es3j0ne7"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_c7qa3"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_8iut0"]
@@ -7,10 +7,6 @@
 [ext_resource type="Material" uid="uid://dcfm8uarhyr22" path="res://grap_resurce/materials/test_material_tiles.tres" id="3_j78hn"]
 [ext_resource type="PackedScene" uid="uid://btlsaxo2y6pgr" path="res://MapTools/collision/platfrom_L.tscn" id="4_dv0q3"]
 [ext_resource type="Material" uid="uid://pmoqcokt1pc" path="res://grap_resurce/materials/test_material_tiles2.tres" id="5_m7d6f"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="6_423nu"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="7_ie5u3"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="8_nknif"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="9_vqkct"]
 [ext_resource type="PackedScene" uid="uid://bk7b6vnk7eoxr" path="res://QuestsNDialogue/NPC/TestNPC.tscn" id="11_hrecj"]
 [ext_resource type="Script" path="res://QuestsNDialogue/helper/actionable.gd" id="12_uc7bx"]
 [ext_resource type="PackedScene" uid="uid://bwm1vfbuijfpq" path="res://Inventory/TestItem.tscn" id="12_xm7bm"]
@@ -31,19 +27,6 @@ size = Vector3(1, 2.70129, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l2jh5"]
 size = Vector3(1.38525, 2.58276, 1)
-
-[sub_resource type="Resource" id="Resource_tmt85"]
-script = ExtResource("8_nknif")
-duration = 1.0
-transition = 0
-ease = 2
-
-[sub_resource type="Resource" id="Resource_o4c5h"]
-script = ExtResource("9_vqkct")
-cull_mask = 1048575
-h_offset = 0.0
-v_offset = 0.0
-fov = 60.0
 
 [node name="test_room" instance=ExtResource("1_c7qa3")]
 
@@ -337,29 +320,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5682, 0, -0.0854454)
 totems = [NodePath("../Totem")]
 state_number = 2
 
-[node name="MainCamera3D" type="Camera3D" parent="." index="14"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
-fov = 60.0
+[node name="MainCamera3D2" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
 
-[node name="PhantomCameraHost" type="Node" parent="MainCamera3D" index="0"]
-script = ExtResource("6_423nu")
-
-[node name="PhantomCamera3D" type="Node3D" parent="." index="15" node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
-script = ExtResource("7_ie5u3")
-priority = 30
-follow_mode = 5
-follow_target = NodePath("../Player")
-tween_resource = SubResource("Resource_tmt85")
-tween_on_load = false
-camera_3d_resource = SubResource("Resource_o4c5h")
-follow_offset = Vector3(0, 5, 8)
-follow_damping = true
-follow_damping_value = Vector3(0.4, 0.4, 0.4)
-follow_distance = 4.0
-dead_zone_width = 0.5
-dead_zone_height = 0.186
-spring_length = 4.0
-
-[node name="PhantomCamera3D2" parent="." index="16"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+[node name="PhantomCamera3D2" parent="." index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
+follow_offset = Vector3(1, 5, 8)
+dead_zone_width = 0.3

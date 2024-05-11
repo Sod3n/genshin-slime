@@ -15,6 +15,4 @@ func save_data():
 	data["name_map"] = get_tree().current_scene.name
 
 func load_data():
-	
-	
 	game_loading.emit()

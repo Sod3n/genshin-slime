@@ -26,8 +26,8 @@ func check_():
 	pass
 
 func animation():
-	if input_vector.x<0:sprite.flip_h = true
-	if input_vector.x>0:sprite.flip_h = false
+	if input_vector.x<0:rotation = Vector3(0, PI, 0)
+	if input_vector.x>0:rotation = Vector3(0, 0, 0)
 	
 	if input_vector.length()>0.1:
 		anim_play("RUN")
@@ -45,7 +45,7 @@ func _physics_process(delta):
 	if !is_on_floor():
 		velocity.y-= GRAV * delta
 	
-	direction = (transform.basis * Vector3(input_vector.x, 0, input_vector.y)).normalized()
+	direction = (Vector3(input_vector.x, 0, input_vector.y)).normalized()
 	if direction:
 		velocity.x = direction.x * ((int(!run) * SPEED) + (SPEED_RUN) * int(run))
 		velocity.z = direction.z * ((int(!run) * SPEED) + (SPEED_RUN) * int(run))

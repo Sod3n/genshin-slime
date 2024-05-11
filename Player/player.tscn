@@ -80,14 +80,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0614166, 0.802917, 0.01799
 shape = SubResource("BoxShape3D_t5c1t")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0710954, 0.8, 0)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.496091, 0.8, 0)
 shaded = true
 alpha_cut = 2
 texture_filter = 0
 texture = ExtResource("2_vuyvd")
 hframes = 4
 vframes = 3
-frame = 1
+frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

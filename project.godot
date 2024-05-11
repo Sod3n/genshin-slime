@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Genshin-slime"
-run/main_scene="res://maps/test_room.tscn"
+run/main_scene="res://maps/first_scene_test_room.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -32,8 +32,8 @@ general/states=["State", "Shortcuts"]
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=480
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=2
 window/stretch/mode="viewport"
 

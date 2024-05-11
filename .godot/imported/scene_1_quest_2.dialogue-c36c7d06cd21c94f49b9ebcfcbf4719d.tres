@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ly7nr"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7x5b6"]
 
 [resource]
-script = ExtResource("1_ly7nr")
+script = ExtResource("1_7x5b6")
 using_states = PackedStringArray()
 titles = {
 "check_chest": "29",
@@ -213,6 +213,22 @@ lines = {
 }]),
 "is_blocking": true
 },
+"next_id": "31",
+"type": &"mutation"
+},
+"31": {
+"id": "31",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "key"
+}])])
+}]),
+"is_blocking": true
+},
 "next_id": "32",
 "type": &"mutation"
 },
@@ -336,6 +352,6 @@ else:
 
 Вы осматриваете сундук. Там ничего нет
 do update_quest(\"check_chest\")
-
+do remove_items(\"key\")
 => END"
 metadata/dialogue_manager_version = "2.39.0"

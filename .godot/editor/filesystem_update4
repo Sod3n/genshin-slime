@@ -20,3 +20,8 @@ res://MapTools/collision/door.tscn
 res://puzzles/Totem.tscn
 res://puzzles/EqualTotemPuzzles.tscn
 res://maps/arena_test.tscn
+res://quests/check_chest_quest.gd
+res://addons/gloot/core/inventory.gd
+res://quests/check_chest.tres
+res://scripts/SaveManager.gd
+res://Player/player.gd

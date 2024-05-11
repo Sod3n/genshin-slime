@@ -23,3 +23,5 @@ shape = SubResource("CapsuleShape3D_075yj")
 [node name="move_point" type="Node" parent="."]
 
 [node name="MovePoint" type="Marker3D" parent="move_point"]
+
+[node name="Eye" type="Node3D" parent="."]

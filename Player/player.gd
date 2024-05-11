@@ -34,6 +34,16 @@ func animation():
 	else:
 		anim_play("IDLE")
 
+func saving():
+	SaveManager.data["player_pos"] = global_position
+
+func loading():
+	global_position = SaveManager.data["player_pos"]
+
+func _ready():
+	SaveManager.connect("game_loading", loading)
+	SaveManager.connect("game_saving", saving)
+	pass
 
 func _physics_process(delta):
 	

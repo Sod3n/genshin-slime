@@ -28,3 +28,8 @@ res://Menu/EndGame.gd
 res://Puska/puska.gd
 res://glazastyj_kristal.tscn
 res://Player/player.gd
+res://Menu/dead.tscn
+res://Menu/MainMenu.tscn
+res://maps/ColorRect.gd
+res://Menu/MainMenu.gd
+res://maps/__map.gd

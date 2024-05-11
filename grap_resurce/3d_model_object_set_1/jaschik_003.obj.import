@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://doq7oqq7bld77"
+path="res://.godot/imported/jaschik_003.obj-2b20c6a6add561d9caf1d81966e4534e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/jaschik_003.obj-2b20c6a6add561d9caf1d81966e4534e.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/jaschik_003.obj"
+dest_files=["res://.godot/imported/jaschik_003.obj-2b20c6a6add561d9caf1d81966e4534e.mesh", "res://.godot/imported/jaschik_003.obj-2b20c6a6add561d9caf1d81966e4534e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

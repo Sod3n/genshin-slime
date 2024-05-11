@@ -28,10 +28,6 @@ func _on_item_mouse_entered(item: InventoryItem) -> void:
 func _on_item_mouse_exited(_item: InventoryItem) -> void:
 	lbl_info.hide()
 
-
-	
-
-
 func _on_btn_sort(ctrl_inventory) -> void:
 	if !ctrl_inventory.inventory.sort():
 		print("Warning: InventoryGrid.sort() returned false!")

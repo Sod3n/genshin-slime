@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cujq2dfmr3gku"
+path="res://.godot/imported/zabor_001.obj-d82daa9f9886920a2d67d96d33d0a902.mesh"
+
+[deps]
+
+files=["res://.godot/imported/zabor_001.obj-d82daa9f9886920a2d67d96d33d0a902.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_2/zabor_001.obj"
+dest_files=["res://.godot/imported/zabor_001.obj-d82daa9f9886920a2d67d96d33d0a902.mesh", "res://.godot/imported/zabor_001.obj-d82daa9f9886920a2d67d96d33d0a902.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

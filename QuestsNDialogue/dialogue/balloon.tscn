@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=7 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://QuestsNDialogue/dialogue/balloon.gd" id="1_4u26j"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="2_v7dc7"]
+[ext_resource type="FontFile" uid="uid://dv7jb8as17oqs" path="res://fonts/Laptev_Brush.otf" id="4_bg32g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5d24i"]
 content_margin_left = 40.0
@@ -56,15 +57,16 @@ patch_margin_right = 20
 patch_margin_bottom = 20
 
 [node name="Margin" type="MarginContainer" parent="Balloon"]
-custom_minimum_size = Vector2(0, 250)
+custom_minimum_size = Vector2(0, 200)
 layout_direction = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 25.0
+offset_top = 25.0
 offset_right = -25.0
-offset_bottom = 10.0
+offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 20
@@ -81,23 +83,35 @@ theme_override_constants/separation = 10
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
-theme_override_font_sizes/normal_font_size = 26
+theme_override_fonts/normal_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_font = ExtResource("4_bg32g")
+theme_override_fonts/italics_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_italics_font = ExtResource("4_bg32g")
+theme_override_fonts/mono_font = ExtResource("4_bg32g")
+theme_override_font_sizes/normal_font_size = 36
 bbcode_enabled = true
-text = "Character"
+text = "Персонаж"
 fit_content = true
 scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/Margin/VBox" instance=ExtResource("2_a8ve6")]
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 26
-text = "Dialogue"
+theme_override_fonts/normal_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_font = ExtResource("4_bg32g")
+theme_override_fonts/italics_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_italics_font = ExtResource("4_bg32g")
+theme_override_fonts/mono_font = ExtResource("4_bg32g")
+theme_override_font_sizes/normal_font_size = 42
+text = "Промты для нейросети – это один из ключевых аспектов работы с искусственным интеллектом. Они играют важную роль в формировании ответов и генерации текста. Здесь рассмотрим, что такое промты в нейросетях и как их составлять так, чтобы вытянуть максимум пользы. Все данные брал из адекватных источников и личной практики. Все проверил, все работает. Все проверил, все работает. Все проверил, все р"
 
 [node name="Responses" type="VBoxContainer" parent="Balloon/Margin/VBox"]
+visible = false
 layout_mode = 2
 theme_override_constants/separation = 2
 
 [node name="ResponseTemplate" type="RichTextLabel" parent="Balloon/Margin/VBox"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxFlat_5d24i")

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6lbpdkdfsx4o"
+path="res://.godot/imported/kolodec.obj-bf2b9546949de26710f65e7cd389f5fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kolodec.obj-bf2b9546949de26710f65e7cd389f5fd.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_2/kolodec.obj"
+dest_files=["res://.godot/imported/kolodec.obj-bf2b9546949de26710f65e7cd389f5fd.mesh", "res://.godot/imported/kolodec.obj-bf2b9546949de26710f65e7cd389f5fd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

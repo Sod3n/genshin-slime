@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgcr1ivqgu3sb"]
+
+[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_4d2hc"]
+[ext_resource type="ArrayMesh" uid="uid://di4sf0h05xnn0" path="res://grap_resurce/3d_model_object_set_1/pen_002.obj" id="2_dnbfh"]
+
+[node name="Pen002" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.39056, 0.0536259, 0.571526)
+material_override = ExtResource("1_4d2hc")
+mesh = ExtResource("2_dnbfh")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.183791, 0)
+light_color = Color(1, 0.313726, 1, 1)
+omni_range = 0.679171
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.607642, 0.492538, 0.245726)
+light_energy = 0.3
+omni_range = 1.53385
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.607642, 0.492538, 0.385696)
+light_energy = 0.3
+omni_range = 1.53385

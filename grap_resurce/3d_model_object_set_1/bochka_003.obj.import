@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnodpsc41xs54"
+path="res://.godot/imported/bochka_003.obj-2b889b1961c4c793e34770c098e1b74d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bochka_003.obj-2b889b1961c4c793e34770c098e1b74d.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/bochka_003.obj"
+dest_files=["res://.godot/imported/bochka_003.obj-2b889b1961c4c793e34770c098e1b74d.mesh", "res://.godot/imported/bochka_003.obj-2b889b1961c4c793e34770c098e1b74d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

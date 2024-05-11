@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r4avv"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4or5a"]
 
 [resource]
-script = ExtResource("1_r4avv")
+script = ExtResource("1_4or5a")
 using_states = PackedStringArray()
 titles = {
+"collect_item": "51",
 "not_enough_space": "45",
 "pick_apple": "35",
 "start": "3"
@@ -434,6 +435,12 @@ lines = {
 "next_id": "end",
 "type": &"goto"
 },
+"49": {
+"id": "49",
+"next_id": "51",
+"text": "collect_item",
+"type": &"title"
+},
 "5": {
 "condition": {
 "expression": Array[Dictionary]([{
@@ -454,6 +461,24 @@ lines = {
 "next_id": "6",
 "next_id_after": "30",
 "type": &"condition"
+},
+"51": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "51",
+"next_id": "52",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "[speed=0.5]Вы подобрали предмет[/speed][speed=0.1]...[/speed]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[speed=0.5]Вы подобрали предмет[/speed][speed=0.1]...[/speed]",
+"type": &"dialogue"
+},
+"52": {
+"id": "52",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
 },
 "6": {
 "character": "Coco",
@@ -556,5 +581,10 @@ if is_quest_active(\"get_apple\") and apple_count < 5:
 
 Не достаточно место в инвентаре.
 
+=> END
+
+~ collect_item
+
+[speed=0.5]Вы подобрали предмет[/speed][speed=0.1]...[/speed]
 => END"
 metadata/dialogue_manager_version = "2.39.0"

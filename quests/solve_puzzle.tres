@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c8erp6i206p0m"]
+
+[ext_resource type="Script" path="res://quests/solve_puzzle_quest.gd" id="1_cjor7"]
+
+[resource]
+script = ExtResource("1_cjor7")
+id = 0
+quest_name = "Проверить тотемы"
+quest_description = ""
+quest_objective = ""

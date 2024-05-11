@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwchaf86a6gru"
+path="res://.godot/imported/skoplenie_travy.obj-59251749ff8e2ab510f6bd0ed13b376e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skoplenie_travy.obj-59251749ff8e2ab510f6bd0ed13b376e.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/skoplenie_travy.obj"
+dest_files=["res://.godot/imported/skoplenie_travy.obj-59251749ff8e2ab510f6bd0ed13b376e.mesh", "res://.godot/imported/skoplenie_travy.obj-59251749ff8e2ab510f6bd0ed13b376e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

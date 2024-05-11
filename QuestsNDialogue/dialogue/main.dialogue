@@ -45,3 +45,8 @@ if is_quest_active("get_apple") and apple_count < 5:
 Не достаточно место в инвентаре.
 
 => END
+
+~ collect_item
+
+[speed=0.5]Вы подобрали предмет[/speed][speed=0.1]...[/speed]
+=> END

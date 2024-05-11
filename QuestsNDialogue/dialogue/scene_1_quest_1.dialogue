@@ -9,11 +9,7 @@ if is_quest_completed("return_to_npc"):
 if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
 	НПС 1: Привет, спутник.
 	НПС 1: Можешь принести вещи для обряда?
-	- Конечно
-		НПС 1: Сяб.
-		do start_quest("get_book")
-	- Не сейчас
-		НПС 1: Ладно.
+	do start_quest("get_book")
 else:
 	if is_quest_active("return_to_npc"):
 		НПС 1: Спасибо за помощь!
@@ -23,8 +19,7 @@ else:
 		=> second_part
 	else:
 		НПС 1: Нашёл книги?
-		- Нет
-			НПС 1: Ничего, я тебя не тороплю
+		НПС 1: Ничего, я тебя не тороплю
 	
 => END
 
@@ -32,11 +27,7 @@ else:
 if  not is_quest_active("get_materials") and not is_quest_completed("get_materials"):
 	НПС 1: Ну, книги есть, осталось немного.
 	НПС 1: Принеси ещё дрова, свечки и травы, пж >_<
-	- Конечно
-		НПС 1: Сяб.
-		do start_quest("get_materials")
-	- Не сейчас
-		НПС 1: Ладно.
+	do start_quest("get_materials")
 else:
 	if is_quest_active("get_materials"):
 		if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle"), remove_items("grass")):
@@ -49,8 +40,7 @@ else:
 				НПС 1: Продолжай в том же духе!
 		else:
 			НПС 1: Как успехи в поиске?
-			- Нормально
-				НПС 1: Хорошо
+			НПС 1: Хорошо
 => END
 
 ~ second_part_completed

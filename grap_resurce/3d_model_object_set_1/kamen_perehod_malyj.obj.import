@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://khlvcl826bu2"
+path="res://.godot/imported/kamen_perehod_malyj.obj-4ccbf40a875f3e7688c1c6dea759f774.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kamen_perehod_malyj.obj-4ccbf40a875f3e7688c1c6dea759f774.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/kamen_perehod_malyj.obj"
+dest_files=["res://.godot/imported/kamen_perehod_malyj.obj-4ccbf40a875f3e7688c1c6dea759f774.mesh", "res://.godot/imported/kamen_perehod_malyj.obj-4ccbf40a875f3e7688c1c6dea759f774.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

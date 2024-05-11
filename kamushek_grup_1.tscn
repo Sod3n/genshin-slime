@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dye2h6w3seer8"]
+
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_hyevd"]
+[ext_resource type="ArrayMesh" uid="uid://crqtomaoj00lx" path="res://grap_resurce/3d_model_object_set_1/kamushek_002.obj" id="2_gt8cr"]
+[ext_resource type="ArrayMesh" uid="uid://bi58aq6j2sb62" path="res://grap_resurce/3d_model_object_set_1/kamushek_003.obj" id="3_vutd4"]
+
+[node name="Kamushek_grup_1" type="Node3D"]
+transform = Transform3D(0.105761, 0, -0.994392, 0, 1.69045, 0, 0.994392, 0, 0.105761, -6.57217, 5.96046e-08, -4.30841)
+
+[node name="Kamushek030" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.423235, 0, 0.90602, 0, 1, 0, -0.90602, 0, 0.423235, -4.08823, 5.96046e-08, -5.56713)
+material_override = ExtResource("1_hyevd")
+mesh = ExtResource("2_gt8cr")
+skeleton = NodePath("../..")
+
+[node name="Kamushek031" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.601076, 0, -0.799192, 0, 1, 0, 0.799192, 0, 0.601076, -4.76579, 5.96046e-08, -4.94027)
+material_override = ExtResource("1_hyevd")
+mesh = ExtResource("2_gt8cr")
+skeleton = NodePath("../..")
+
+[node name="Kamushek029" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1.6, 0, 0.866025, 0, 0.5, -4.34546, 5.96046e-08, -5.2889)
+material_override = ExtResource("1_hyevd")
+mesh = ExtResource("3_vutd4")
+skeleton = NodePath("../..")

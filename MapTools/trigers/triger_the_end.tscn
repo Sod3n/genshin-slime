@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c72uaqjlv5b44"]
+
+[ext_resource type="PackedScene" uid="uid://dewj0p1ykkx80" path="res://MapTools/triger.tscn" id="1_408cn"]
+
+[node name="triger_the_end" instance=ExtResource("1_408cn")]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dewj0p1ykkx80"]
+
+[ext_resource type="Script" path="res://MapTools/trigers/__triger.gd" id="1_flyft"]
+
+[node name="__triger" type="Area3D"]
+script = ExtResource("1_flyft")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

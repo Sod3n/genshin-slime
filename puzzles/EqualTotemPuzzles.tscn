@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://53nhesf5x5p8"]
+
+[ext_resource type="Script" path="res://puzzles/EqualTotemPuzzles.gd" id="1_bub3q"]
+
+[node name="EqualTotemPuzzles" type="Node3D"]
+script = ExtResource("1_bub3q")

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bp822hp382gyn"
+path="res://.godot/imported/nastennyj_krest.obj-3694796d9cc19e043efc84e71e57632e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/nastennyj_krest.obj-3694796d9cc19e043efc84e71e57632e.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/nastennyj_krest.obj"
+dest_files=["res://.godot/imported/nastennyj_krest.obj-3694796d9cc19e043efc84e71e57632e.mesh", "res://.godot/imported/nastennyj_krest.obj-3694796d9cc19e043efc84e71e57632e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

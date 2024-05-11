@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://cyf47xeobqsmg"
+path="res://.godot/imported/scene_1_quest_2.dialogue-c36c7d06cd21c94f49b9ebcfcbf4719d.tres"
+
+[deps]
+
+source_file="res://QuestsNDialogue/dialogue/scene_1_quest_2.dialogue"
+dest_files=["res://.godot/imported/scene_1_quest_2.dialogue-c36c7d06cd21c94f49b9ebcfcbf4719d.tres"]
+
+[params]
+
+defaults=true

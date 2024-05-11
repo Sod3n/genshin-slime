@@ -1,0 +1,49 @@
+~ start
+
+if is_quest_completed("get_materials"):
+	=> second_part_completed
+
+if is_quest_completed("return_to_npc"):
+	=> second_part
+
+if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
+	НПС 1: Привет, спутник.
+	НПС 1: Можешь принести вещи для обряда?
+	do start_quest("get_book")
+else:
+	if is_quest_active("return_to_npc"):
+		НПС 1: Спасибо за помощь!
+		do remove_items("book")
+		do update_quest("return_to_npc")
+		do complete_quest("return_to_npc")
+		=> second_part
+	else:
+		НПС 1: Нашёл книги?
+		НПС 1: Ничего, я тебя не тороплю
+	
+=> END
+
+~ second_part
+if  not is_quest_active("get_materials") and not is_quest_completed("get_materials"):
+	НПС 1: Ну, книги есть, осталось немного.
+	НПС 1: Принеси ещё дрова, свечки и травы, пж >_<
+	do start_quest("get_materials")
+else:
+	if is_quest_active("get_materials"):
+		if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle"), remove_items("grass")):
+			Вы отдаёте часть материалов.
+			do update_quest("get_materials")
+			if is_quest_completed("get_materials"):
+				НПС 1: Преисполнейще благодарю.
+				=> second_part_completed
+			else:
+				НПС 1: Продолжай в том же духе!
+		else:
+			НПС 1: Как успехи в поиске?
+			НПС 1: Хорошо
+=> END
+
+~ second_part_completed
+do quest_1_completed = true
+НПС 1: Можешь проходить дальше.
+=> END

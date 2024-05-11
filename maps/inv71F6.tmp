@@ -1,0 +1,105 @@
+[gd_scene load_steps=19 format=3 uid="uid://n2u7vtd4rbtc"]
+
+[ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_bx8yr"]
+[ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_lr5br"]
+[ext_resource type="PackedScene" uid="uid://dv1cwo11ii0n8" path="res://Inventory/inventory_grid_transfer.tscn" id="2_lxkir"]
+[ext_resource type="Material" uid="uid://dcfm8uarhyr22" path="res://grap_resurce/materials/test_material_tiles.tres" id="3_4fgi7"]
+[ext_resource type="PackedScene" uid="uid://btlsaxo2y6pgr" path="res://MapTools/collision/platfrom_L.tscn" id="4_jm4ty"]
+[ext_resource type="Material" uid="uid://pmoqcokt1pc" path="res://grap_resurce/materials/test_material_tiles2.tres" id="5_lya2p"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="6_4i15m"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="7_4kdwy"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="8_sp3q4"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="9_jne6x"]
+[ext_resource type="PackedScene" uid="uid://bwm1vfbuijfpq" path="res://Inventory/TestItem.tscn" id="11_ov1t8"]
+[ext_resource type="Script" path="res://Inventory/pickup.gd" id="12_6fii3"]
+[ext_resource type="Script" path="res://Inventory/remove_item.gd" id="12_8nufd"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="13_7uwgw"]
+[ext_resource type="Resource" uid="uid://ddrmqwl3guset" path="res://tests/data/item_definitions_grid.tres" id="14_yy1te"]
+
+[sub_resource type="Resource" id="Resource_yhrnb"]
+script = ExtResource("8_sp3q4")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="Resource" id="Resource_gf2ij"]
+script = ExtResource("9_jne6x")
+cull_mask = 1048575
+h_offset = 0.0
+v_offset = 0.0
+fov = 60.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lrihb"]
+size = Vector3(1, 2.70129, 1)
+
+[node name="test_room" instance=ExtResource("1_bx8yr")]
+
+[node name="InventoryGridTransfer" parent="." index="0" instance=ExtResource("2_lxkir")]
+
+[node name="Player" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="3"]
+transform = Transform3D(0.462796, -0.83888, -0.286532, 0.526407, 5.05883e-08, 0.850233, -0.713243, -0.544317, 0.441592, 0, 0, 0)
+
+[node name="Platform" parent="." index="5" instance=ExtResource("2_lr5br")]
+transform = Transform3D(40.2323, 0, 0, 0, 1, 0, 0, 0, 40.2323, 0, 0, 0)
+material_override = ExtResource("3_4fgi7")
+
+[node name="MeshInstance3D" parent="." index="6" instance=ExtResource("4_jm4ty")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 9, -9, 1, 3)
+material_override = ExtResource("5_lya2p")
+
+[node name="MainCamera3D" type="Camera3D" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+fov = 60.0
+
+[node name="PhantomCameraHost" type="Node" parent="MainCamera3D" index="0"]
+script = ExtResource("6_4i15m")
+
+[node name="PhantomCamera3D" type="Node3D" parent="." index="8" node_paths=PackedStringArray("follow_target")]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+script = ExtResource("7_4kdwy")
+priority = 30
+follow_mode = 5
+follow_target = NodePath("../Player")
+tween_resource = SubResource("Resource_yhrnb")
+tween_on_load = false
+camera_3d_resource = SubResource("Resource_gf2ij")
+follow_offset = Vector3(0, 5, 8)
+follow_damping = true
+follow_damping_value = Vector3(0.4, 0.4, 0.4)
+follow_distance = 4.0
+dead_zone_width = 0.5
+dead_zone_height = 0.186
+spring_length = 4.0
+
+[node name="TestItem2" parent="." index="9" instance=ExtResource("11_ov1t8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.33891, 0.818861, -5.74633)
+
+[node name="RemoveItem" type="Area3D" parent="TestItem2" index="1"]
+script = ExtResource("12_8nufd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestItem2/RemoveItem" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_lrihb")
+
+[node name="item" type="Node" parent="TestItem2/RemoveItem" index="1"]
+script = ExtResource("13_7uwgw")
+protoset = ExtResource("14_yy1te")
+prototype_id = "book"
+
+[node name="TestItem" parent="." index="10" instance=ExtResource("11_ov1t8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.92362, 0.971131, -6.15236)
+
+[node name="PickUp" type="Area3D" parent="TestItem" index="1"]
+script = ExtResource("12_6fii3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestItem/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_lrihb")
+
+[node name="item" type="Node" parent="TestItem/PickUp" index="1"]
+script = ExtResource("13_7uwgw")
+protoset = ExtResource("14_yy1te")
+prototype_id = "book"

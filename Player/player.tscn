@@ -1,16 +1,69 @@
-[gd_scene load_steps=4 format=3 uid="uid://bs1xotbmrlfim"]
+[gd_scene load_steps=9 format=3 uid="uid://bs1xotbmrlfim"]
 
-[ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_5cssm"]
 [ext_resource type="Script" path="res://Player/player.gd" id="1_jw4od"]
+[ext_resource type="Texture2D" uid="uid://b77q8fi6wn75u" path="res://Player/MC.png" id="2_vuyvd"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u55ea"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_t5c1t"]
+size = Vector3(3.02933, 2.08997, 2.48172)
+
+[sub_resource type="Animation" id="Animation_7jyb6"]
+resource_name = "IDLE"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_wlp56"]
+resource_name = "PICK_UP"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 8]
+}
+
+[sub_resource type="Animation" id="Animation_pg7op"]
+resource_name = "RUN"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ke3oa"]
+_data = {
+"IDLE": SubResource("Animation_7jyb6"),
+"PICK_UP": SubResource("Animation_wlp56"),
+"RUN": SubResource("Animation_pg7op")
+}
+
 [node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_jw4od")
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0)
-texture = ExtResource("1_5cssm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -19,3 +72,24 @@ shape = SubResource("CapsuleShape3D_u55ea")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="TargetMove" type="Marker3D" parent="."]
+
+[node name="InteractableFinder" type="Area3D" parent="TargetMove"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TargetMove/InteractableFinder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0614166, 0.802917, 0.0179901)
+shape = SubResource("BoxShape3D_t5c1t")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.496091, 0.8, 0)
+shaded = true
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("2_vuyvd")
+hframes = 4
+vframes = 3
+frame = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ke3oa")
+}

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://by6sxyyv24juc"]
+
+[ext_resource type="Script" path="res://quests/get_book_quest.gd" id="1_tmce0"]
+
+[resource]
+script = ExtResource("1_tmce0")
+id = 2
+quest_name = "Find Books"
+quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_objective = ""

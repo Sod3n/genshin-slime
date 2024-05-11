@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jv0v84v4piqu"
+path="res://.godot/imported/rakushka_003.obj-23814002190116e34ae41592a7ab04ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rakushka_003.obj-23814002190116e34ae41592a7ab04ec.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/rakushka_003.obj"
+dest_files=["res://.godot/imported/rakushka_003.obj-23814002190116e34ae41592a7ab04ec.mesh", "res://.godot/imported/rakushka_003.obj-23814002190116e34ae41592a7ab04ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

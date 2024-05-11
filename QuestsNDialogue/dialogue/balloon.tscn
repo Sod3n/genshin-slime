@@ -1,0 +1,127 @@
+[gd_scene load_steps=7 format=3 uid="uid://73jm5qjy52vq"]
+
+[ext_resource type="Script" path="res://QuestsNDialogue/dialogue/balloon.gd" id="1_4u26j"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="2_v7dc7"]
+[ext_resource type="FontFile" uid="uid://dv7jb8as17oqs" path="res://fonts/Laptev_Brush.otf" id="4_bg32g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5d24i"]
+content_margin_left = 40.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(1, 1, 1, 0.25098)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oj3c8"]
+content_margin_left = 40.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+draw_center = false
+
+[node name="ExampleBalloon" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_4u26j")
+
+[node name="Balloon" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -860.0
+offset_top = -240.0
+offset_right = 860.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Balloon"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -240.0
+offset_right = -1228.57
+offset_bottom = -171.429
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_v7dc7")
+region_rect = Rect2(9, 10, 30, 28)
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="Margin" type="MarginContainer" parent="Balloon"]
+custom_minimum_size = Vector2(0, 200)
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+metadata/_edit_layout_mode = 1
+
+[node name="VBox" type="VBoxContainer" parent="Balloon/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/Margin/VBox"]
+modulate = Color(1, 1, 1, 0.501961)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_font = ExtResource("4_bg32g")
+theme_override_fonts/italics_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_italics_font = ExtResource("4_bg32g")
+theme_override_fonts/mono_font = ExtResource("4_bg32g")
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "Персонаж"
+fit_content = true
+scroll_active = false
+
+[node name="DialogueLabel" parent="Balloon/Margin/VBox" instance=ExtResource("2_a8ve6")]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_font = ExtResource("4_bg32g")
+theme_override_fonts/italics_font = ExtResource("4_bg32g")
+theme_override_fonts/bold_italics_font = ExtResource("4_bg32g")
+theme_override_fonts/mono_font = ExtResource("4_bg32g")
+theme_override_font_sizes/normal_font_size = 42
+text = "Промты для нейросети – это один из ключевых аспектов работы с искусственным интеллектом. Они играют важную роль в формировании ответов и генерации текста. Здесь рассмотрим, что такое промты в нейросетях и как их составлять так, чтобы вытянуть максимум пользы. Все данные брал из адекватных источников и личной практики. Все проверил, все работает. Все проверил, все работает. Все проверил, все р"
+
+[node name="Responses" type="VBoxContainer" parent="Balloon/Margin/VBox"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="ResponseTemplate" type="RichTextLabel" parent="Balloon/Margin/VBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 26
+theme_override_styles/focus = SubResource("StyleBoxFlat_5d24i")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oj3c8")
+bbcode_enabled = true
+text = "Response"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+
+[connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

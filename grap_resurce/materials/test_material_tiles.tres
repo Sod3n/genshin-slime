@@ -6,3 +6,4 @@
 albedo_texture = ExtResource("1_rmuia")
 uv1_triplanar = true
 uv1_world_triplanar = true
+texture_filter = 2

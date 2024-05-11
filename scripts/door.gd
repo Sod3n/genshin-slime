@@ -1,0 +1,26 @@
+extends Node3D
+
+@export var state_variable : String
+@onready var opened = $Opened
+@onready var closed = $Closed
+@onready var opened_collision_shape_3d = $Opened/CollisionShape3D
+@onready var closed_collision_shape_3d = $Closed/CollisionShape3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if State.get(state_variable):
+		opened_collision_shape_3d.disabled = true
+		opened.show()
+		closed_collision_shape_3d.disabled = false
+		closed.hide()
+	else:
+		closed_collision_shape_3d.disabled = true
+		closed.show()
+		opened_collision_shape_3d.disabled = false
+		opened.hide()

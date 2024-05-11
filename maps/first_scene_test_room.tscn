@@ -1,0 +1,329 @@
+[gd_scene load_steps=24 format=3 uid="uid://bw2w8es3j0ne7"]
+
+[ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_c7qa3"]
+[ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_8iut0"]
+[ext_resource type="PackedScene" uid="uid://cd1lmsy0ije4c" path="res://QuestsNDialogue/gui/gui.tscn" id="2_ef523"]
+[ext_resource type="PackedScene" uid="uid://dv1cwo11ii0n8" path="res://Inventory/inventory_grid_transfer.tscn" id="2_lrwhm"]
+[ext_resource type="Material" uid="uid://dcfm8uarhyr22" path="res://grap_resurce/materials/test_material_tiles.tres" id="3_j78hn"]
+[ext_resource type="PackedScene" uid="uid://btlsaxo2y6pgr" path="res://MapTools/collision/platfrom_L.tscn" id="4_dv0q3"]
+[ext_resource type="Material" uid="uid://pmoqcokt1pc" path="res://grap_resurce/materials/test_material_tiles2.tres" id="5_m7d6f"]
+[ext_resource type="PackedScene" uid="uid://bk7b6vnk7eoxr" path="res://QuestsNDialogue/NPC/TestNPC.tscn" id="11_hrecj"]
+[ext_resource type="Script" path="res://QuestsNDialogue/helper/actionable.gd" id="12_uc7bx"]
+[ext_resource type="PackedScene" uid="uid://bwm1vfbuijfpq" path="res://Inventory/TestItem.tscn" id="12_xm7bm"]
+[ext_resource type="Resource" uid="uid://dh24xscnfjm2k" path="res://QuestsNDialogue/dialogue/scene_1_quest_1.dialogue" id="13_7e5iy"]
+[ext_resource type="Script" path="res://Inventory/pickup.gd" id="13_8o4ft"]
+[ext_resource type="Resource" uid="uid://by6sxyyv24juc" path="res://quests/get_book.tres" id="14_gkqr0"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="14_u3tmw"]
+[ext_resource type="Resource" uid="uid://ddrmqwl3guset" path="res://tests/data/item_definitions_grid.tres" id="15_k7min"]
+[ext_resource type="Resource" uid="uid://bi81snnay1jjn" path="res://quests/get_materials.tres" id="20_3a3at"]
+[ext_resource type="Resource" uid="uid://cyf47xeobqsmg" path="res://QuestsNDialogue/dialogue/scene_1_quest_2.dialogue" id="20_ajybk"]
+[ext_resource type="PackedScene" uid="uid://cvshfbif53gna" path="res://MapTools/collision/door.tscn" id="21_ggshb"]
+[ext_resource type="PackedScene" uid="uid://53nhesf5x5p8" path="res://puzzles/EqualTotemPuzzles.tscn" id="22_fhsan"]
+[ext_resource type="Script" path="res://puzzles/EqualTotemPuzzleOne.gd" id="23_o3rvr"]
+[ext_resource type="PackedScene" uid="uid://bb6hyhxf6h348" path="res://puzzles/Totem.tscn" id="23_smf7c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n1jdi"]
+size = Vector3(1, 2.70129, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l2jh5"]
+size = Vector3(1.38525, 2.58276, 1)
+
+[node name="test_room" instance=ExtResource("1_c7qa3")]
+
+[node name="InventoryGridTransfer" parent="." index="0" instance=ExtResource("2_lrwhm")]
+visible = false
+
+[node name="GUI" parent="." index="1" instance=ExtResource("2_ef523")]
+
+[node name="Player" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="4"]
+transform = Transform3D(0.462796, -0.83888, -0.286532, 0.526407, 5.05883e-08, 0.850233, -0.713243, -0.544317, 0.441592, 0, 0, 0)
+
+[node name="Platform" parent="." index="5" instance=ExtResource("2_8iut0")]
+transform = Transform3D(118.131, 0, 0, 0, 1, 0, 0, 0, 119.668, 0, 0, -25.6017)
+material_override = ExtResource("3_j78hn")
+
+[node name="MeshInstance3D" parent="." index="6" instance=ExtResource("4_dv0q3")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 9, -9, 1, 3)
+material_override = ExtResource("5_m7d6f")
+
+[node name="Books" type="Node" parent="." index="7"]
+
+[node name="TestItemBook" parent="Books" index="0" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6892, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("14_gkqr0")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Books/TestItemBook/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Books/TestItemBook/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "book"
+
+[node name="TestItemBook2" parent="Books" index="1" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2582, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook2" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("14_gkqr0")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Books/TestItemBook2/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Books/TestItemBook2/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "book"
+
+[node name="TestItemBook3" parent="Books" index="2" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8123, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Books/TestItemBook3" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("14_gkqr0")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Books/TestItemBook3/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Books/TestItemBook3/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "book"
+
+[node name="TestNpc1" parent="." index="8" instance=ExtResource("11_hrecj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -30.5934)
+
+[node name="Area3D" type="Area3D" parent="TestNpc1" index="2"]
+script = ExtResource("12_uc7bx")
+dialogue_resource = ExtResource("13_7e5iy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestNpc1/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
+shape = SubResource("BoxShape3D_l2jh5")
+
+[node name="TestNpc2" parent="." index="9" instance=ExtResource("11_hrecj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14135, 0.5, -60.2866)
+
+[node name="Area3D" type="Area3D" parent="TestNpc2" index="2"]
+script = ExtResource("12_uc7bx")
+dialogue_resource = ExtResource("20_ajybk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestNpc2/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
+shape = SubResource("BoxShape3D_l2jh5")
+
+[node name="TestNpc3" parent="." index="10" instance=ExtResource("11_hrecj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6864, 0.5, -60.2866)
+
+[node name="Area3D" type="Area3D" parent="TestNpc3" index="2"]
+script = ExtResource("12_uc7bx")
+dialogue_resource = ExtResource("20_ajybk")
+dialogue_start = "check_chest"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestNpc3/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
+shape = SubResource("BoxShape3D_l2jh5")
+
+[node name="Materials" type="Node" parent="." index="11"]
+
+[node name="TestItemStick" parent="Materials" index="0" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "stick"
+
+[node name="TestItemStick2" parent="Materials" index="1" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick2" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick2/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick2/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "stick"
+
+[node name="TestItemStick3" parent="Materials" index="2" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7975, 0.490538, -27.4034)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick3" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick3/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick3/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "stick"
+
+[node name="TestItemStick4" parent="Materials" index="3" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -31.577)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick4" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick4/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick4/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "candle"
+
+[node name="TestItemStick5" parent="Materials" index="4" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -31.577)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick5" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick5/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick5/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "candle"
+
+[node name="TestItemStick6" parent="Materials" index="5" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0023, 0.490538, -31.577)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick6" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick6/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick6/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "candle"
+
+[node name="TestItemStick7" parent="Materials" index="6" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3979, 0.490538, -36.2776)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick7" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick7/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick7/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "grass"
+
+[node name="TestItemStick8" parent="Materials" index="7" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87597, 0.490538, -36.2776)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick8" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick8/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick8/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "grass"
+
+[node name="TestItemStick9" parent="Materials" index="8" instance=ExtResource("12_xm7bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0023, 0.490538, -36.2776)
+
+[node name="PickUp" type="Area3D" parent="Materials/TestItemStick9" index="1"]
+script = ExtResource("13_8o4ft")
+update_quest = ExtResource("20_3a3at")
+is_destroy_on_pick_up = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Materials/TestItemStick9/PickUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
+shape = SubResource("BoxShape3D_n1jdi")
+
+[node name="item" type="Node" parent="Materials/TestItemStick9/PickUp" index="1"]
+script = ExtResource("14_u3tmw")
+protoset = ExtResource("15_k7min")
+prototype_id = "grass"
+
+[node name="Door" parent="." index="12" instance=ExtResource("21_ggshb")]
+transform = Transform3D(2.37798, 0, 0, 0, 2.37798, 0, 0, 0, 2.37798, 6.58095, 0.5, -30.6557)
+state_variable = "quest_1_completed"
+
+[node name="EqualTotemPuzzles" parent="." index="13" node_paths=PackedStringArray("totems") instance=ExtResource("22_fhsan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3553, 0.5, -59.1904)
+script = ExtResource("23_o3rvr")
+totems = [NodePath("Totem"), NodePath("Totem2"), NodePath("Totem3"), NodePath("Totem4")]
+
+[node name="Totem" parent="EqualTotemPuzzles" index="0" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54484, 0, -0.0854454)
+totems = [NodePath("../Totem2")]
+state_number = 2
+
+[node name="Totem2" parent="EqualTotemPuzzles" index="1" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.83384, 0, -0.0854454)
+totems = [NodePath("../Totem3")]
+state_number = 2
+
+[node name="Totem3" parent="EqualTotemPuzzles" index="2" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48307, 0, -0.0854454)
+totems = [NodePath("../Totem4")]
+state_number = 2
+
+[node name="Totem4" parent="EqualTotemPuzzles" index="3" node_paths=PackedStringArray("totems") instance=ExtResource("23_smf7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5682, 0, -0.0854454)
+totems = [NodePath("../Totem")]
+state_number = 2
+
+[node name="MainCamera3D2" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
+
+[node name="PhantomCamera3D2" parent="." index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 7.69047, 11.6252)
+follow_offset = Vector3(1, 5, 8)
+dead_zone_width = 0.3

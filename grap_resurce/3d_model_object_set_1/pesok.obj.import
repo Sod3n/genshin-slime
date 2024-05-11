@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5l8mll827w67"
+path="res://.godot/imported/pesok.obj-abf5c814034a1022a3d86a4cf07484c0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pesok.obj-abf5c814034a1022a3d86a4cf07484c0.mesh"]
+
+source_file="res://grap_resurce/3d_model_object_set_1/pesok.obj"
+dest_files=["res://.godot/imported/pesok.obj-abf5c814034a1022a3d86a4cf07484c0.mesh", "res://.godot/imported/pesok.obj-abf5c814034a1022a3d86a4cf07484c0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

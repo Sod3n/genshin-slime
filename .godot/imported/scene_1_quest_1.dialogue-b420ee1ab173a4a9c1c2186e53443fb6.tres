@@ -1,0 +1,667 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pq6db"]
+
+[resource]
+script = ExtResource("1_pq6db")
+using_states = PackedStringArray()
+titles = {
+"second_part": "27",
+"second_part_completed": "47",
+"start": "3"
+}
+character_names = PackedStringArray("НПС 1")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "start",
+"type": &"title"
+},
+"10": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "Привет, спутник.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Привет, спутник.",
+"type": &"dialogue"
+},
+"11": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "Можешь принести вещи для обряда?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Можешь принести вещи для обряда?",
+"type": &"dialogue"
+},
+"12": {
+"id": "12",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_book"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "24",
+"parent_id": "9",
+"type": &"mutation"
+},
+"13": {
+"id": "13",
+"next_conditional_id": "24",
+"next_id": "14",
+"next_id_after": "24",
+"type": &"condition"
+},
+"14": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_npc"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "14",
+"next_conditional_id": "20",
+"next_id": "15",
+"next_id_after": "24",
+"parent_id": "13",
+"type": &"condition"
+},
+"15": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "Спасибо за помощь!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Спасибо за помощь!",
+"type": &"dialogue"
+},
+"16": {
+"id": "16",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "book"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "17",
+"parent_id": "14",
+"type": &"mutation"
+},
+"17": {
+"id": "17",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "update_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_npc"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "18",
+"parent_id": "14",
+"type": &"mutation"
+},
+"18": {
+"id": "18",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "complete_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_npc"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "19",
+"parent_id": "14",
+"type": &"mutation"
+},
+"19": {
+"id": "19",
+"is_snippet": false,
+"next_id": "27",
+"parent_id": "14",
+"type": &"goto"
+},
+"20": {
+"id": "20",
+"next_conditional_id": "24",
+"next_id": "21",
+"next_id_after": "24",
+"parent_id": "13",
+"type": &"condition"
+},
+"21": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"notes": "",
+"parent_id": "20",
+"tags": PackedStringArray(),
+"text": "Нашёл книги?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Нашёл книги?",
+"type": &"dialogue"
+},
+"22": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "24",
+"notes": "",
+"parent_id": "20",
+"tags": PackedStringArray(),
+"text": "Ничего, я тебя не тороплю",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ничего, я тебя не тороплю",
+"type": &"dialogue"
+},
+"24": {
+"id": "24",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"26": {
+"id": "26",
+"next_id": "27",
+"text": "second_part",
+"type": &"title"
+},
+"27": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "not"
+}, {
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "and_or",
+"value": "and"
+}, {
+"type": "not"
+}, {
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "27",
+"next_conditional_id": "31",
+"next_id": "28",
+"next_id_after": "44",
+"type": &"condition"
+},
+"28": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "Ну, книги есть, осталось немного.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ну, книги есть, осталось немного.",
+"type": &"dialogue"
+},
+"29": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "Принеси ещё дрова, свечки и травы, пж >_<",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Принеси ещё дрова, свечки и травы, пж >_<",
+"type": &"dialogue"
+},
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "3",
+"next_conditional_id": "6",
+"next_id": "4",
+"next_id_after": "6",
+"type": &"condition"
+},
+"30": {
+"id": "30",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "44",
+"parent_id": "27",
+"type": &"mutation"
+},
+"31": {
+"id": "31",
+"next_conditional_id": "44",
+"next_id": "32",
+"next_id_after": "44",
+"type": &"condition"
+},
+"32": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "32",
+"next_conditional_id": "44",
+"next_id": "33",
+"next_id_after": "44",
+"parent_id": "31",
+"type": &"condition"
+},
+"33": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "get_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "dot"
+}, {
+"function": "update_objectives",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "stick"
+}])])
+}]), Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "candle"
+}])])
+}]), Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "grass"
+}])])
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "33",
+"next_conditional_id": "41",
+"next_id": "34",
+"next_id_after": "44",
+"parent_id": "32",
+"type": &"condition"
+},
+"34": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"parent_id": "33",
+"tags": PackedStringArray(),
+"text": "Вы отдаёте часть материалов.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Вы отдаёте часть материалов.",
+"type": &"dialogue"
+},
+"35": {
+"id": "35",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "update_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "36",
+"parent_id": "33",
+"type": &"mutation"
+},
+"36": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "36",
+"next_conditional_id": "39",
+"next_id": "37",
+"next_id_after": "44",
+"parent_id": "33",
+"type": &"condition"
+},
+"37": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"notes": "",
+"parent_id": "36",
+"tags": PackedStringArray(),
+"text": "Преисполнейще благодарю.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Преисполнейще благодарю.",
+"type": &"dialogue"
+},
+"38": {
+"id": "38",
+"is_snippet": false,
+"next_id": "47",
+"parent_id": "36",
+"type": &"goto"
+},
+"39": {
+"id": "39",
+"next_conditional_id": "44",
+"next_id": "40",
+"next_id_after": "44",
+"parent_id": "33",
+"type": &"condition"
+},
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "47",
+"parent_id": "3",
+"type": &"goto"
+},
+"40": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "44",
+"notes": "",
+"parent_id": "39",
+"tags": PackedStringArray(),
+"text": "Продолжай в том же духе!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Продолжай в том же духе!",
+"type": &"dialogue"
+},
+"41": {
+"id": "41",
+"next_conditional_id": "44",
+"next_id": "42",
+"next_id_after": "44",
+"parent_id": "32",
+"type": &"condition"
+},
+"42": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "42",
+"next_id": "43",
+"notes": "",
+"parent_id": "41",
+"tags": PackedStringArray(),
+"text": "Как успехи в поиске?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Как успехи в поиске?",
+"type": &"dialogue"
+},
+"43": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "43",
+"next_id": "44",
+"notes": "",
+"parent_id": "41",
+"tags": PackedStringArray(),
+"text": "Хорошо",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Хорошо",
+"type": &"dialogue"
+},
+"44": {
+"id": "44",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"46": {
+"id": "46",
+"next_id": "47",
+"text": "second_part_completed",
+"type": &"title"
+},
+"47": {
+"id": "47",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "quest_1_completed"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "48",
+"type": &"mutation"
+},
+"48": {
+"character": "НПС 1",
+"character_replacements": Array[Dictionary]([]),
+"id": "48",
+"next_id": "49",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Можешь проходить дальше.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Можешь проходить дальше.",
+"type": &"dialogue"
+},
+"49": {
+"id": "49",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"6": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_npc"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "6",
+"next_conditional_id": "9",
+"next_id": "7",
+"next_id_after": "9",
+"type": &"condition"
+},
+"7": {
+"id": "7",
+"is_snippet": false,
+"next_id": "27",
+"parent_id": "6",
+"type": &"goto"
+},
+"9": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "not"
+}, {
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_book"
+}])])
+}, {
+"type": "and_or",
+"value": "and"
+}, {
+"type": "not"
+}, {
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_book"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "9",
+"next_conditional_id": "13",
+"next_id": "10",
+"next_id_after": "24",
+"type": &"condition"
+}
+}
+raw_text = "~ start
+
+if is_quest_completed(\"get_materials\"):
+	=> second_part_completed
+
+if is_quest_completed(\"return_to_npc\"):
+	=> second_part
+
+if  not is_quest_active(\"get_book\") and not is_quest_completed(\"get_book\"):
+	НПС 1: Привет, спутник.
+	НПС 1: Можешь принести вещи для обряда?
+	do start_quest(\"get_book\")
+else:
+	if is_quest_active(\"return_to_npc\"):
+		НПС 1: Спасибо за помощь!
+		do remove_items(\"book\")
+		do update_quest(\"return_to_npc\")
+		do complete_quest(\"return_to_npc\")
+		=> second_part
+	else:
+		НПС 1: Нашёл книги?
+		НПС 1: Ничего, я тебя не тороплю
+	
+=> END
+
+~ second_part
+if  not is_quest_active(\"get_materials\") and not is_quest_completed(\"get_materials\"):
+	НПС 1: Ну, книги есть, осталось немного.
+	НПС 1: Принеси ещё дрова, свечки и травы, пж >_<
+	do start_quest(\"get_materials\")
+else:
+	if is_quest_active(\"get_materials\"):
+		if get_quest(\"get_materials\").update_objectives(remove_items(\"stick\"), remove_items(\"candle\"), remove_items(\"grass\")):
+			Вы отдаёте часть материалов.
+			do update_quest(\"get_materials\")
+			if is_quest_completed(\"get_materials\"):
+				НПС 1: Преисполнейще благодарю.
+				=> second_part_completed
+			else:
+				НПС 1: Продолжай в том же духе!
+		else:
+			НПС 1: Как успехи в поиске?
+			НПС 1: Хорошо
+=> END
+
+~ second_part_completed
+do quest_1_completed = true
+НПС 1: Можешь проходить дальше.
+=> END"
+metadata/dialogue_manager_version = "2.39.0"

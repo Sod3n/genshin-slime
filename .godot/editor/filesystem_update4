@@ -1,4 +1,4 @@
-res://maps/__map.tscn
+res://maps/arena_test.tscn
 res://quests/solve_puzzle_quest.gd
 res://grap_resurce/materials/test_material_tiles.tres
 res://grap_resurce/materials/test_material_tiles2.tres
@@ -7,6 +7,7 @@ res://grap_resurce/materials/material_lol.tres
 res://grap_resurce/materials/material_tile.tres
 res://grap_resurce/grid_map_objects/grid_map_objects_tilesets.tres
 res://Water/WaterShader.tres
+res://maps/__map.tscn
 res://Player/player.tscn
 res://MapTools/triger.tscn
 res://Puska/puska.tscn
@@ -23,18 +24,7 @@ res://QuestsNDialogue/dialogue/balloon.tscn
 res://MapTools/collision/door.tscn
 res://puzzles/Totem.tscn
 res://puzzles/EqualTotemPuzzles.tscn
-res://maps/arena_test.tscn
 res://maps/Bereg_lvl1.tscn
 res://maps/Bereg_lvl1_test.tscn
 res://Water/watertileset.tscn
-res://puzzles/Totem.gd
-res://QuestsNDialogue/gui/GUI.gd
-res://quests/get_book_quest.gd
-res://quests/get_book.tres
-res://QuestsNDialogue/state.gd
-res://quests/find_key.gd
-res://quests/find_key.tres
-res://quests/find_key_quest.gd
-res://quests/get_into_town.tres
-res://quests/return_to_npc_quest.gd
-res://quests/return_to_npc_two.tres
+res://Puska/puska.gd

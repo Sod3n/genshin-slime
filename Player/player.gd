@@ -26,10 +26,12 @@ func check_():
 	pass
 
 func animation():
+	animation_player.speed_scale = 1.0
 	if input_vector.x<0:rotation = Vector3(0, PI, 0)
 	if input_vector.x>0:rotation = Vector3(0, 0, 0)
 	
 	if input_vector.length()>0.1:
+		animation_player.speed_scale = 2.0
 		anim_play("RUN")
 	else:
 		anim_play("IDLE")

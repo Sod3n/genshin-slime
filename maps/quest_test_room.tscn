@@ -78,3 +78,9 @@ dialogue_resource = ExtResource("12_1yf0v")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TestNpc/Area3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119629, 1.00208, 0)
 shape = SubResource("BoxShape3D_6qcj8")
+
+[node name="MainCamera3D2" parent="." index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
+
+[node name="PhantomCamera3D2" parent="." index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)

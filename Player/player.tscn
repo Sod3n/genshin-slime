@@ -87,7 +87,6 @@ texture_filter = 0
 texture = ExtResource("2_vuyvd")
 hframes = 4
 vframes = 3
-frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

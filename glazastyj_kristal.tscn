@@ -1,20 +1,49 @@
-[gd_scene load_steps=3 format=3 uid="uid://yjnunf2qaxrb"]
+[gd_scene load_steps=5 format=3 uid="uid://yjnunf2qaxrb"]
 
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_js71j"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_js71j"]
 [ext_resource type="ArrayMesh" uid="uid://7j8r8xbx6vsi" path="res://grap_resurce/3d_model_object_set_1/glazastyj_kristal.obj" id="2_8sy2c"]
 
-[node name="GlazastyjKristal" type="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38264, 5.96046e-08, 0.558041)
+[sub_resource type="Animation" id="Animation_nyidy"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GlazastyjKristal:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.383, 0.2, 0.558), Vector3(-0.383, -0.2, 0.558)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v7ilc"]
+_data = {
+"idle": SubResource("Animation_nyidy")
+}
+
+[node name="GlazastyjKristal" type="Node3D"]
+
+[node name="GlazastyjKristal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.383, 0.135502, 0.558)
 material_override = ExtResource("1_js71j")
 mesh = ExtResource("2_8sy2c")
 skeleton = NodePath("../..")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="OmniLight3D" type="OmniLight3D" parent="GlazastyjKristal"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.833506, 0)
 light_color = Color(1, 0.12549, 1, 1)
 omni_range = 0.945525
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+[node name="OmniLight3D2" type="OmniLight3D" parent="GlazastyjKristal"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05131, 0)
 light_color = Color(1, 0.12549, 1, 1)
 omni_range = 0.945525
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v7ilc")
+}
+autoplay = "idle"

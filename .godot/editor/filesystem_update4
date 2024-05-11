@@ -26,3 +26,5 @@ res://maps/arena_test.tscn
 res://Menu/EndGame.tscn
 res://Menu/EndGame.gd
 res://Puska/puska.gd
+res://glazastyj_kristal.tscn
+res://Player/player.gd

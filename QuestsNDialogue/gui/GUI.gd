@@ -9,21 +9,18 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if _quest == null:
-		%CurrentQuest.hide()
-		%Progress.hide()
+		%Control.hide()
 		return
 	else:
-		%CurrentQuest.text = "Current Quest: %s" % _quest.quest_name
+		%Control.show()
+		%CurrentQuest.text = _quest.quest_name
 		%Progress.text = _quest.get_progress()
 		
 
 func set_current_quest(quest: Quest) -> void:
 	_quest = quest
-	%CurrentQuest.show()
-	%Progress.show()
+	%Control.show()
 
 func finish_quest(_quest: Quest) -> void:
-	print("A")
-	%CurrentQuest.hide()
-	%Progress.hide()
+	%Control.hide()
 

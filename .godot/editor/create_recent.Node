@@ -1,3 +1,4 @@
+Control
 Camera3D
 GridMap
 Node3D
@@ -7,9 +8,7 @@ StaticBody3D
 CollisionShape3D
 Area3D
 MeshInstance3D
-Control
 Node
 CanvasLayer
 HBoxContainer
 BoxContainer
-PanelContainer

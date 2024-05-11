@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_tmce0")
 id = 2
-quest_name = "Find Books"
+quest_name = "Найти книги:"
 quest_description = "Nathan'd like to have an apple. Help him to find one."
 quest_objective = ""

@@ -17066,8 +17066,10 @@ state_number = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.83384, 0, -0.0854454)
 totems = [NodePath("../Totem3")]
 state_number = 3
+state = 2
 
 [node name="Totem3" parent="EqualTotemPuzzles" index="2" node_paths=PackedStringArray("totems") instance=ExtResource("91_rgwt3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48307, 0, -0.0854454)
 totems = [NodePath("../Totem")]
 state_number = 3
+state = 1

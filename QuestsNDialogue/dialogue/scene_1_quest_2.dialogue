@@ -1,5 +1,29 @@
 ~ start
 
+if is_quest_completed("get_materials"):
+	=> END
+
+if is_quest_active("get_materials"):
+	if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle"), remove_items("grass")):
+		Вы отдаёте часть материалов.
+		do update_quest("get_materials")
+		if is_quest_completed("get_materials"):
+			НПС 1: Преисполнейще благодарю.
+			do start_quest("return_to_npc_two")
+		else:
+			НПС 1: Продолжай в том же духе!
+	else:
+		НПС 1: Как успехи в поиске? Можешь не торопится.
+			
+НПС 1: Ну, книги есть, осталось немного.
+НПС 1: Принеси ещё дрова, свечки и травы, пж >_<
+do start_quest("get_materials")
+
+=> END
+
+
+~ start2
+
 if is_quest_completed("solve_puzzle") or is_quest_active("solve_puzzle"):
 	=> second_part
 

@@ -12,13 +12,12 @@ func update():
 		State.book_count += 1
 	else:
 		State.book_count += 1
-		State.book_status = "has"
 		objective_completed = true
 		QuestSystem.complete_quest(self)
 		QuestSystem.start_quest(RETURN_TO_NPC)
 
 func get_progress() -> String:
-	return "%s/3" % State.book_count
+	return "%s / 3" % State.book_count
 
 func complete():
 	pass

@@ -1,7 +1,7 @@
 [gd_scene load_steps=91 format=3 uid="uid://cgju0ifp8jt1"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_r4vuu"]
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="2_ma02b"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_ma02b"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_vsh3r"]
 [ext_resource type="ArrayMesh" uid="uid://dhdv0f00uv70k" path="res://grap_resurce/3d_model_object_set_1/biblija.obj" id="2_ybpqj"]
 [ext_resource type="ArrayMesh" uid="uid://0xh7vxgrj4k2" path="res://grap_resurce/3d_model_object_set_1/bochka_001.obj" id="3_05ibu"]

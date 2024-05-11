@@ -20,7 +20,7 @@ json_data = "[
     {
         \"height\": 1,
         \"id\": \"candle\",
-        \"image\": \"res://images/item_key.png\",
+        \"image\": \"res://images/item_candle.png\",
         \"width\": 1
     },
     {
@@ -32,7 +32,7 @@ json_data = "[
     {
         \"height\": 1,
         \"id\": \"key\",
-        \"image\": \"res://images/item_scroll_blue.png\",
+        \"image\": \"res://images/item_key.png\",
         \"width\": 1
     }
 ]"

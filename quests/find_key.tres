@@ -6,5 +6,5 @@
 script = ExtResource("1_khjgc")
 id = 7
 quest_name = "Найти ключ от ворот в пригород"
-quest_description = null
-quest_objective = null
+quest_description = ""
+quest_objective = ""

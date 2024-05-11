@@ -1,12 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://bsmlerd8sun6a"]
+[gd_scene load_steps=8 format=3 uid="uid://bsmlerd8sun6a"]
 
 [ext_resource type="PackedScene" uid="uid://bs1xotbmrlfim" path="res://Player/player.tscn" id="1_4yh1v"]
-[ext_resource type="Script" path="res://maps/__map.gd" id="1_w3l5j"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="2_6kikg"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_on7md"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="3_wxd20"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="4_grj2u"]
-[ext_resource type="Script" path="res://maps/ColorRect.gd" id="6_g0ygc"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_8coap"]
 
@@ -24,7 +21,6 @@ v_offset = 0.0
 fov = 60.0
 
 [node name="__map" type="Node3D"]
-script = ExtResource("1_w3l5j")
 
 [node name="Player" parent="." instance=ExtResource("1_4yh1v")]
 
@@ -34,9 +30,6 @@ navigation_mesh = SubResource("NavigationMesh_8coap")
 [node name="MainCamera3D2" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 4, 6)
 fov = 60.0
-
-[node name="PhantomCameraHost" type="Node" parent="MainCamera3D2"]
-script = ExtResource("2_on7md")
 
 [node name="PhantomCamera3D2" type="Node3D" parent="." node_paths=PackedStringArray("follow_target")]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 4, 6)
@@ -54,20 +47,3 @@ follow_distance = 4.0
 dead_zone_width = 0.3
 dead_zone_height = 0.1
 spring_length = 4.0
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
-script = ExtResource("6_g0ygc")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-autoplay = true
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-autoplay = true

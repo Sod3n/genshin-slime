@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/MainTheme.mp3-549f6bf928367fc1ca1b5c521402665
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

@@ -1,13 +1,13 @@
+AnimatedSprite3D
+CollisionShape3D
+StaticBody3D
+PhantomCameraHost
 Node
 AnimationPlayer
-AnimatedSprite3D
 Node3D
-CollisionShape3D
 Area3D
 ColorRect
 Button
-PhantomCameraHost
-StaticBody3D
 MeshInstance3D
 GridMap
 Control

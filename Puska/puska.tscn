@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgejjb2nk1pgc"]
+[gd_scene load_steps=9 format=3 uid="uid://cgejjb2nk1pgc"]
 
-[ext_resource type="Texture2D" uid="uid://co28idlhynvja" path="res://icon.svg" id="1_2h3ic"]
 [ext_resource type="Script" path="res://Puska/puska.gd" id="1_yd072"]
+[ext_resource type="Texture2D" uid="uid://dblcwxrd7rue2" path="res://images/monster.png" id="2_vvhsc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_075yj"]
 height = 2.39389
@@ -9,13 +9,37 @@ height = 2.39389
 [sub_resource type="BoxShape3D" id="BoxShape3D_jarl7"]
 size = Vector3(2, 1, 1)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_fy10i"]
+atlas = ExtResource("2_vvhsc")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcwpt"]
+atlas = ExtResource("2_vvhsc")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0y1w"]
+atlas = ExtResource("2_vvhsc")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pgaas"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fy10i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcwpt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0y1w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Puska" type="CharacterBody3D"]
 script = ExtResource("1_yd072")
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1.85122, 0, 0, 0, 1, 0, 0.393045, 0)
-billboard = 2
-texture = ExtResource("1_2h3ic")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00526309, 0.464995, -0.0247605)
@@ -32,3 +56,9 @@ shape = SubResource("CapsuleShape3D_075yj")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="EYE_ZONE"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 shape = SubResource("BoxShape3D_jarl7")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_pgaas")
+autoplay = "default"

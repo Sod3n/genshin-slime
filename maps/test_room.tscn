@@ -1,10 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bfdrbbsynapcw"]
+[gd_scene load_steps=4 format=3 uid="uid://bfdrbbsynapcw"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_mxjce"]
 [ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="2_t21kk"]
 [ext_resource type="Material" uid="uid://dcfm8uarhyr22" path="res://grap_resurce/materials/test_material_tiles.tres" id="3_rxjl8"]
-[ext_resource type="PackedScene" uid="uid://btlsaxo2y6pgr" path="res://MapTools/collision/platfrom_L.tscn" id="4_q6j05"]
-[ext_resource type="Material" uid="uid://pmoqcokt1pc" path="res://grap_resurce/materials/test_material_tiles2.tres" id="5_lqo4h"]
 
 [node name="test_room" instance=ExtResource("1_mxjce")]
 
@@ -14,13 +12,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="2"]
 transform = Transform3D(0.462796, -0.83888, -0.286532, 0.526407, 5.05883e-08, 0.850233, -0.713243, -0.544317, 0.441592, 0, 0, 0)
 
-[node name="Platform" parent="." index="3" instance=ExtResource("2_t21kk")]
+[node name="Platform" parent="." index="4" instance=ExtResource("2_t21kk")]
 transform = Transform3D(40.2323, 0, 0, 0, 1, 0, 0, 0, 40.2323, 0, 0, 0)
 material_override = ExtResource("3_rxjl8")
 
-[node name="MeshInstance3D" parent="." index="4" instance=ExtResource("4_q6j05")]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 9, -9, 1, 3)
-material_override = ExtResource("5_lqo4h")
+[node name="MainCamera3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)
 
-[node name="PhantomCamera3D2" parent="." index="5"]
+[node name="PhantomCamera3D" parent="." index="6"]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.69047, 11.6252)

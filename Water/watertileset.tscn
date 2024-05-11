@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://2ipsag8hy8tt"]
+
+[ext_resource type="Texture2D" uid="uid://cd743hd6wg8w4" path="res://Water/Water.png" id="1_8p67c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yybl8"]
+atlas = ExtResource("1_8p67c")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebla1"]
+atlas = ExtResource("1_8p67c")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh64u"]
+atlas = ExtResource("1_8p67c")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdn7o"]
+atlas = ExtResource("1_8p67c")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_udlwh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yybl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebla1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh64u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdn7o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(39.7778, 0, 0, 0, 39.7778, 0, 0, 0, 39.7778, 0, 0, 0)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0011694, 0.999999, 0, -0.999999, 0.0011694, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_udlwh")
+autoplay = "default"

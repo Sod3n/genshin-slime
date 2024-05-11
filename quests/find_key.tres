@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://desdmwy6lfgsl"]
+
+[ext_resource type="Script" path="res://quests/find_key_quest.gd" id="1_khjgc"]
+
+[resource]
+script = ExtResource("1_khjgc")
+id = 7
+quest_name = "Найти ключ"
+quest_description = ""
+quest_objective = ""

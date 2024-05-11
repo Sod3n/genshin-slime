@@ -5,13 +5,16 @@ signal on_state_changed
 @export var totems : Array[Node]
 
 @export var state_number : int
+@export var state : int
 
 @onready var state_0 = $State0
 @onready var state_1 = $State1
 @onready var state_2 = $State2
 
-var state : int
 var active = true
+
+func _ready():
+	show_state()
 
 func change_state():
 	if not active:
@@ -26,7 +29,9 @@ func next_state():
 	state += 1
 	if state == state_number:
 		state = 0
-		
+	show_state()
+
+func show_state():
 	if state == 0:
 		state_0.show()
 		state_1.hide()

@@ -8,6 +8,9 @@ extends CanvasLayer
 @onready var responses_menu: VBoxContainer = $Balloon/Margin/VBox/Responses
 @onready var response_template: RichTextLabel = %ResponseTemplate
 
+# The action to press to skip typing.
+@export var skip_action: StringName = &"ui_cancel"
+
 ## The dialogue resource
 var resource: DialogueResource
 
@@ -19,6 +22,8 @@ var is_waiting_for_input: bool = false
 
 ## See if we are running a long mutation and should hide the balloon
 var will_hide_balloon: bool = false
+
+var next_dialogue_timer: SceneTreeTimer
 
 ## The current line
 var dialogue_line: DialogueLine:
@@ -63,6 +68,7 @@ var dialogue_line: DialogueLine:
 
 		dialogue_label.modulate.a = 1
 		if not dialogue_line.text.is_empty():
+			is_waiting_for_input = true
 			dialogue_label.type_out()
 			await dialogue_label.finished_typing
 
@@ -72,7 +78,8 @@ var dialogue_line: DialogueLine:
 			configure_menu()
 		elif dialogue_line.time != "":
 			var time = dialogue_line.text.length() * 0.02 if dialogue_line.time == "auto" else dialogue_line.time.to_float()
-			await get_tree().create_timer(time).timeout
+			next_dialogue_timer = get_tree().create_timer(time)
+			await next_dialogue_timer.timeout
 			next(dialogue_line.next_id)
 		else:
 			is_waiting_for_input = true
@@ -181,18 +188,25 @@ func _on_response_gui_input(event: InputEvent, item: Control) -> void:
 	elif event.is_action_pressed("ui_accept") and item in get_responses():
 		next(dialogue_line.responses[item.get_index()].next_id)
 
+func next_or_skip_typing():
+	if dialogue_label.is_typing:
+		dialogue_label.skip_typing()
+	else:
+		next(dialogue_line.next_id)
 
 func _on_balloon_gui_input(event: InputEvent) -> void:
+	
 	if not is_waiting_for_input: return
 	if dialogue_line.responses.size() > 0: return
-
+	
 	# When there are no response options the balloon itself is the clickable thing
+
 	get_viewport().set_input_as_handled()
 
 	if event is InputEventMouseButton and event.is_pressed() and event.button_index == 1:
-		next(dialogue_line.next_id)
+		next_or_skip_typing()
 	elif event.is_action_pressed("ui_accept") and get_viewport().gui_get_focus_owner() == balloon:
-		next(dialogue_line.next_id)
+		next_or_skip_typing()
 
 
 

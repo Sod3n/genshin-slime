@@ -1,0 +1,535 @@
+[gd_scene load_steps=4 format=3 uid="uid://kulf87mxjd3p"]
+
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_6g88h"]
+[ext_resource type="ArrayMesh" uid="uid://cujq2dfmr3gku" path="res://grap_resurce/3d_model_object_set_2/zabor_001.obj" id="2_mt6ah"]
+[ext_resource type="ArrayMesh" uid="uid://c2nvecwatddlk" path="res://grap_resurce/3d_model_object_set_2/zabor_002.obj" id="3_qy5nc"]
+
+[node name="Zabor" type="Node"]
+
+[node name="Zabor001" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16671, 0.499, 38.1239)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor003" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.8333, 0.499, -8.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor012" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor018" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor026" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.3094, 0.499, -13.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor032" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.3094, 0.499, -13.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor031" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.3094, 0.499, -12.1554)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor042" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor043" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor044" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor045" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor083" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor084" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor046" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor047" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.3094, 0.499, -2.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor052" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.3094, 0.499, -6.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor053" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.3094, 0.499, -6.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor054" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.3094, 0.499, -6.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor019" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor020" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor021" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor013" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor014" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor015" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor016" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8333, 0.499, -11.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor017" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.767848, 0, 0.640633, 0, 1, 0, -0.640633, 0, 0.767848, -39.8333, 0.499, -13.0766)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor008" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.8333, 0.499, -7.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor027" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.925, 0.499, -12.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor009" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -45.4116, 0.499, -8.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor056" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -8.9359)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor059" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -6.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor070" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16.5448, 1.499, -6.0048)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor060" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -5.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor061" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -4.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor065" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -2.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor067" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -1.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor068" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -0.829699)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor069" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, 0.170301)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor062" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -4.8297)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor057" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -9.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor078" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -18.6592)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor079" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -17.6592)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor080" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -16.6592)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor081" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -15.6592)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor082" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.90497, 0.499, -14.6592)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor058" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4.90497, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor063" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -3.90497, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor064" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2.90497, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.09503, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor071" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.09503, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="Zabor071"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.73654, -0.000999987, -38.5904)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor072" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.09503, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="Zabor072"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.73654, -0.000999987, -38.5904)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor073" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.09503, 0.499, -12.8505)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="Zabor073"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.73654, -0.000999987, -38.5904)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor074" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 5.6217, 0.499, -13.3386)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="Zabor074"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.73654, -0.000999987, -38.5904)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor075" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 5.6217, 0.499, -14.3386)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor066" type="MeshInstance3D" parent="Zabor075"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.73654, -0.000999987, -38.5904)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor010" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -45.4116, 0.499, -12.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor022" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -49.4116, 0.499, -12.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor035" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -57.7709, 0.499, -14.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor036" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -6.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor039" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -5.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor040" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -4.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor041" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -3.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor048" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -48.7709, 0.499, -3.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor049" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -48.7709, 0.499, -4.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor050" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -48.7709, 0.499, -5.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor051" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -48.7709, 0.499, -6.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor038" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -57.7709, 0.499, -13.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor037" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -60.7709, 0.499, -13.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor034" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -57.7709, 0.499, -15.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor033" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -12.658)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor028" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -13.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor029" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -14.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor030" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -54.7709, 0.499, -15.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor023" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -49.4116, 0.499, -13.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor024" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -49.4116, 0.499, -14.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor025" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -49.4116, 0.499, -15.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor011" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -40.4116, 0.499, -12.3679)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor004" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.8333, 0.499, -8.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor005" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.8333, 0.499, -8.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor006" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.8333, 0.499, -8.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor007" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8333, 0.499, -8.8761)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor085" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3155, 0.499, -9.3479)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor086" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3155, 0.499, -11.4176)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("2_mt6ah")
+skeleton = NodePath("../../..")
+
+[node name="Zabor002" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.11381, 0.499, 40.4247)
+material_override = ExtResource("1_6g88h")
+mesh = ExtResource("3_qy5nc")
+skeleton = NodePath("../../..")

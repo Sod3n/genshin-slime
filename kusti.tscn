@@ -1,0 +1,1214 @@
+[gd_scene load_steps=5 format=3 uid="uid://f7jnunp7e5qk"]
+
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_h3l5o"]
+[ext_resource type="ArrayMesh" uid="uid://dmb1np243n2cj" path="res://grap_resurce/3d_model_object_set_1/kustik.obj" id="2_8myry"]
+[ext_resource type="ArrayMesh" uid="uid://yca54wqu8btj" path="res://grap_resurce/3d_model_object_set_2/kustik_001.obj" id="3_fjy6o"]
+[ext_resource type="ArrayMesh" uid="uid://dowenxx4iiwqh" path="res://grap_resurce/3d_model_object_set_2/kustik_002.obj" id="4_1ss62"]
+
+[node name="Kusti" type="Node"]
+
+[node name="Kustik" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58286, 0.5, 24.7059)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.41714, 0.5, -11.2941)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.48793, 0, -0.000528499, 0, 3.29022, 0, 0.0013898, 0, -0.946056, 8.45509, 0.5, -14.2201)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.60906, 0, 0.43636, 0, 2.30874, 0, -0.719196, 0, -0.976273, 3.99344, 0.5, -13.0655)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.66525, 0, -0.0188779, 0, 2.92489, 0, 0.0404267, 0, 1.24458, 9.89169, 0.5, -13.7984)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik10" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.66545, 0, -0.0109925, 0, 2.92489, 0, 0.0235403, 0, 1.24468, 12.2745, 0.5, -13.7984)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77866, 0, -0.0110248, 0, 4.05978, 0, 0.0157085, 0, 1.24834, 11.2745, 0.5, -13.7984)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77866, 0, -0.0110248, 0, 4.05978, 0, 0.0157085, 0, 1.24834, 13.802, 0.5, -13.7984)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.10847, 0, -0.0341637, 0, 2.32849, 0, 0.0572746, 0, -1.25768, 13.802, 0.5, -16.7984)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik14" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.1066, 0, -0.0630171, 0, 2.32849, 0, 0.105647, 0, 1.25657, 11.934, 0.5, -16.6134)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.20299, 0, -1.03345, 0, 2.32849, 0, 1.73256, 0, 0.717571, 8.96129, 0.5, -17.4247)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.94568, 0, -0.485789, 0, 2.32849, 0, 0.814415, 0, 1.16058, 5.36207, 0.5, -16.318)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik64" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.10892, 0, 0.0221568, 0, 2.32849, 0, -0.0371422, 0, 1.25795, -4.71299, 0.5, -19.6703)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik78" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.9645, 0, 0.458047, 0, 2.32849, 0, -0.767901, 0, 1.1718, -6.48727, 0.5, -14.128)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik79" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.03024, 0, -0.341132, 0, 2.32849, 0, 0.571897, 0, -1.21102, -5.36233, 0.5, -15.128)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik65" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.10892, 0, 0.0221568, 0, 2.32849, 0, -0.0371422, 0, 1.25795, -5.71299, 0.5, -19.6703)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik66" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.34494, 0, -0.0254263, 0, 1.79554, 0, 0.0281016, 0, -1.21681, -7.39917, 0.5, -19.6703)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik81" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.34204, 0, -0.083862, 0, 3.17909, 0, 0.0926907, 0, -1.21418, -7.88423, 0.5, -20.2034)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik67" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.34494, 0, -0.0254263, 0, 1.79554, 0, 0.0281016, 0, -1.21681, -5.39917, 0.5, -19.3041)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik68" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.34494, 0, -0.0254263, 0, 1.79554, 0, 0.0281016, 0, -1.21681, -8.39917, 0.5, -19.7835)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik63" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50598, 0, 0.371288, 0, 1.94, 0, -0.461919, 0, 1.21049, -2.00664, 1.24072, -20.1303)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.76549, 0, 0.503596, 0, 1.78677, 0, -0.781733, 0, -1.13734, 4.95727, 0.5, -14.3989)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5889, 0, -0.0189936, 0, 1.87601, 0, 0.0241006, 0, 1.25221, 9.11759, 0.5, -13.0242)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik7" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.37361, 0, -0.0188513, 0, 2.71286, 0, 0.0360031, 0, 1.24283, 5.66905, 0.5, -12.7095)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik8" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.16685, 0, -0.0187673, 0, 1.65767, 0, 0.0328669, 0, 1.23729, 4.17873, 0.5, -11.8949)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77232, 0, -0.406583, 0, 2.12064, 0, 0.557248, 0, 1.29313, 9.25819, 0.5, -16.3796)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.18552, 0, -0.0949523, 0, 1.27208, 0, 0.0854782, 0, -1.31692, 10.3572, 0.5, -16.3796)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.18552, 0, -0.0949523, 0, 1.27208, 0, 0.0854782, 0, -1.31692, 8.93109, 0.5, -16.3796)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.18552, 0, -0.0949523, 0, 1.27208, 0, 0.0854782, 0, -1.31692, 10.9311, 0.5, -16.3796)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.18986, 0, -0.0952996, 0, 1.92917, 0, 0.0857909, 0, -1.32174, 10.3298, 0.5, -17.0068)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik142" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.03797, 0, -0.000528446, 0, 2.27491, 0, 0.00113845, 0, -0.94596, -36.7248, 0.500658, -10.3308)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik143" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.18328, 0, -0.0189297, 0, 2.02231, 0, 0.0331161, 0, 1.24799, -35.1003, 0.500658, -9.8184)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik144" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.1834, 0, -0.0110101, 0, 2.02231, 0, 0.019283, 0, 1.24667, -32.4535, 0.500658, -10.1685)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik145" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.45699, 0, -0.0110424, 0, 2.80699, 0, 0.0128676, 0, 1.25033, -33.411, 0.500658, -9.4789)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik146" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.45699, 0, -0.0110424, 0, 2.80699, 0, 0.0128676, 0, 1.25033, -31.6665, 0.500658, -9.3346)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik147" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.30157, 0, -0.0190457, 0, 1.2971, 0, 0.0197423, 0, 1.25564, -35.7344, 0.500658, -9.0442)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik170" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.30157, 0, -0.0190457, 0, 1.2971, 0, 0.0197423, 0, 1.25564, -37.266, 0.500658, -9.303)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik69" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.48793, 0, -0.000528499, 0, 3.29022, 0, 0.0013898, 0, -0.946056, -8.82593, 0.5, -11.5196)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik80" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.48793, 0, -0.000528499, 0, 3.29022, 0, 0.0013898, 0, -0.946056, -9.82593, 0.5, -11.0177)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik70" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77866, 0, -0.0110248, 0, 4.05978, 0, 0.0157085, 0, 1.24834, -6.00653, 0.5, -11.0979)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik71" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5889, 0, -0.0189936, 0, 1.87601, 0, 0.0241006, 0, 1.25221, -8.16343, 0.5, -10.3237)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik166" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.07455, 0, -0.522219, 0, 3.29022, 0, 1.37333, 0, -0.788866, -9.1113, 0.5, -1.7393)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik167" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.33868, 0, 0.674787, 0, 1.87601, 0, -0.856221, 0, 1.05501, -7.8991, 0.5, -1.1071)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik148" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77754, 0, -0.0456368, 0, 4.05978, 0, 0.0650243, 0, 1.24755, -20.0048, 0.5, -8.5221)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik149" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.58762, 0, -0.0537098, 0, 1.87601, 0, 0.0681512, 0, 1.2512, -22.1823, 0.5, -7.8081)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik151" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.58666, 0, -0.0691662, 0, 1.87601, 0, 0.0877634, 0, -1.25044, -33.5871, 0.500001, -10.6447)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik53" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.73568, 0, 0.185746, 0, 2.30874, 0, -0.306143, 0, -1.0531, -39.7682, 0.5, -16.6704)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik57" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.46178, 0, -0.597419, 0, 2.30874, 0, 0.984644, 0, -0.88691, -39.9025, 0.5, -13.3976)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik54" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.90263, 0, 0.211778, 0, 1.78677, 0, -0.328745, 0, -1.22568, -39.1577, 0.5, -18.1982)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik55" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.31106, 0, 0.284066, 0, 2.71286, 0, -0.542522, 0, 1.21008, -38.0563, 0.5, -16.7327)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik56" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.10975, 0, 0.2828, 0, 1.65767, 0, -0.495264, 0, 1.20468, -39.3037, 0.5, -15.5801)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik106" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.48748, 0, 0.0180627, 0, 3.29022, 0, -0.0475011, 0, -0.945884, -28.3752, 0.5, -20.0104)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik107" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.66394, 0, -0.0433317, 0, 2.92489, 0, 0.0927941, 0, 1.24397, -26.9472, 0.5, -19.5605)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik108" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.63187, 0, 0.19725, 0, 2.92489, 0, -0.422406, 0, 1.229, -24.0713, 0.5, -19.2334)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik109" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77801, 0, -0.035554, 0, 4.05978, 0, 0.0506582, 0, 1.24788, -25.5646, 0.5, -19.5334)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik110" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.63114, 0, 0.497894, 0, 4.05978, 0, -0.709409, 0, 1.1448, -22.6525, 0.5, -19.7447)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik117" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.63114, 0, 0.497894, 0, 4.05978, 0, -0.709409, 0, 1.1448, -20.6525, 0.5, -21.7447)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik112" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.77596, 0, -0.0696651, 0, 2.73027, 0, 0.0992606, 0, 1.24644, -14.6525, 0.5, -21.7447)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik111" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.58812, 0, -0.0435973, 0, 1.87601, 0, 0.0553196, 0, 1.2516, -27.8071, 0.5, -19.0991)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74155, 0, -0.00052841, 0, 2.30315, 0, 0.00097286, 0, -0.945897, -44.6987, 0.5, -12.5894)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik44" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.000972936, 0, -0.945897, 0, 2.30315, 0, 1.74155, 0, 0.000528452, -49.5698, 0.5, -13.315)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik45" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.000972936, 0, -0.945897, 0, 2.30315, 0, 1.74155, 0, 0.000528452, -49.5698, 0.5, -15.2802)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik46" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00135577, 0, -0.945897, 0, 2.66394, 0, 2.42682, 0, 0.000528452, -58.112, 0.5, -15.2802)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik47" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.88093, 0, -0.000528344, 0, 2.23379, 0, 0.00105072, 0, -0.945779, -60.7926, 0.5, -14.352)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik48" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.8809, 0, -0.00534807, 0, 2.23379, 0, 0.0106361, 0, 0.945764, -62.4429, 0.5, -14.363)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik49" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.10631, 0, -0.334183, 0, 1.41391, 0, 0.515669, 0, -0.716952, -62.4429, 0.5, -13.4966)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik50" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.10631, 0, -0.334183, 0, 1.41391, 0, 0.515669, 0, -0.716952, -63.2489, 0.5, -12.498)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik51" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.10631, 0, -0.334183, 0, 1.41391, 0, 0.515669, 0, -0.716952, -60.191, 0.5, -13.3074)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86577, 0, -0.0189638, 0, 2.04742, 0, 0.0283001, 0, 1.25024, -43.6931, 0.5, -12.1677)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik24" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86585, 0, -0.0110216, 0, 2.04742, 0, 0.0164785, 0, 1.24798, -42.0251, 0.5, -12.1677)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik25" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -42.7251, 0.5, -12.1677)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -40.9559, 0.5, -12.1677)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -44.2349, 0.5, -11.3935)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik58" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.81996, 0, -0.85017, 0, 1.31321, 0, 0.75175, 0, 0.927311, -40.5942, 0.5, -13.344)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik59" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.780337, 0, 0.896598, 0, 1.31321, 0, -0.792802, 0, -0.8825, -40.4284, 0.5, -15.5963)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik60" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.711036, 0, 0.96751, 0, 1.31321, 0, -0.855505, 0, -0.804127, -46.4784, 0.5, -13.2807)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik61" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0775012, 0, 1.255, 0, 2.25817, 0, -1.10971, 0, -0.0876477, -54.4187, 0.5, -13.2807)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik62" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0775012, 0, 1.255, 0, 2.25817, 0, -1.10971, 0, -0.0876477, -54.4187, 0.5, -14.2807)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -45.9566, 0.5, -12.6162)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik52" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.858957, 0, 0.799406, 0, 1.31321, 0, -0.706862, 0, 0.971414, -49.0791, 0.5, -12.3456)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.74136, 0, 0.0141644, 0, 2.30315, 0, -0.0260789, 0, 0.945792, -41.3346, 0.5, -8.5314)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.86598, 0, 0.000938345, 0, 2.04742, 0, -0.00140028, 0, -1.25039, -42.0145, 0.5, -9.2803)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.86589, 0, -0.00697035, 0, 2.04742, 0, 0.0104212, 0, -1.24801, -43.6823, 0.5, -8.5884)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.24511, 0, -0.00699087, 0, 2.84185, 0, 0.0069541, 0, -1.25168, -45.8466, 0.5, -7.5075)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24476, 0, -0.0306253, 0, 2.84185, 0, 0.0304648, 0, 1.25132, -49.262, 0.5, -6.122)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik32" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24511, 0, 0.00699076, 0, 2.84185, 0, -0.00695399, 0, 1.25168, -44.7514, 0.5, -9.2408)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.11241, 0, 0.000944056, 0, 1.31321, 0, -0.000834819, 0, -1.25805, -40.771, 0.5, -9.4205)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik82" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74155, 0, -0.00052841, 0, 2.30315, 0, 0.00097286, 0, -0.945897, -30.0788, 0.5, -15.7947)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik83" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86577, 0, -0.0189638, 0, 2.04742, 0, 0.0283001, 0, 1.25024, -29.0732, 0.5, -15.373)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik84" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86585, 0, -0.0110216, 0, 2.04742, 0, 0.0164785, 0, 1.24798, -27.4052, 0.5, -15.373)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik85" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -28.1052, 0.5, -15.373)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik86" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -26.336, 0.5, -15.373)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik87" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -29.2958, 0.5, -14.5102)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik88" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -31.3367, 0.5, -15.8215)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik89" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74155, 0, -0.00052841, 0, 2.30315, 0, 0.00097286, 0, -0.945897, -33.0839, 0.5, -17.0033)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik90" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86577, 0, -0.0189638, 0, 2.04742, 0, 0.0283001, 0, 1.25024, -32.1955, 0.5, -16.3666)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik91" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86585, 0, -0.0110216, 0, 2.04742, 0, 0.0164785, 0, 1.24798, -30.5275, 0.5, -16.3666)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik92" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -31.2275, 0.5, -16.3666)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik93" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -29.4583, 0.5, -16.3666)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik118" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.40455, 0, -0.000528353, 0, 2.30315, 0, 0.000784605, 0, -0.945795, -16.2558, 0.5, -13.6082)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik119" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50477, 0, -0.0190195, 0, 2.04742, 0, 0.0228245, 0, 1.25391, -16.112, 0.5, -13.1865)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik120" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50481, 0, -0.0110404, 0, 2.04742, 0, 0.0132899, 0, 1.25011, -14.7668, 0.5, -13.1865)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik121" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00416, 0, -0.0110729, 0, 2.84185, 0, 0.00886836, 0, 1.25379, -15.3313, 0.5, -13.1865)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik122" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00416, 0, -0.0110729, 0, 2.84185, 0, 0.00886836, 0, 1.25379, -13.9045, 0.5, -13.1865)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik123" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00416, 0, -0.0110729, 0, 2.84185, 0, 0.00886836, 0, 1.25379, -16.4226, 0.5, -14.1801)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik124" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.40378, 0, 0.031292, 0, 2.30315, 0, -0.0464701, 0, 0.945277, -14.3517, 0.500001, -14.2963)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik125" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.50472, 0, -0.0217766, 0, 2.04742, 0, 0.0261335, 0, -1.25386, -15.9552, 0.500001, -14.7937)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik126" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.50445, 0, -0.029628, 0, 2.04742, 0, 0.0356642, 0, -1.24981, -17.2997, 0.500001, -14.7499)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik127" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -16.7355, 0.500001, -14.7683)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik128" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -17.3484, 0.500001, -14.0377)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik129" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -15.6124, 0.500001, -13.8108)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik130" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.40378, 0, 0.031292, 0, 2.30315, 0, -0.0464701, 0, 0.945277, -16.1309, 0.500001, -15.3986)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik131" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.50472, 0, -0.0217766, 0, 2.04742, 0, 0.0261335, 0, -1.25386, -16.9552, 0.500001, -15.7937)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik132" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.50445, 0, -0.029628, 0, 2.04742, 0, 0.0356642, 0, -1.24981, -18.2893, 0.500001, -15.0682)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik133" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -17.7355, 0.500001, -15.7683)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik134" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -19.1616, 0.500001, -15.7219)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik135" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.00392, 0, -0.0297151, 0, 2.84185, 0, 0.0237987, 0, -1.25349, -16.6124, 0.500001, -14.8108)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik94" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -32.7373, 0.5, -15.5924)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik95" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -34.459, 0.5, -16.8151)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik136" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74155, 0, -0.00052841, 0, 2.30315, 0, 0.00097286, 0, -0.945897, -21.6113, 0.487979, -7.3828)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik137" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86577, 0, -0.0189638, 0, 2.04742, 0, 0.0283001, 0, 1.25024, -20.6057, 0.487979, -6.9611)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik150" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86577, 0, -0.0189638, 0, 2.04742, 0, 0.0283001, 0, 1.25024, -21.7782, 0.487979, -8.156)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik138" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.86585, 0, -0.0110216, 0, 2.04742, 0, 0.0164785, 0, 1.24798, -18.9377, 0.487979, -6.9611)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik139" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -19.6377, 0.487979, -6.9611)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik140" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.11228, 0, -0.01908, 0, 1.31321, 0, 0.0168712, 0, 1.25791, -20.2584, 0.591466, -6.6865)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik141" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.24508, 0, -0.011054, 0, 2.84185, 0, 0.0109961, 0, 1.25165, -20.9908, 0.487979, -7.9547)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.39312, 0, 0.014122, 0, 1.61221, 0, -0.0208637, 0, 0.942959, -51.2976, 0.5, -3.1167)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.49279, 0, 0.000938486, 0, 1.4332, 0, -0.00112022, 0, -1.25057, -51.8415, 0.5, -3.3896)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.49272, 0, -0.00696257, 0, 1.4332, 0, 0.00833702, 0, -1.24661, -53.1758, 0.5, -3.1738)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik39" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.996094, 0, 0.00698295, 0, 1.98929, 0, -0.00556321, 0, 1.25028, -54.0311, 0.5, -3.3591)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik40" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.975233, 0, -0.0140585, 0, 1.61221, 0, 0.0146052, 0, -0.938723, -51.5917, 0.5, -12.5008)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik41" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.04495, 0, -0.000938806, 0, 1.4332, 0, 0.000784246, 0, 1.25086, -51.2109, 0.5, -12.2279)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.04491, 0, 0.00695079, 0, 1.4332, 0, -0.00583586, 0, 1.24452, -50.277, 0.5, -12.4438)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.69727, 0, -0.00697114, 0, 1.98929, 0, 0.00389421, 0, -1.24818, -49.6783, 0.5, -12.2584)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik72" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.93868, 0, -0.23264, 0, 3.29022, 0, 0.520629, 0, -0.866289, 16.6693, 1.5, -13.7807)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik73" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.08356, 0, 0.289048, 0, 2.92489, 0, -0.524553, 0, 1.14812, 17.8667, 1.5, -13.7452)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik74" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.081, 0, 0.295935, 0, 2.92489, 0, -0.537951, 0, 1.14479, 19.708, 1.5, -14.3619)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik75" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.38866, 0, 0.296805, 0, 4.05978, 0, -0.358976, 0, 1.14816, 18.9353, 1.5, -14.1031)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik76" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.38866, 0, 0.296805, 0, 4.05978, 0, -0.358976, 0, 1.14816, 20.8884, 1.5, -14.7572)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+
+[node name="Kustik152" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.35706, 0, 0.243849, 0, 2.30315, 0, -0.362127, 0, -0.913819, -13.024, 0.5, -1.9528)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik153" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.44778, 0, -0.342339, 0, 2.04742, 0, 0.410828, 0, 1.20642, -12.9941, 0.5, -1.5083)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik154" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.45028, 0, -0.33365, 0, 2.04742, 0, 0.401627, 0, 1.20482, -11.6945, 0.5, -1.1607)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik155" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.967773, 0, -0.334631, 0, 2.84185, 0, 0.268005, 0, 1.20836, -12.2399, 0.5, -1.3066)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik156" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.967773, 0, -0.334631, 0, 2.84185, 0, 0.268005, 0, 1.20836, -10.8615, 0.5, -0.938)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik157" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.975979, 0, 0.295149, 0, 2.84185, 0, -0.236385, 0, -1.2186, -13.9686, 0.500001, -2.65)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik158" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.975979, 0, 0.295149, 0, 2.84185, 0, -0.236385, 0, -1.2186, -12.3502, 0.500001, -1.9823)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik159" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.39995, 0, 0.0764442, 0, 2.30315, 0, -0.113523, 0, 0.9427, -11.1442, 0.621283, -4.1886)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik160" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.37985, 0, 0.500575, 0, 2.04742, 0, -0.600722, 0, -1.14982, -11.3599, 0.5, -4.5335)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik161" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.38356, 0, 0.491749, 0, 2.04742, 0, -0.591937, 0, -1.14939, -12.6013, 0.5, -5.0517)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik162" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.999042, 0, -0.126883, 0, 2.84185, 0, 0.10162, 0, -1.2474, -12.0803, 0.5, -4.8342)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik163" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.923248, 0, 0.493195, 0, 2.84185, 0, -0.394999, 0, -1.15277, -13.3971, 0.5, -5.3839)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik164" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00351, 0, 0.0462514, 0, 2.84185, 0, -0.0370426, 0, 1.25298, -10.4858, 0.573354, -3.3576)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik168" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00351, 0, 0.0462514, 0, 2.84185, 0, -0.0370426, 0, 1.25298, -9.48582, 0.573354, -5.3576)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik171" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.549583, 0, 1.04939, 0, 1.84409, 0, -0.840459, 0, 0.686208, -9.31496, 0.573354, -2.7887)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik172" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.958275, 0, 1.66756, 0, 1.84409, 0, -1.46546, 0, 1.09043, -10.4461, 0.573354, -4.7651)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik173" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.944331, 0, 2.2754, 0, 1.84409, 0, -1.29012, 0, 1.66552, -8.95697, 0.573354, -5.3241)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik169" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00351, 0, 0.0462514, 0, 2.84185, 0, -0.0370426, 0, 1.25298, -9.8794, 0.573354, -2.8744)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik165" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.935608, 0, -0.455438, 0, 2.84185, 0, 0.36476, 0, 1.1682, -12.0614, 0.500001, -4.1499)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik001" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.50232, 40)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik002" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19019, 0.527399, 38.9472)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("4_1ss62")
+skeleton = NodePath("../../..")
+
+[node name="Kustik003" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.0038, 0.50232, -8.8915)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik005" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4, 0, 0, 0, 1.3, 0, 0, 0, 1, -27.4507, 0.50232, -9.2438)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik004" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.4665, 0.527399, -8.4323)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("4_1ss62")
+skeleton = NodePath("../../..")
+
+[node name="Kustik006" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.0038, 0.50232, -14.463)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik007" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4, 0, 0, 0, 1.3, 0, 0, 0, 1, -36.4507, 0.50232, -14.8153)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik008" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.4665, 0.527399, -14.0038)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("4_1ss62")
+skeleton = NodePath("../../..")
+
+[node name="Kustik009" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0784, 0.50232, -16.8527)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik010" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4, 0, 0, 0, 1.3, 0, 0, 0, 1, -21.5252, 0.50232, -17.2049)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("3_fjy6o")
+skeleton = NodePath("../../..")
+
+[node name="Kustik011" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.541, 0.527399, -16.3935)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("4_1ss62")
+skeleton = NodePath("../../..")
+
+[node name="Kustik96" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.49272, 0, -0.00696257, 0, 1.4332, 0, 0.00833702, 0, -1.24661, -53.1758, 0.5, -3.1738)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik97" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.996094, 0, 0.00698295, 0, 1.98929, 0, -0.00556321, 0, 1.25028, -54.0311, 0.5, -3.3591)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik98" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.39137, 0, -0.0492902, 0, 1.61221, 0, 0.072821, 0, 0.941776, -29.9634, 0.5, -20.2662)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik99" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.48934, 0, 0.0849926, 0, 1.4332, 0, -0.101454, 0, -1.24768, -30.4877, 0.5, -20.5751)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik100" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.4899, 0, 0.0768432, 0, 1.4332, 0, -0.0920139, 0, -1.24426, -31.8335, 0.5, -20.4494)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik101" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.994215, 0, -0.0770695, 0, 1.98929, 0, 0.0614011, 0, 1.24792, -32.6744, 0.5, -20.6918)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik102" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.37082, 0, 0.168622, 0, 1.61221, 0, -0.249121, 0, 0.927867, -19.0221, 0.5, -20.7715)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik113" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.37082, 0, 0.168622, 0, 1.61221, 0, -0.249121, 0, 0.927867, -16.0221, 0.5, -20.7715)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik114" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.37082, 0, 0.168622, 0, 1.61221, 0, -0.249121, 0, 0.927867, -16.0221, 0.5, -21.7715)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik115" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.37082, 0, 0.168622, 0, 1.61221, 0, -0.249121, 0, 0.927867, -16.0221, 0.5, -21.7715)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik116" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.3919, 0, -0.0419748, 0, 1.61221, 0, 0.0620132, 0, -0.94213, -17.382, 0.5, -20.5076)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik103" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.47275, 0, -0.204229, 0, 1.4332, 0, 0.243786, 0, -1.23378, -19.6034, 0.5, -20.9515)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik104" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.47113, 0, -0.211374, 0, 1.4332, 0, 0.253103, 0, -1.22858, -20.8842, 0.5, -20.5198)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true
+
+[node name="Kustik105" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.981686, 0, 0.211996, 0, 1.98929, 0, -0.168896, 0, 1.2322, -21.7583, 0.5, -20.5622)
+material_override = ExtResource("1_h3l5o")
+mesh = ExtResource("2_8myry")
+skeleton = NodePath("../../..")
+metadata/_edit_group_ = true

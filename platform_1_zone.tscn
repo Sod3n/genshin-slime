@@ -1,0 +1,570 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn4coqsccbjbr"]
+
+[ext_resource type="PackedScene" uid="uid://b2ggjsgak07ol" path="res://MapTools/collision/platform.tscn" id="1_maegc"]
+[ext_resource type="PackedScene" uid="uid://btlsaxo2y6pgr" path="res://MapTools/collision/platfrom_L.tscn" id="2_5apul"]
+
+[node name="Platform_1_zone" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.001, 0)
+
+[node name="Platform" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 23, 0, 0, -15)
+skeleton = NodePath("../../..")
+
+[node name="Platform2" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+skeleton = NodePath("../..")
+
+[node name="Platform107" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform108" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform109" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform110" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform111" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform112" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform113" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform114" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform115" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform116" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform117" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform118" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform119" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform120" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform121" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform122" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform123" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform124" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform125" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform126" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform128" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+skeleton = NodePath("../..")
+
+[node name="Platform129" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -16)
+skeleton = NodePath("../..")
+
+[node name="Platform130" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -16)
+skeleton = NodePath("../..")
+
+[node name="Platform106" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 3, 0, 1, -27)
+skeleton = NodePath("../..")
+
+[node name="Platform96" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 1, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform97" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, 34, 1, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform99" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 7, 33, 1, -15)
+skeleton = NodePath("../..")
+
+[node name="Platform100" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 1, -15)
+skeleton = NodePath("../..")
+
+[node name="Platform101" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 1, -18)
+skeleton = NodePath("../..")
+
+[node name="Platform102" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 1, -18)
+skeleton = NodePath("../..")
+
+[node name="Platform103" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, 34, 1, -19)
+skeleton = NodePath("../..")
+
+[node name="Platform104" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, 34, 1, -20)
+skeleton = NodePath("../..")
+
+[node name="Platform105" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1, 31, 1, -21)
+skeleton = NodePath("../..")
+
+[node name="Platform98" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, 35, 1, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform93" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(17, 0, 0, 0, 1, 0, 0, 0, 11, 24, 1, -15)
+skeleton = NodePath("../..")
+
+[node name="Platform91" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -7)
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Platform95" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 5, 16, 0, -24)
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Platform92" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -8)
+skeleton = NodePath("../..")
+metadata/_edit_group_ = true
+
+[node name="Platform90" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform94" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(9, 0, 0, 0, 1, 0, 0, 0, 11, 12, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform3" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -5)
+skeleton = NodePath("../..")
+
+[node name="Platform4" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
+skeleton = NodePath("../..")
+
+[node name="Platform5" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -7)
+skeleton = NodePath("../..")
+
+[node name="Platform6" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform7" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -9)
+skeleton = NodePath("../..")
+
+[node name="Platform8" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform9" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform10" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform11" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(19, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform12" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform13" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform14" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform15" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -9)
+skeleton = NodePath("../..")
+
+[node name="Platform16" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(11, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform17" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -9)
+skeleton = NodePath("../..")
+
+[node name="Platform18" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform19" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform20" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform21" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(0.99, 0, 0, 0, 1, 0, 0, 0, 1, -65, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform22" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, -64, 0, -15)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -11)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -12)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -13)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D9" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3.21853e-07, 0, -1, 0, 1, 0, 3, 0, -1.07284e-07, 0, 1, -24)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D10" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3.21853e-07, 0, -1, 0, 1, 0, 3, 0, -1.07284e-07, -1, 1, -24)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D11" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3.21853e-07, 0, -1, 0, 1, 0, 3, 0, -1.07284e-07, -2, 1, -24)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D12" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3.21853e-07, 0, -1, 0, 1, 0, 3, 0, -1.07284e-07, 1, 1, -24)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D13" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3.21853e-07, 0, -1, 0, 1, 0, 3, 0, -1.07284e-07, 2, 1, -24)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -14)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -15)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -16)
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D8" parent="." instance=ExtResource("2_5apul")]
+transform = Transform3D(-3, 0, 1.50996e-07, 0, 1, 0, -4.52987e-07, 0, -1, 14, 1, -17)
+skeleton = NodePath("../..")
+
+[node name="Platform23" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -19)
+skeleton = NodePath("../..")
+
+[node name="Platform24" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -18)
+skeleton = NodePath("../..")
+
+[node name="Platform79" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -17)
+skeleton = NodePath("../..")
+
+[node name="Platform80" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, -63, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform25" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 7, -64, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform26" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -26)
+skeleton = NodePath("../..")
+
+[node name="Platform27" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -61, 0, -25)
+skeleton = NodePath("../..")
+
+[node name="Platform28" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, 0, -24)
+skeleton = NodePath("../..")
+
+[node name="Platform85" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform86" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform87" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform29" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform84" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, -61, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform30" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(13, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform31" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform32" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, -24)
+skeleton = NodePath("../..")
+
+[node name="Platform33" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, -25)
+skeleton = NodePath("../..")
+
+[node name="Platform34" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, -25)
+skeleton = NodePath("../..")
+
+[node name="Platform35" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -26)
+skeleton = NodePath("../..")
+
+[node name="Platform36" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, -27)
+skeleton = NodePath("../..")
+
+[node name="Platform76" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, -26)
+skeleton = NodePath("../..")
+
+[node name="Platform77" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, -25)
+skeleton = NodePath("../..")
+
+[node name="Platform78" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -25)
+skeleton = NodePath("../..")
+
+[node name="Platform37" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, -26)
+skeleton = NodePath("../..")
+
+[node name="Platform38" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -27)
+skeleton = NodePath("../..")
+
+[node name="Platform88" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -27)
+skeleton = NodePath("../..")
+
+[node name="Platform39" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -28)
+skeleton = NodePath("../..")
+
+[node name="Platform40" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -28)
+skeleton = NodePath("../..")
+
+[node name="Platform41" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -27)
+skeleton = NodePath("../..")
+
+[node name="Platform42" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(9, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -28)
+skeleton = NodePath("../..")
+
+[node name="Platform43" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 23, -8, 0, -17)
+skeleton = NodePath("../..")
+
+[node name="Platform44" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(11, 0, 0, 0, 1, 0, 0, 0, 19, -14, 0, -18)
+skeleton = NodePath("../..")
+
+[node name="Platform46" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -8)
+skeleton = NodePath("../..")
+
+[node name="Platform45" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(43, 0, 0, 0, 1, 0, 0, 0, 7, -41, 0, -18)
+skeleton = NodePath("../..")
+
+[node name="Platform47" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(43, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform48" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(11, 0, 0, 0, 1, 0, 0, 0, 5, -54, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform49" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform50" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform51" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform52" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform53" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform54" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform55" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform56" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform57" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform58" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, -60, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform59" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -9)
+skeleton = NodePath("../..")
+
+[node name="Platform60" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform61" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform62" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -16)
+skeleton = NodePath("../..")
+
+[node name="Platform81" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -20)
+skeleton = NodePath("../..")
+
+[node name="Platform82" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -15)
+skeleton = NodePath("../..")
+
+[node name="Platform83" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 0, -14)
+skeleton = NodePath("../..")
+
+[node name="Platform63" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -13)
+skeleton = NodePath("../..")
+
+[node name="Platform64" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -12)
+skeleton = NodePath("../..")
+
+[node name="Platform65" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, -20, 0, -11)
+skeleton = NodePath("../..")
+
+[node name="Platform66" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -10)
+skeleton = NodePath("../..")
+
+[node name="Platform67" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 5, -21, 0, -24)
+skeleton = NodePath("../..")
+
+[node name="Platform68" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 3, -31, 0, -24)
+skeleton = NodePath("../..")
+
+[node name="Platform69" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, -23, 0, -24)
+skeleton = NodePath("../..")
+
+[node name="Platform70" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform71" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, -41, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform72" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform73" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, -22)
+skeleton = NodePath("../..")
+
+[node name="Platform74" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, -23)
+skeleton = NodePath("../..")
+
+[node name="Platform75" parent="." instance=ExtResource("1_maegc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, -39, 0, -23)
+skeleton = NodePath("../..")

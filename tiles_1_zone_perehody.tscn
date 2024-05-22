@@ -1,0 +1,3065 @@
+[gd_scene load_steps=14 format=3 uid="uid://dhppj6khcdho4"]
+
+[ext_resource type="Material" uid="uid://de0pmmeom20gy" path="res://grap_resurce/materials/material_tile.tres" id="1_6re30"]
+[ext_resource type="ArrayMesh" uid="uid://cqqn7q07h47yk" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_bolshoj.obj" id="2_trdff"]
+[ext_resource type="ArrayMesh" uid="uid://khlvcl826bu2" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_malyj.obj" id="3_0qvd7"]
+[ext_resource type="ArrayMesh" uid="uid://corkurro5jvoi" path="res://grap_resurce/3d_model_object_set_1/kamen_perehod_prjamoj.obj" id="4_6idus"]
+[ext_resource type="ArrayMesh" uid="uid://x66smwvrsnge" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_bolshoj.obj" id="5_g6433"]
+[ext_resource type="ArrayMesh" uid="uid://1pu06oehs6pb" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_malyj.obj" id="6_atk4q"]
+[ext_resource type="ArrayMesh" uid="uid://ct20nu5v7251i" path="res://grap_resurce/3d_model_object_set_1/pesok_perehod_prjamoj.obj" id="7_1r55l"]
+[ext_resource type="ArrayMesh" uid="uid://2tklc3v6ftvb" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_bolshoj.obj" id="8_wbxqn"]
+[ext_resource type="ArrayMesh" uid="uid://ckt76nxgcgvr4" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_malyj.obj" id="9_d23ym"]
+[ext_resource type="ArrayMesh" uid="uid://dd77jg5iid3qe" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_prjamoj.obj" id="10_q8kym"]
+[ext_resource type="ArrayMesh" uid="uid://xpvr1jwkc81g" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_bolshoj.obj" id="11_kbktn"]
+[ext_resource type="ArrayMesh" uid="uid://boihp2qkdoutg" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_malyj.obj" id="12_ttg4q"]
+[ext_resource type="ArrayMesh" uid="uid://b27eudtd730sr" path="res://grap_resurce/3d_model_object_set_1/zemlja_perehod_prjamoj.obj" id="13_kagc8"]
+
+[node name="Tiles_1_zone_perehody" type="Node3D"]
+
+[node name="KamenPerehodBolshoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -14, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -58, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -56, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -56, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -58, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -12, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -58, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -59, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -59, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -58, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -56, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -55, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -55, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -56, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -13, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj40" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -57, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj41" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -27, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -26, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -26, 0.51, 15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj44" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -27, 0.51, 15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj45" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -57, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -59, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj47" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -55, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -13, 0.51, 11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -64, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -61, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -60, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -42, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, 1.001, 0, 1.001, 0, -1.001, 0, -1.07392e-07, -44, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, 1.001, 0, 1.001, 0, -1.001, 0, -1.07392e-07, -46, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, 1.001, 0, 1.001, 0, -1.001, 0, -1.07392e-07, -48, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -41, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodBolshoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -39, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("2_trdff")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -61, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -64, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -48, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -46, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -44, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -8.75102e-08, 0, 1.001, 0, 8.75102e-08, 0, -1.001, -42, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -41, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodMalyj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -39, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("3_0qvd7")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -53, -0.49, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -57, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -56, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -55, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -54, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -53, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -52, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -51, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -47, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -45, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -43, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, -1.001, 0, 1.001, 0, 1.001, 0, -1.07392e-07, -42, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, -1.001, 0, 1.001, 0, 1.001, 0, -1.07392e-07, -42, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj48" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, -1.001, 0, 1.001, 0, 1.001, 0, -1.07392e-07, -42, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj49" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.07392e-07, 0, -1.001, 0, 1.001, 0, 1.001, 0, -1.07392e-07, -42, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -50, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -49, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -62, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -63, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -40, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -38, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -37, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -36, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -35, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -34, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj27" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -33, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -33, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -32, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -31, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -30, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -29, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -28, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj34" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -27, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -26, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj36" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -25, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -24, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -23, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="KamenPerehodPrjamoj39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -23, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("4_6idus")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -14, 0.51, 13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, 6, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, 10, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, 13, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, 14, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -16, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -60, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -64, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -64, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -63, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.001, 0, 0, 0, 1.001, 0, 0, 0, 1.001, -63, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.001, -0.00192178, 0, 0.00192178, 1.001, 0, 0, 0, 1.001, -64, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodBolshoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -59, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("5_g6433")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -12, 0.51, 13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.98023e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, 2.98023e-08, 10, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.174e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -1.174e-07, 14, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 1.61199e-07, 0, 1.002, 0, -1.61199e-07, 0, -1.002, 14, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -60, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodMalyj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -64, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("6_atk4q")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -13, 0.51, 13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 13, 0.511, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 15, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 16, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 17, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 18, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 19, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 20, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, 20, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, 22, 0.511, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, 14, 0.511, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, 6, 0.51, -4)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, 6, 0.51, -5)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, 6, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, 7, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, 8, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, 9, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -15, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -9, 0.51, -5)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -61, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -59, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="PesokPerehodPrjamoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -65, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("7_1r55l")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -14, 0.51, 12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -21, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -19, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -18, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -15, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -23, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -24, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -32, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -41, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -40, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -46, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -46, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -45, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -45, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -25, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -30, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -22, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -17, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -15, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -21, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodBolshoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -19, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("8_wbxqn")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -12, 0.51, 12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -18, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -21, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -23, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -24, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -25, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, -25, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -22, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj40" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -24, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 2.62793e-07, 0, 1.002, 0, -2.62793e-07, 0, -1.002, -24, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 2.62793e-07, 0, 1.002, 0, -2.62793e-07, 0, -1.002, -25, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj43" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -32, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj44" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -35, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -3.50391e-07, 0, 1.002, 0, 3.50391e-07, 0, 1.002, -35, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj46" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.94189e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -3.94189e-07, -30, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj36" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -30, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj37" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, -38, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, -47, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj48" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -39, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj49" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 2.62793e-07, 0, 1.002, 0, -2.62793e-07, 0, -1.002, -39, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj50" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -47, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj51" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -46, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj55" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -47, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj56" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -3.50391e-07, 0, 1.002, 0, 3.50391e-07, 0, 1.002, -47, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj57" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -3.50391e-07, 0, 1.002, 0, 3.50391e-07, 0, 1.002, -46, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj58" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.94189e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -3.94189e-07, -40, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj59" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 4.37988e-07, 0, 1.002, 0, -4.37988e-07, 0, -1.002, -40, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj60" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 4.37988e-07, 0, 1.002, 0, -4.37988e-07, 0, -1.002, -45, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj52" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -45, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj53" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, -41, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj54" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 2.62793e-07, 0, 1.002, 0, -2.62793e-07, 0, -1.002, -40, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj38" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -38, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75977e-08, 0, 1.002, 0, -8.75977e-08, 0, -1.002, -30, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -17, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -15, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -13, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 2.62793e-07, 0, 1.002, 0, -2.62793e-07, 0, -1.002, -13, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj32" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -18, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj33" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -19, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj34" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 3.06592e-07, -20, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -3.50391e-07, 0, 1.002, 0, 3.50391e-07, 0, 1.002, -20, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -21, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -19, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj27" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, -2.18994e-07, -18, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -11, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -7, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -7, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -4, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -4, 0.511, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -7, 0.511, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, 3, 0.511, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, 5, 0.511, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75977e-08, 0, 1.002, 0, 8.75977e-08, 0, -1.002, 5, 0.511, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, 3, 0.511, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -11, 0.511, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -10, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -10, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -6, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodMalyj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -6, 0.511, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("9_d23ym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -13, 0.51, 12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -19, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -17, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -16, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -14, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -20, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -22, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -25, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -24, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj49" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -31, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj50" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -32, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj51" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -33, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj52" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -34, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj53" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -35, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj54" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -36, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj55" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -37, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj84" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -33, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj86" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -34, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj87" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -35, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj88" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -36, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj91" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -42, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj92" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -43, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj93" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -44, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj94" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -40, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj95" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -46, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj96" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -44, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj97" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -43, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj98" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -42, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj99" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -41, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj100" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -45, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj101" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -47, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj102" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -39, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj118" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -40, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj89" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -37, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj66" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -25, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj67" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -26, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj68" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -27, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj69" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -28, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj70" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -29, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj75" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -31, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj77" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -33, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj83" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -32, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj85" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -34, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj56" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -37, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj57" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -36, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj58" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -35, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj59" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -34, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj60" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -33, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj61" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -32, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj90" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -41, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj103" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -42, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj104" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -43, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj105" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -44, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj106" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -45, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj107" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -42, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj108" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -43, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj109" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -44, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj110" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -45, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj112" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -44, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj116" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -46, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj117" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -47, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj113" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -43, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj114" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -42, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj115" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -41, 0.51, -13)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj65" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -31, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj81" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -33, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj82" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -34, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj71" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -30, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj72" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -29, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj73" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -28, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj74" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -27, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj76" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -26, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj78" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -24, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj79" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -2.18994e-07, -35, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj80" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -2.18994e-07, -35, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj62" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -31, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj63" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -30, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj64" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -2.18994e-07, -38, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -23, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -19, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -18, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -16, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -14, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj48" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -20, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 3.55271e-15, 0, 1.002, 0, -3.55271e-15, 0, 1.002, -20, 0.51, -14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -18, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -13, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -13, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj40" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -13, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -10, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -9, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -8, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -6, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -5, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -5, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -6, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -8, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -9, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -10, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -11, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -4, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, 5, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj27" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.96046e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -5.96046e-08, 3, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -1.03403e-07, 0, 1.002, 0, 1.03403e-07, 0, -1.002, 4, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj29" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.91001e-07, 0, 1.002, 0, -1.91001e-07, 0, 1.002, 4, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18994e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -2.18994e-07, -7, 0.511, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.06592e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 3.06592e-07, -7, 0.511, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -9, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -9, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -8, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -6.98814, 0.509999, -10.001)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -7, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.96046e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -5.96046e-08, -10, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.47202e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.47202e-07, -6, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -1.03403e-07, 0, 1.002, 0, 1.03403e-07, 0, -1.002, -9, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="TravaPerehodPrjamoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -8, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("10_q8kym")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -14, 0.51, 14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, 6, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, 7, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, 8, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75977e-08, 0, 1.002, 0, -8.75977e-08, 0, -1.002, 11, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, 4, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, 5, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, 6, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, 6, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -9, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -8, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -7, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -13, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -10, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -9, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -14, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -10, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -23, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -3, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, 3, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -12, 0.51, 14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -8, 0.51, -5)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -10, 0.51, -5)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -13, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -15, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -8, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -8, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -6, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75977e-08, 0, 1.002, 0, -8.75977e-08, 0, -1.002, 6, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -4, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -7, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -8, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -9, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -11, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75977e-08, 0, 1.002, 0, -8.75977e-08, 0, -1.002, 7, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, 8, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75977e-08, 0, 1.002, 0, -8.75977e-08, 0, -1.002, 11, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, 3, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, 4, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.75195e-07, 0, 1.002, 0, 1.75195e-07, 0, 1.002, -6, -1.49, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -15, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -3, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -10, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -23, 0.511, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -24, 0.511, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, -14, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, -1.51147e-07, 0, 1.001, 0, 1.51147e-07, 0, -1.001, 3, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -13, 0.51, 14)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -40, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -38, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -52, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -61, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodBolshoj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -54, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("11_kbktn")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj29" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -41, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -41, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -38, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -37, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj33" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -37, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -40, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -38, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj74" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -39, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj75" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -41, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj76" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -41, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj77" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -37, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj78" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -37, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj79" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -39, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj80" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75976e-08, 0, 1.002, 0, -8.75976e-08, 0, -1.002, -40, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj60" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -7, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj61" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.19209e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -1.19209e-07, 3, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj62" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.19209e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -1.19209e-07, 3, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj63" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.19209e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -1.19209e-07, 5, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj64" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.19209e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, -1.19209e-07, 6, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj65" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.16117e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, 3.16117e-08, 6, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj66" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 1.21872e-08, 0, 1.002, 0, -1.21872e-08, 0, -1.002, 5, 0.51, -15)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj67" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 1.21872e-08, 0, 1.002, 0, -1.21872e-08, 0, -1.002, 9, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj68" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 1.21872e-08, 0, 1.002, 0, -1.21872e-08, 0, -1.002, 10, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj69" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 1.21872e-08, 0, 1.002, 0, -1.21872e-08, 0, -1.002, 12, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj52" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 0, 0, 1.002, 0, 0, 0, 1.002, -10, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj53" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -11, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj54" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -4, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj55" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -4, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj56" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -4, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj57" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37988e-08, -4, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj58" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.06581e-14, 0, 1.002, 0, -1.06581e-14, 0, 1.002, -5, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj59" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.06581e-14, 0, 1.002, 0, -1.06581e-14, 0, 1.002, -6, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -15, 0.511, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.41048e-08, 0, 1.009, 0, 1.009, 0, -1.009, 0, -4.41048e-08, -15, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -14, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -12, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -11, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj40" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -11, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj49" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -14, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj50" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -8, 0.51, -7)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj51" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -8, 0.51, -6)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj41" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -12, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -13, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj43" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -7, -0.49, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -10, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -9, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -8, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -7, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj48" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -6, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -9, 0.511, -5)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -15, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -55, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -55, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj81" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -55, 0.511, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj82" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.41048e-08, 0, 1.009, 0, 1.009, 0, -1.009, 0, -4.41048e-08, -55, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj83" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -54, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj84" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -51, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj85" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -54, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj86" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -52, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj87" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -53, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj88" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -50, 0.51, -12)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj121" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj122" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -10)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj123" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -9)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj124" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75974e-08, 0, 1.002, 0, 8.75974e-08, 0, -1.002, -50, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj125" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75974e-08, 0, 1.002, 0, 8.75974e-08, 0, -1.002, -50, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj126" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75974e-08, 0, 1.002, 0, 8.75974e-08, 0, -1.002, -51, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj127" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75974e-08, 0, 1.002, 0, 8.75974e-08, 0, -1.002, -52, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj128" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75974e-08, 0, 1.002, 0, 8.75974e-08, 0, -1.002, -53, 0.51, -8)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj89" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -55, 0.51, -11)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj37" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -55, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75972e-08, 0, 1.002, 0, -8.75972e-08, 0, -1.002, -49, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj45" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75972e-08, 0, 1.002, 0, -8.75972e-08, 0, -1.002, -52, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -54, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37984e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37984e-08, -49, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, 8.75972e-08, 0, 1.002, 0, -8.75972e-08, 0, -1.002, -58, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj48" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -61, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -63, 0.52, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj44" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37984e-08, 0, -1.002, 0, 1.002, 0, 1.002, 0, -4.37984e-08, -58, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj38" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -55, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj90" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -55, 0.511, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj91" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.41048e-08, 0, 1.009, 0, 1.009, 0, -1.009, 0, -4.41048e-08, -55, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj109" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -51, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj129" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -53, 0.51, -16)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj110" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -50, 0.51, -17)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj111" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj112" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj113" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -49, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj114" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -58, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj117" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -58, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj115" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -58, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj116" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, -1.002, 0, 1.002, 0, 1.002, 0, 1.31396e-07, -58, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj118" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -60, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj119" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -59, 0.51, -18)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj93" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -51, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj94" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -54, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj95" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -52, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj96" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -53, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj97" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -50, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj98" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -55, 0.51, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj39" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31396e-07, 0, 1.002, 0, 1.002, 0, -1.002, 0, 1.31396e-07, -63, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodMalyj40" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, -1.42109e-14, 0, 1.002, 0, 1.42109e-14, 0, 1.002, -63, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("12_ttg4q")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj99" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -63, 0.511, -20)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj100" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.41048e-08, 0, 1.009, 0, 1.009, 0, -1.009, 0, -4.41048e-08, -63, 0.51, -21)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj101" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.002, 0, -8.75976e-08, 0, 1.002, 0, 8.75976e-08, 0, -1.002, -62, 0.51, -19)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj102" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -59, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj103" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -62, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj104" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -60, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj105" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.002, 0, 1.75195e-07, 0, 1.002, 0, -1.75195e-07, 0, 1.002, -61, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj106" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37988e-08, 0, 1.002, 0, 1.002, 0, -1.002, 0, -4.37988e-08, -63, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37551e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, -4.37551e-08, -3, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3, 0.51, -23)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -2, 0.51, -22)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -19, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -18, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -17, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -16, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -15, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -13, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -12, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -11, 0.51, -26)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -9, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -8, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj36" type="MeshInstance3D" parent="."]
+transform = Transform3D(7.55734e-08, 0, 1.001, 0, 1.001, 0, -1.001, 0, 7.55734e-08, -10, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj27" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -7, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -6, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -5, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -4, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -4, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, 4.00345, 0.51, -24.0003)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, 5, 0.51, -24)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -22, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -21, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -20, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")
+
+[node name="ZemljaPerehodPrjamoj16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.001, 0, 1.51147e-07, 0, 1.001, 0, -1.51147e-07, 0, -1.001, -20, 0.51, -25)
+material_override = ExtResource("1_6re30")
+mesh = ExtResource("13_kagc8")
+skeleton = NodePath("../../..")

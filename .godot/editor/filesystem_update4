@@ -24,6 +24,10 @@ res://MapTools/collision/box.tscn
 res://MapTools/collision/bonfire.tscn
 res://koster_fire_on.tscn
 res://Menu/MainMenu.tscn
-res://scripts/door.gd
-res://tests/data/item_definitions_grid.tres
 res://Puska/puska.tscn
+res://rakushki.tscn
+res://rostuschij_glaz.tscn
+res://oduvanchik.tscn
+res://trava.tscn
+res://kusti.tscn
+res://zabor.tscn

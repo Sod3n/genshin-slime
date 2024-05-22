@@ -1,0 +1,500 @@
+[gd_scene load_steps=10 format=3 uid="uid://wckjg68kqyey"]
+
+[ext_resource type="PackedScene" uid="uid://dpmhf7ae8sr8g" path="res://svetjaschijsja_oduvanchik.tscn" id="1_w1sio"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_pcfp2"]
+[ext_resource type="ArrayMesh" uid="uid://bgvojp4vwym3u" path="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik_001.obj" id="3_4yaou"]
+[ext_resource type="ArrayMesh" uid="uid://3fbjrwkc4b4u" path="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik_002.obj" id="4_pvwu6"]
+[ext_resource type="ArrayMesh" uid="uid://i3k17p2hcbhn" path="res://grap_resurce/3d_model_object_set_1/svetjaschijsja_oduvanchik_003.obj" id="5_nck4e"]
+[ext_resource type="PackedScene" uid="uid://dnqwlhy5331fm" path="res://svetjaschijsja_oduvanchik_005.tscn" id="6_hfhfe"]
+[ext_resource type="PackedScene" uid="uid://2vquxfpa4iac" path="res://svetjaschijsja_oduvanchik_006.tscn" id="7_2sybp"]
+[ext_resource type="PackedScene" uid="uid://dui0vfkcsnq77" path="res://svetjaschijsja_oduvanchik_004.tscn" id="8_olkwa"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_iawv2"]
+data = PackedVector3Array(0.1587, 0.518, 0, -0.1306, 0.518, 0, 0.1587, 0, 0, 0.1587, 0, 0, -0.1306, 0.518, 0, -0.1306, 0, 0, -0.1445, 0.3754, 0.0319, -0.1719, 0.324, 0.0383, -0.1445, 0.3754, -0.0319, -0.1445, 0.3754, -0.0319, -0.1719, 0.324, 0.0383, -0.1719, 0.324, -0.0383, -0.1445, 0.3754, -0.0319, -0.1719, 0.324, -0.0383, -0.0852, 0.3517, -0.0319, -0.0852, 0.3517, -0.0319, -0.1719, 0.324, -0.0383, -0.1007, 0.2956, -0.0383, -0.0852, 0.3517, -0.0319, -0.1007, 0.2956, -0.0383, -0.0852, 0.3517, 0.0319, -0.0852, 0.3517, 0.0319, -0.1007, 0.2956, -0.0383, -0.1007, 0.2956, 0.0383, -0.0852, 0.3517, 0.0319, -0.1007, 0.2956, 0.0383, -0.1445, 0.3754, 0.0319, -0.1445, 0.3754, 0.0319, -0.1007, 0.2956, 0.0383, -0.1719, 0.324, 0.0383, -0.1411, 0.2494, -0.018, -0.1745, 0.2628, -0.018, -0.1411, 0.2494, 0.018, -0.1411, 0.2494, 0.018, -0.1745, 0.2628, -0.018, -0.1745, 0.2628, 0.018, -0.1445, 0.3754, -0.0319, -0.0852, 0.3517, -0.0319, -0.1445, 0.3754, 0.0319, -0.1445, 0.3754, 0.0319, -0.0852, 0.3517, -0.0319, -0.0852, 0.3517, 0.0319, -0.1007, 0.2956, 0.0383, -0.1411, 0.2494, 0.018, -0.1719, 0.324, 0.0383, -0.1719, 0.324, 0.0383, -0.1411, 0.2494, 0.018, -0.1745, 0.2628, 0.018, -0.1007, 0.2956, -0.0383, -0.1411, 0.2494, -0.018, -0.1007, 0.2956, 0.0383, -0.1007, 0.2956, 0.0383, -0.1411, 0.2494, -0.018, -0.1411, 0.2494, 0.018, -0.1719, 0.324, -0.0383, -0.1745, 0.2628, -0.018, -0.1007, 0.2956, -0.0383, -0.1007, 0.2956, -0.0383, -0.1745, 0.2628, -0.018, -0.1411, 0.2494, -0.018, -0.1719, 0.324, 0.0383, -0.1745, 0.2628, 0.018, -0.1719, 0.324, -0.0383, -0.1719, 0.324, -0.0383, -0.1745, 0.2628, 0.018, -0.1745, 0.2628, -0.018)
+
+[node name="Oduvanchik" type="Node"]
+
+[node name="SvetjaschijsjaOduvanchik" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.79033, 0.5, 15.1585)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik19" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.537049, 0, 0.843551, 0, 1, 0, -0.843551, 0, 0.537049, -0.0870401, 0.397617, -5.835)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik20" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.994771, 0, -0.102133, 0, 1, 0, 0.102133, 0, -0.994771, 2.13652, 0.397617, -9.7642)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik21" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.124398, 0, 0.992232, 0, 1, 0, -0.992232, 0, 0.124398, -3.54426, 0.477981, -6.2375)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik22" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.124398, 0, 0.992232, 0, 1, 0, -0.992232, 0, 0.124398, -6.57709, 0.477981, -8.7518)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik23" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.674921, 0, 0.73789, 0, 1, 0, -0.73789, 0, 0.674921, -8.98176, 0.477981, -10.1802)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik30" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.674921, 0, 0.73789, 0, 1, 0, -0.73789, 0, 0.674921, -13.6607, 0.477981, -12.5253)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik31" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.99975, 0, -0.0223559, 0, 1, 0, 0.0223559, 0, -0.99975, -15.6733, 0.477981, -13.2224)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik32" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.99975, 0, -0.0223559, 0, 1, 0, 0.0223559, 0, -0.99975, -17.6976, 0.477981, -13.6068)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik33" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -18.6976, 0.477981, -14.6068)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik37" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -21.5206, 0.477981, -16.904)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik38" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.263014, 0, 0.964792, 0, 1, 0, -0.964792, 0, -0.263014, -36.3938, 0.477981, -14.5565)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik34" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -25.7912, 0.477981, -14.7028)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik35" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -34.3535, 0.477981, -15.305)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik36" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -39.3519, 0.477981, -12.3049)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik14" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4289, 2.5, -22.8415)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik15" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.7903, 2.5, -22.8415)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik16" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.8233, 3.70877, -21.9405)
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SvetjaschijsjaOduvanchik16"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SvetjaschijsjaOduvanchik16/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_iawv2")
+
+[node name="SvetjaschijsjaOduvanchik17" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, -21.1212, 3.00011, -22.2426)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik18" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, -28.3164, 3.8122, -20.4912)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik3" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.871051, 0, 0.491193, 0, 1, 0, -0.491193, 0, 0.871051, -40.5037, 0.5, -11.5256)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik4" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.788998, 0, -0.614395, 0, 1, 0, 0.614395, 0, -0.788998, -42.5037, 0.5, -11.5256)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik41" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.788998, 0, -0.614395, 0, 1, 0, 0.614395, 0, -0.788998, -40.2309, 0.5, -9.3394)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik5" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -43.0648, 0.5, -11.5256)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik6" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -45.359, 0.5, -11.5256)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik7" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -46.5672, 0.5, -12.3375)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik8" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.93296, 0, -0.35998, 0, 1.29849, 0, 0.35998, 0, 0.93296, -45.2796, 0.5, -9.6596)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik9" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.546321, 0, 0.837576, 0, 1.29849, 0, -0.837576, 0, 0.546321, -45.3853, 0.5, -7.2952)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik10" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.546321, 0, 0.837576, 0, 1.29849, 0, -0.837576, 0, 0.546321, -49.1452, 0.5, -5.924)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik11" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.546321, 0, 0.837576, 0, 1.29849, 0, -0.837576, 0, 0.546321, -51.1806, 0.5, -10.7269)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik12" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(-0.997937, 0, -0.0642016, 0, 1.29848, 0, 0.0642016, 0, -0.997937, -53.5003, 0.5, -11.9283)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik13" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.822561, 0, 0.568677, 0, 1.29849, 0, -0.568677, 0, 0.822561, -58.1825, 0.5, -14.3798)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik2" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.958313, 0, 0.285722, 0, 1, 0, -0.285722, 0, 0.958313, 4.09513, 0.551984, -11.2148)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik001" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5495, 0.5, 28.497)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik023" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4505, 1.5, -22.503)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik024" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4505, 2.5, -24.503)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik025" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4505, 2.5, -25.503)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik031" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.4505, 2.5, -22.503)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik002" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27678, 0.5, 28.6264)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik017" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.72322, 1.5, -23.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik018" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -12.7232, 1.5, -23.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik029" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -12.7232, 1.5, -26.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik026" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -9.72322, 1.5, -28.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik019" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -16.7232, 1.5, -22.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik028" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -19.7232, 1.5, -28.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik020" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -21.7232, 1.5, -21.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik027" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -29.7232, 1.5, -23.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik033" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, 1, -33.3439, 0.253121, -23.3737)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik021" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -23.7232, 1.5, -21.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik022" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -26.7232, 1.5, -22.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik032" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -33.7232, 1.5, -22.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik030" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -36.7232, 2.5, -23.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik003" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.98122, 0.5, 28.5737)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik052" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.451331, 0, -0.986508, 0, 1, 0, 0.942423, 0, -0.472444, -10.3153, 0.564823, -11.6024)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik034" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0684994, 0.01696, -0.616893, -0.250885, 0.743961, 1.15265e-09, 0.865539, 0.214302, 0.0488214, -14.3808, 1.50564, -23.9193)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik035" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.239292, -0.0592472, -0.594856, -0.250885, 0.743961, -2.98752e-10, 0.834619, 0.206647, -0.17055, -18.3808, 1.50564, -22.357)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik036" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.768943, 0.190386, -0.287377, -0.250885, 0.743961, -7.06375e-09, 0.403208, 0.0998319, 0.548047, -25.9877, 1.50564, -21.3788)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik037" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.233255, 0.0577525, -0.596073, -0.250885, 0.743961, -2.02677e-09, 0.836326, 0.207069, 0.166247, -30.4896, 3.00361, -22.0982)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik015" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.69282, 0, 0.5, 0, 0.8, 0, -0.4, 0, 0.866025, -38.2437, 0.5, -17.5317)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik005" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.731401, 0, 0.681947, 0, 1, 0, -0.681947, 0, 0.731401, 16.2849, 0.5, -16.966)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik057" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.383598, 0, 0.419438, 0, 0.7, 0, -0.357661, 0, 0.449855, -13.7151, 0.5, -3.966)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik039" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.956284, 0, -0.292438, 0, 1, 0, 0.292438, 0, 0.956284, 21.2849, 0.5, -16.966)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik038" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.188924, 0, 0.981991, 0, 1, 0, -0.981991, 0, 0.188924, -7.14627, 0.5, -12.0032)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik016" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.731401, 0, 0.681947, 0, 1, 0, -0.681947, 0, 0.731401, -9.70108, 0.5, -21.1404)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik014" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(0.731401, 0, 0.681947, 0, 1, 0, -0.681947, 0, 0.731401, -60.2668, 0.5, -13.747)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik010" parent="." instance=ExtResource("6_hfhfe")]
+transform = Transform3D(-0.655888, 0, -0.754858, 0, 1, 0, 0.754858, 0, -0.655888, 15.9718, 0.5, -20.4749)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik006" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2253, 0.5, -19.018)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik012" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.3198, 0.5, -13.9818)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik013" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.109231, 0, 0.994016, 0, 0.86718, 0, -0.994016, 0, 0.109231, -39.5861, 0.5, -16.0757)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik011" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(-1.12362, 0, -0.681805, 0, 1.63465, 0, 0.673831, 0, -1.13691, 17.1827, 0.517345, -19.0685)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik008" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.737207, 0, -0.675667, 0, 1, 0, 0.675667, 0, 0.737207, 11.7682, 0.5, -17.4482)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik051" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.409032, 0, -0.91252, 0, 1.20309, 0, 0.91252, 0, 0.409032, -9.88918, 0.5, -11.6136)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik009" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.737207, 0, -0.675667, 0, 1, 0, 0.675667, 0, 0.737207, 11.7682, 2.5, -17.4482)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik007" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.84045, 0.5, -13.6918)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik053" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.84045, 0.5, -13.6918)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik056" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7767, 0.5, -15.7443)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik054" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.964806, 0, -0.262964, 0, 1, 0, 0.262964, 0, 0.964806, -26.6247, 0.5, -15.7611)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik055" parent="." instance=ExtResource("7_2sybp")]
+transform = Transform3D(0.847687, 0, 0.530496, 0, 1.20009, 0, -0.530496, 0, 0.847687, -31.5231, 0.500001, -16.8844)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik004" parent="." instance=ExtResource("8_olkwa")]
+transform = Transform3D(0.00649384, 0, -1.37763, 0, 1.17163, 0, 0.99752, 0, 0.00896834, 10.0148, 0.5, -17.9361)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik42" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.156021, 0, 0.987754, 0, 1, 0, -0.987754, 0, 0.156021, -8.50254, 0.477981, -0.536098)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik28" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -28.4449, 0.5, -14.7309)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik29" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.89848, 0, 0.439014, 0, 1, 0, -0.439014, 0, 0.89848, -30.9709, 0.569789, -14.4332)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik43" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -32.3902, 0.5, -9.5237)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik44" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.89848, 0, 0.439014, 0, 1, 0, -0.439014, 0, 0.89848, -34.9162, 0.569789, -9.226)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik39" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -19.2154, 0.487979, -6.6393)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik40" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.999864, 0, -0.0164924, 0, 1, 0, 0.0164924, 0, 0.999864, -22.4164, 0.487979, -7.7156)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik24" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 14.8782, 3.5, -17.7644)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik25" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 17.1633, 3.5, -16.4451)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik26" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 12.3541, 4.70877, -18.1813)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik27" parent="." instance=ExtResource("1_w1sio")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 7.91702, 4.00011, -21.0919)
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik040" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5495, 4.5, -20.503)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("3_4yaou")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik041" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 15.7554, 2.5, -17.8724)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik042" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 17.2554, 2.5, -20.4704)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik043" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 20.8535, 2.5, -20.7025)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik044" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 2.08616e-07, 0, 1, 0, -2.08616e-07, 0, 1, 11.7913, 2.5, -19.0063)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik045" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 2.08616e-07, 0, 1, 0, -2.08616e-07, 0, 1, 8.83189, 2.5, -18.821)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik046" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 9.27679, 3.5, -17.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik047" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -1.19209e-07, 0, 1, 0, 1.19209e-07, 0, -1, 12.2768, 5.5, -17.3736)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("4_pvwu6")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik048" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.373447, -0.0924632, -0.558656, -0.250885, 0.743961, 4.17413e-09, 0.783828, 0.194071, -0.266166, 14.5927, 2.50564, -19.1737)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik049" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.624542, -0.154633, -0.429885, -0.250885, 0.743961, -1.56861e-08, 0.603155, 0.149338, -0.445129, 10.3475, 2.50564, -19.8208)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[node name="SvetjaschijsjaOduvanchik050" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.50726, -0.125595, -0.502227, -0.250885, 0.743961, -2.63401e-09, 0.704654, 0.174468, -0.361538, 24.6907, 3.81454, -18.8161)
+material_override = ExtResource("2_pcfp2")
+mesh = ExtResource("5_nck4e")
+skeleton = NodePath("../../..")
+
+[editable path="SvetjaschijsjaOduvanchik053"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cgcr1ivqgu3sb"]
 
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_4d2hc"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_4d2hc"]
 [ext_resource type="ArrayMesh" uid="uid://di4sf0h05xnn0" path="res://grap_resurce/3d_model_object_set_1/pen_002.obj" id="2_dnbfh"]
 
 [node name="Pen002" type="MeshInstance3D"]

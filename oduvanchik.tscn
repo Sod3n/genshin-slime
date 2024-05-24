@@ -44,6 +44,7 @@ skeleton = NodePath("../../..")
 
 [node name="SvetjaschijsjaOduvanchik31" parent="." instance=ExtResource("1_w1sio")]
 transform = Transform3D(-0.99975, 0, -0.0223559, 0, 1, 0, 0.0223559, 0, -0.99975, -15.6733, 0.477981, -13.2224)
+visible = false
 skeleton = NodePath("../../..")
 
 [node name="SvetjaschijsjaOduvanchik32" parent="." instance=ExtResource("1_w1sio")]

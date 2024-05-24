@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://co7pt2sfs4c7f"]
+
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_0der5"]
+[ext_resource type="ArrayMesh" uid="uid://dm278kt87gvt" path="res://grap_resurce/3d_model_object_set_2/koster.obj" id="2_ldhvf"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_l116k"]
+lightmap_size_hint = Vector2i(1, 1)
+flip_faces = true
+uv2_padding = 0.0
+size = Vector2(0.03, 0.03)
+
+[node name="Koster_Fire_on" type="MeshInstance3D"]
+transform = Transform3D(-0.999966, -0.00325083, -0.00755037, -0.00325098, 0.999995, 7.02003e-06, 0.00755031, 3.15715e-05, -0.999972, 0, 0, 0)
+material_override = ExtResource("1_0der5")
+mesh = ExtResource("2_ldhvf")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, -4.43521e-11, 4.65661e-10, -8.61888e-11, 1, 5.54428e-09, 0, 6.18456e-11, 1, 0.0649185, 0.536334, -0.124755)
+light_color = Color(0.2808, 0.72, 0.60288, 1)
+light_size = 3.0
+omni_range = 2.52231
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+process_mode = 3
+transform = Transform3D(0.184392, -0.982833, -0.00618929, 0.982833, 0.184346, 0.00739515, -0.00612723, -0.00744665, 0.999953, -0.00117976, 0.362892, 2.54957e-06)
+amount = 20
+lifetime = 1.5
+speed_scale = 0.3
+explosiveness = 0.02
+local_coords = true
+mesh = SubResource("QuadMesh_l116k")
+emission_shape = 1
+emission_sphere_radius = 0.01
+emission_colors = PackedColorArray(0, 0, 0, 1)
+gravity = Vector3(0, 0.05, 0)
+initial_velocity_max = 1.0
+color = Color(0.824332, 0.332434, 0.275895, 1)

@@ -14,6 +14,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	print(State.get(state_variable))
 	if State.get(state_variable):
 		if opened_collision_shape_3d != null:
 			opened_collision_shape_3d.disabled = false

@@ -45,3 +45,8 @@ res://Puska/patrul_system.gd
 res://MapTools/collision/arena_door.tscn
 res://Inventory/pickup.gd
 res://QuestsNDialogue/shortcuts.gd
+res://Menu/EndMenu.tscn
+res://scripts/SceneManagment.gd
+res://maps/ColorRect2.gd
+res://scripts/door.gd
+res://quests/get_materials_quest.gd

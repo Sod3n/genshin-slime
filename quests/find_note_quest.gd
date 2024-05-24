@@ -6,6 +6,7 @@ func start():
 func update():
 	objective_completed = true
 	Shortcuts.complete_quest("find_note")
+	State.arena_opened = false
 
 func get_progress() -> String:
 	return ""

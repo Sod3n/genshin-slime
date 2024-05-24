@@ -15,8 +15,8 @@ func update():
 		QuestSystem.complete_quest(self)
 
 func get_progress() -> String:
-	return "%s/3 брёвен
-	%s/3 свечек" % [State.sticks_count, State.candles_count]
+	return "%s/3 брёвен передано
+	%s/3 свечек передано" % [State.sticks_count, State.candles_count]
 
 func complete():
 	pass

@@ -8,6 +8,7 @@ if is_quest_completed("get_materials"):
 	if is_quest_active("find_note"):
 		if remove_items("book"):
 			do update_quest("find_note")
+			do arena_opened = false
 			Розмерта: Я нашла твои записи. Там был какой-то монстр.
 			Айне: Да… монстр…
 			Айне: Покажи мне записи.
@@ -79,12 +80,11 @@ else if not is_quest_completed("get_into_town"):
 if is_quest_completed("get_into_town") and remove_items("key"):
 	Вы используете ключ и открываете ворота.
 	do arena_opened = true
-else:
+elif not arena_opened:
 	Розмерта: Ворота заперты и я не смогу попасть внутрь. Наверное, оно к лучшему.
 => END
 
 ~ open_castle
 if is_quest_completed("solve_puzzle"):
-	...
-
+	do change_scene("end")
 => END

@@ -1,6 +1,6 @@
 extends Node
 
-@export var time_stay = 3
+@export var time_stay = 0.5
 
 @onready var mob = get_parent()
 

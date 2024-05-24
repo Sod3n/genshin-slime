@@ -1,4 +1,4 @@
-[gd_scene load_steps=959 format=3 uid="uid://cgju0ifp8jt1"]
+[gd_scene load_steps=960 format=3 uid="uid://cgju0ifp8jt1"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_r4vuu"]
 [ext_resource type="PackedScene" uid="uid://bk7b6vnk7eoxr" path="res://QuestsNDialogue/NPC/TestNPC.tscn" id="2_4sw0y"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://QuestsNDialogue/helper/actionable.gd" id="3_8f8v1"]
 [ext_resource type="Resource" uid="uid://dh24xscnfjm2k" path="res://QuestsNDialogue/dialogue/scene_1_quest_1.dialogue" id="4_1l7rd"]
 [ext_resource type="ArrayMesh" uid="uid://drso28483i5r" path="res://grap_resurce/3d_model_object_set_1/bochka_002.obj" id="4_2jec7"]
+[ext_resource type="Script" path="res://maps/ColorRect2.gd" id="4_2yy24"]
 [ext_resource type="ArrayMesh" uid="uid://creksy7yxffl5" path="res://grap_resurce/3d_model_object_set_1/skala_003.obj" id="4_4vlc8"]
 [ext_resource type="ArrayMesh" uid="uid://2tklc3v6ftvb" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_bolshoj.obj" id="4_10vce"]
 [ext_resource type="Texture2D" uid="uid://nfnnp4740da1" path="res://images/ghost.png" id="5_r1k7p"]
@@ -2757,6 +2758,18 @@ size = Vector3(1, 2.70129, 1)
 visible = false
 
 [node name="GUI" parent="." index="1" instance=ExtResource("101_hjtwn")]
+
+[node name="ColorRect" type="ColorRect" parent="GUI" index="1"]
+unique_name_in_owner = true
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("4_2yy24")
 
 [node name="TestNpc4" parent="." index="2" instance=ExtResource("2_4sw0y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0685308, 1.36687, -21.766)
@@ -6228,9 +6241,11 @@ mesh = ExtResource("83_iba8v")
 skeleton = NodePath("../..")
 
 [node name="MainCamera3D2" parent="." index="13"]
+process_mode = 3
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 4.72186, 6.90631)
 
 [node name="PhantomCameraHost" type="Node" parent="MainCamera3D2" index="0"]
+process_mode = 3
 script = ExtResource("10_7se0s")
 
 [node name="Objects_3d" type="Node3D" parent="." index="14"]
@@ -37291,6 +37306,7 @@ sprite_frames = SubResource("SpriteFrames_s2f8u")
 autoplay = "default"
 
 [node name="PhantomCamera3D2" parent="." index="16"]
+process_mode = 3
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 4.72186, 6.90631)
 follow_damping_value = Vector3(0.6, 0.6, 0.6)
 auto_follow_distance = true
@@ -37654,15 +37670,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.0419, 0.470767, -10)
 state_variable = "bonfire_up"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="27"]
+unique_name_in_owner = true
 stream = ExtResource("110_ettto")
 autoplay = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="28"]
+unique_name_in_owner = true
 stream = ExtResource("111_7lyp4")
 autoplay = true
 
 [node name="Checkpoint" type="Node3D" parent="." index="29"]
-transform = Transform3D(0.694548, 0.401834, -0.596768, 0, 0.829483, 0.558533, 0.719447, -0.387928, 0.576115, 11.8368, 1.50157, -8.38927)
+transform = Transform3D(0.694548, 0.401834, -0.596768, 0, 0.829483, 0.558533, 0.719447, -0.387928, 0.576115, 11.8368, 0.430261, -8.38927)
 
 [node name="ArenaDoor" parent="." index="30" instance=ExtResource("106_r2q1w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.9753)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.97541)

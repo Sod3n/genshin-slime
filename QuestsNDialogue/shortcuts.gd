@@ -52,3 +52,13 @@ func add_item_to_inventory(item_id : String):
 		InventoryInstance.value.create_and_add_item_at(item.prototype_id, free_space.position)
 		return true
 	return false
+	
+func change_scene(scene : String):
+	Shortcuts.fade_in.emit()
+	await Signal(Shortcuts.faded_in)
+	SceneManagment.switch_scene(scene)
+
+signal fade_in()
+signal faded_in()
+signal fade_out()
+signal faded_out()

@@ -13,6 +13,7 @@ var moving = false
 var move_point = Vector3()
 var direction = Vector3()
 var player : Node
+@onready var player_forward = $"../PlayerForward"
 
 func check_eyes():
 	eye_zone.global_rotation.y = Vector2.ZERO.angle_to_point(Vector2(direction.z, direction.x)) - PI/2
@@ -47,6 +48,7 @@ func check_eyes():
 		player = raycast_result.collider
 	else:
 		obstacle_detected = true
+		player = null
 
 func set_move_point(pos):
 	agent.target_position = pos
@@ -65,8 +67,9 @@ func _physics_process(delta):
 			if not agent.is_target_reachable():
 				player = null
 			
-			if is_in_move_point():
+			if player != null and (global_position - player.global_position).length() <= 1.5:
 				catch_player()
+				set_move_point(global_position)
 		else:
 			player == null
 			agent.target_desired_distance = 0.1
@@ -90,8 +93,29 @@ func _physics_process(delta):
 		move_and_slide()
 
 
+var timer := Timer.new()
+
+func _ready():
+	add_child(timer)
+	timer.wait_time = 1.0
+	Shortcuts.fade_out.emit()
+	
+
 func catch_player():
+	player.anim_play("IDLE")
+	await get_tree().create_timer(0.01).timeout
+	get_tree().paused = true
+	Shortcuts.fade_in.emit()
+	await Signal(Shortcuts.faded_in)
 	pick_up.enable()
 	Shortcuts.clear_inventory()
 	player.global_position = checkpoint.global_position
+	player_forward.global_position = player.global_position
+	player.direction = Vector2.ZERO
 	player = null
+	timer.process_mode = 3
+	timer.start()
+	await timer.timeout
+	Shortcuts.fade_out.emit()
+	await Signal(Shortcuts.faded_out)
+	get_tree().paused = false

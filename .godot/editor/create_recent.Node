@@ -1,3 +1,4 @@
+ColorRect
 Node3D
 MeshInstance3D
 Node
@@ -10,5 +11,4 @@ StaticBody3D
 PhantomCameraHost
 AnimationPlayer
 Area3D
-ColorRect
 Button

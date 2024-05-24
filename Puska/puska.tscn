@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cgejjb2nk1pgc"]
+[gd_scene load_steps=11 format=3 uid="uid://cgejjb2nk1pgc"]
 
 [ext_resource type="Script" path="res://Puska/puska.gd" id="1_yd072"]
 [ext_resource type="Texture2D" uid="uid://dblcwxrd7rue2" path="res://images/monster.png" id="2_vvhsc"]
@@ -8,7 +8,13 @@ radius = 0.267963
 height = 1.54446
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jarl7"]
-size = Vector3(4.85706, 1, 1)
+size = Vector3(7.45441, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7twh6"]
+size = Vector3(4.17529, 1, 2.96733)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i82ix"]
+size = Vector3(1.26642, 1, 2.26294)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fy10i"]
 atlas = ExtResource("2_vvhsc")
@@ -61,8 +67,16 @@ debug_enabled = true
 [node name="EYE_ZONE" type="Area3D" parent="."]
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="EYE_ZONE"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.42853, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.12985, 0, 0)
 shape = SubResource("BoxShape3D_jarl7")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="EYE_ZONE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7175, 0, 0.0124588)
+shape = SubResource("BoxShape3D_7twh6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="EYE_ZONE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17503, 0, 0.0360184)
+shape = SubResource("BoxShape3D_i82ix")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)

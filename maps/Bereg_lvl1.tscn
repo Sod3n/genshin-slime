@@ -75,17 +75,17 @@
 [ext_resource type="ArrayMesh" uid="uid://dgudie1e6un27" path="res://grap_resurce/3d_model_object_set_2/drova.obj" id="75_0p5qw"]
 [ext_resource type="ArrayMesh" uid="uid://c6lbpdkdfsx4o" path="res://grap_resurce/3d_model_object_set_2/kolodec.obj" id="76_daibd"]
 [ext_resource type="ArrayMesh" uid="uid://dm278kt87gvt" path="res://grap_resurce/3d_model_object_set_2/koster.obj" id="77_2w77u"]
-[ext_resource type="PackedScene" path="res://kusti.tscn" id="77_s0l7h"]
-[ext_resource type="PackedScene" path="res://zabor.tscn" id="78_uybap"]
+[ext_resource type="PackedScene" uid="uid://f7jnunp7e5qk" path="res://kusti.tscn" id="77_s0l7h"]
+[ext_resource type="PackedScene" uid="uid://kulf87mxjd3p" path="res://zabor.tscn" id="78_uybap"]
 [ext_resource type="ArrayMesh" uid="uid://cjjt4mjy6ngo0" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_001.obj" id="79_06wko"]
-[ext_resource type="PackedScene" path="res://trava.tscn" id="79_31ttt"]
+[ext_resource type="PackedScene" uid="uid://drt43i8y2drko" path="res://trava.tscn" id="79_31ttt"]
 [ext_resource type="PackedScene" uid="uid://c322o015mq0uy" path="res://koster_fire_on.tscn" id="79_gp6mg"]
-[ext_resource type="PackedScene" path="res://oduvanchik.tscn" id="80_4kue8"]
+[ext_resource type="PackedScene" uid="uid://wckjg68kqyey" path="res://oduvanchik.tscn" id="80_4kue8"]
 [ext_resource type="ArrayMesh" uid="uid://bf4kstji62ydb" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_002.obj" id="81_vbdn2"]
 [ext_resource type="ArrayMesh" uid="uid://dx460366rf3ha" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_003.obj" id="82_5gyyi"]
 [ext_resource type="ArrayMesh" uid="uid://cujq2dfmr3gku" path="res://grap_resurce/3d_model_object_set_2/zabor_001.obj" id="83_iba8v"]
-[ext_resource type="PackedScene" path="res://rostuschij_glaz.tscn" id="86_7nt28"]
-[ext_resource type="PackedScene" path="res://rakushki.tscn" id="87_xmapg"]
+[ext_resource type="PackedScene" uid="uid://do7m2taqg80cb" path="res://rostuschij_glaz.tscn" id="86_7nt28"]
+[ext_resource type="PackedScene" uid="uid://des8oujowhwk8" path="res://rakushki.tscn" id="87_xmapg"]
 [ext_resource type="MeshLibrary" uid="uid://c07qxrvq7q1qa" path="res://grap_resurce/grid_map_objects/grid_map_objects_tilesets.tres" id="88_77k3h"]
 [ext_resource type="Texture2D" uid="uid://cd743hd6wg8w4" path="res://Water/Water.png" id="89_mgbti"]
 [ext_resource type="PackedScene" uid="uid://bwm1vfbuijfpq" path="res://Inventory/TestItem.tscn" id="95_olr31"]
@@ -13786,6 +13786,15 @@ shape = SubResource("ConcavePolygonShape3D_qoyhq")
 [node name="RostuschijGlaz" parent="Objects_3d" index="657" instance=ExtResource("86_7nt28")]
 
 [node name="Oduvanchik" parent="Objects_3d" index="658" instance=ExtResource("80_4kue8")]
+
+[node name="SvetjaschijsjaOduvanchik31" parent="Objects_3d/Oduvanchik" index="7"]
+transform = Transform3D(-0.99975, 0, -0.0223559, 0, 1, 0, 0.0223559, 0, -0.99975, -15.6733, 0.477981, -12.9914)
+
+[node name="SvetjaschijsjaOduvanchik32" parent="Objects_3d/Oduvanchik" index="8"]
+transform = Transform3D(-0.99975, 0, -0.0223559, 0, 1, 0, 0.0223559, 0, -0.99975, -17.6976, 0.477981, -13.2056)
+
+[node name="SvetjaschijsjaOduvanchik33" parent="Objects_3d/Oduvanchik" index="9"]
+transform = Transform3D(0.364568, 0, 0.931177, 0, 1, 0, -0.931177, 0, 0.364568, -18.6976, 0.477981, -14.0704)
 
 [node name="Trava" parent="Objects_3d" index="659" instance=ExtResource("79_31ttt")]
 
@@ -37666,3 +37675,6 @@ transform = Transform3D(0.694548, 0.401834, -0.596768, 0, 0.829483, 0.558533, 0.
 
 [node name="ArenaDoor" parent="." index="30" instance=ExtResource("106_r2q1w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.9753)
+
+[editable path="Objects_3d/Oduvanchik"]
+[editable path="Objects_3d/Oduvanchik/SvetjaschijsjaOduvanchik053"]

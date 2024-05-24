@@ -1,5 +1,8 @@
-Node3D
+CPUParticles3D
+GPUParticles3D
+CPUParticles2D
 MeshInstance3D
+Node3D
 Node
 NavigationRegion3D
 CSGCombiner3D
@@ -9,6 +12,3 @@ CollisionShape3D
 StaticBody3D
 PhantomCameraHost
 AnimationPlayer
-Area3D
-ColorRect
-Button

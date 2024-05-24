@@ -10,13 +10,12 @@ mesh = ExtResource("2_gi1kp")
 skeleton = NodePath("../..")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.160685, 0.390555, 0)
-light_color = Color(1, 0.85098, 1, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.160685, 0.390555, 0.0823689)
 light_energy = 0.2
-omni_range = 0.608946
+omni_range = 1.0
+omni_attenuation = 1.07177
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.160685, 0.390555, -0.0923605)
-light_color = Color(1, 0.85098, 1, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.185544, 0.387812, -0.0502024)
 light_energy = 0.2
-omni_range = 0.608946
+omni_range = 1.0

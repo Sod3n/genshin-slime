@@ -1,4 +1,4 @@
-res://maps/Bereg_lvl1.tscn
+res://maps/__map.tscn
 res://quests/solve_puzzle_quest.gd
 res://grap_resurce/materials/material_lol.tres
 res://grap_resurce/materials/test_material_tiles.tres
@@ -7,7 +7,6 @@ res://Water/water_tileset2.tres
 res://grap_resurce/materials/material_tile.tres
 res://grap_resurce/grid_map_objects/grid_map_objects_tilesets.tres
 res://Water/WaterShader.tres
-res://maps/__map.tscn
 res://QuestsNDialogue/gui/gui.tscn
 res://QuestsNDialogue/dialogue/balloon.tscn
 res://MapTools/collision/door.tscn
@@ -15,6 +14,7 @@ res://puzzles/Totem.tscn
 res://puzzles/EqualTotemPuzzles.tscn
 res://maps/arena_test.tscn
 res://maps/first_scene_test_room.tscn
+res://maps/Bereg_lvl1.tscn
 res://Player/player.tscn
 res://QuestsNDialogue/NPC/TestNPC.tscn
 res://glazastyj_kristal.tscn
@@ -30,18 +30,7 @@ res://maps/objects/objects_3d.tscn
 res://maps/Bereg_lvl1_test.tscn
 res://maps/Bereg_lvl1_back.tscn
 res://rostuschij_glaz_001.tscn
-res://Puska/puska.gd
-res://Player/player.gd
-res://QuestsNDialogue/state.gd
-res://quests/get_into_town_quest.gd
-res://quests/get_book_quest.gd
-res://quests/find_note_quest.gd
-res://quests/find_key_quest.gd
-res://QuestsNDialogue/gui/GUI.gd
-res://quests/get_into_town.tres
-res://quests/find_key.tres
-res://quests/get_materials.tres
-res://Puska/patrul_system.gd
 res://MapTools/collision/arena_door.tscn
-res://Inventory/pickup.gd
-res://QuestsNDialogue/shortcuts.gd
+res://pen_002.tscn
+res://oduvanchik.tscn
+res://svetjaschijsja_oduvanchik.tscn

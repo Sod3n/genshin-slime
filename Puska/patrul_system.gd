@@ -21,7 +21,7 @@ func _ready():
 	timer.start(time_stay)
 	
 func _physics_process(delta):
-	if mob.is_in_move_point():
+	if mob.is_in_move_point() and mob.player == null:
 		mob.moving = false
 		if timer.is_stopped(): timer.start(time_stay)
 

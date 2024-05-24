@@ -1,10 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvshfbif53gna"]
+[gd_scene load_steps=8 format=3 uid="uid://cvshfbif53gna"]
 
 [ext_resource type="Script" path="res://scripts/door.gd" id="1_8xj2t"]
 [ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_eb0nt"]
 [ext_resource type="ArrayMesh" uid="uid://c2nvecwatddlk" path="res://grap_resurce/3d_model_object_set_2/zabor_002.obj" id="3_241qb"]
+[ext_resource type="Script" path="res://QuestsNDialogue/helper/actionable.gd" id="4_h7r25"]
+[ext_resource type="Resource" uid="uid://dh24xscnfjm2k" path="res://QuestsNDialogue/dialogue/scene_1_quest_1.dialogue" id="5_kj7g4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gno8o"]
+size = Vector3(1.38525, 2.58276, 1)
 
 [node name="Door" type="Node3D"]
 script = ExtResource("1_8xj2t")
@@ -23,3 +28,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.
 material_override = ExtResource("2_eb0nt")
 mesh = ExtResource("3_241qb")
 skeleton = NodePath("../..")
+
+[node name="Area3D" type="Area3D" parent="Closed"]
+script = ExtResource("4_h7r25")
+dialogue_resource = ExtResource("5_kj7g4")
+dialogue_start = "open_town"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Closed/Area3D"]
+shape = SubResource("BoxShape3D_gno8o")

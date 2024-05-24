@@ -6,6 +6,9 @@ extends CharacterBody3D
 @onready var animation_player = $AnimationPlayer
 @onready var sprite = $Sprite3D
 
+@onready var player_forward = $"../PlayerForward"
+
+
 const SPEED = 6.0
 const SPEED_RUN = 12.0
 const JUMP_VELOCITY = 4.5
@@ -38,11 +41,8 @@ func animation():
 
 
 func _physics_process(delta):
-	
 	animation()
-	
-	if input_vector.length_squared() == 0:
-		return
+	player_forward.global_position = global_position
 	
 	if !is_on_floor():
 		velocity.y-= GRAV * delta
@@ -55,6 +55,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
+	player_forward.global_position.x += velocity.x * 1.7
 	move_and_slide()
 	
 

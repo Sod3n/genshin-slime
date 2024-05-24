@@ -10,4 +10,7 @@ var candles_count : int = 0
 var grass_count : int = 0
 
 var town_opened : bool = false
+var arena_opened : bool = false
 var quest_1_completed : bool = false
+
+var note : int = 1

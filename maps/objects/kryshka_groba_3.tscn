@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcacmsycx7m2x"]
+
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_lkq7m"]
+[ext_resource type="ArrayMesh" uid="uid://j82mhwllf52t" path="res://grap_resurce/3d_model_object_set_1/kryshka_groba.obj" id="2_pdh48"]
+
+[node name="KryshkaGroba3" type="MeshInstance3D"]
+material_override = ExtResource("1_lkq7m")
+mesh = ExtResource("2_pdh48")
+skeleton = NodePath("../..")

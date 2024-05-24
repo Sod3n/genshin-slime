@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://bpl6dyvou5drb"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_4ur8e"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="2_cklhy"]
+[ext_resource type="ArrayMesh" uid="uid://c2nvecwatddlk" path="res://grap_resurce/3d_model_object_set_2/zabor_002.obj" id="3_iuy8i"]
+[ext_resource type="Script" path="res://QuestsNDialogue/helper/actionable.gd" id="4_sqenh"]
+[ext_resource type="Resource" uid="uid://dh24xscnfjm2k" path="res://QuestsNDialogue/dialogue/scene_1_quest_1.dialogue" id="5_j8rsh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gno8o"]
+size = Vector3(1.38525, 2.58276, 1)
+
+[node name="ArenaDoor" type="Node3D"]
+script = ExtResource("1_4ur8e")
+state_variable = "arena_opened"
+
+[node name="Opened" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="Closed" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.510326, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Closed"]
+shape = SubResource("BoxShape3D_mgri7")
+
+[node name="Zabor087" type="MeshInstance3D" parent="Closed"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.577851, 0)
+material_override = ExtResource("2_cklhy")
+mesh = ExtResource("3_iuy8i")
+skeleton = NodePath("../..")
+
+[node name="Area3D" type="Area3D" parent="Closed"]
+script = ExtResource("4_sqenh")
+dialogue_resource = ExtResource("5_j8rsh")
+dialogue_start = "open_arena"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Closed/Area3D"]
+shape = SubResource("BoxShape3D_gno8o")

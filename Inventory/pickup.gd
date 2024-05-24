@@ -4,6 +4,7 @@ const Balloon = preload("res://QuestsNDialogue/dialogue/balloon.tscn")
 const MainDialogue = preload("res://QuestsNDialogue/dialogue/main.dialogue")
 @onready var test_item = $".."
 @onready var inventory_item = $"./item"
+@onready var collision_shape_3d = $"./CollisionShape3D"
 
 @export var update_quest : Quest
 @export var is_destroy_on_pick_up : bool
@@ -23,8 +24,16 @@ func action() -> void:
 		get_tree().current_scene.add_child(balloon)
 		balloon.start(MainDialogue, "collect_item")
 		if is_destroy_on_pick_up:
-			test_item.queue_free()
+			disable()
 	else:
 		var balloon: Node = Balloon.instantiate()
 		get_tree().current_scene.add_child(balloon)
 		balloon.start(MainDialogue, "not_enough_space")
+
+func disable():
+	collision_shape_3d.disabled = true
+	hide()
+
+func enable():
+	collision_shape_3d.disabled = false
+	show()

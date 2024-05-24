@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_47ijp"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dha7c"]
 
 [resource]
-script = ExtResource("1_47ijp")
+script = ExtResource("1_dha7c")
 using_states = PackedStringArray()
 titles = {
-"second_part": "37",
+"second_part": "40",
 "start": "3"
 }
 character_names = PackedStringArray("Финтан", "Розмерта", "НПС 2")
@@ -32,9 +32,9 @@ lines = {
 }])
 },
 "id": "10",
-"next_conditional_id": "20",
+"next_conditional_id": "21",
 "next_id": "11",
-"next_id_after": "25",
+"next_id_after": "28",
 "parent_id": "7",
 "type": &"condition"
 },
@@ -148,89 +148,72 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "25",
+"next_id": "20",
 "parent_id": "10",
 "type": &"mutation"
 },
 "20": {
 "id": "20",
-"next_conditional_id": "25",
-"next_id": "21",
-"next_id_after": "25",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "10",
+"type": &"goto"
+},
+"21": {
+"id": "21",
+"next_conditional_id": "28",
+"next_id": "22",
+"next_id_after": "28",
 "parent_id": "7",
 "type": &"condition"
 },
-"21": {
+"22": {
 "character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
-"id": "21",
-"next_id": "25",
+"id": "22",
+"next_id": "23",
 "notes": "",
-"parent_id": "20",
+"parent_id": "21",
 "tags": PackedStringArray(),
 "text": "Продолжай в том же духе!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Продолжай в том же духе!",
 "type": &"dialogue"
 },
-"22": {
-"id": "22",
-"next_conditional_id": "25",
-"next_id": "23",
-"next_id_after": "25",
+"23": {
+"id": "23",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "21",
+"type": &"goto"
+},
+"24": {
+"id": "24",
+"next_conditional_id": "28",
+"next_id": "25",
+"next_id_after": "28",
 "parent_id": "6",
 "type": &"condition"
 },
-"23": {
-"character": "Финтан",
-"character_replacements": Array[Dictionary]([]),
-"id": "23",
-"next_id": "25",
-"notes": "",
-"parent_id": "22",
-"tags": PackedStringArray(),
-"text": "Как успехи в поиске? Можешь не торопится.
- ",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Как успехи в поиске? Можешь не торопится.
- ",
-"type": &"dialogue"
-},
 "25": {
-"character": "Розмерта",
+"character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
 "id": "25",
 "next_id": "26",
 "notes": "",
+"parent_id": "24",
 "tags": PackedStringArray(),
-"text": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
+"text": "Как успехи в поиске? Можешь не торопится.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
+"translation_key": "Как успехи в поиске? Можешь не торопится.",
 "type": &"dialogue"
 },
 "26": {
-"character": "Финтан",
-"character_replacements": Array[Dictionary]([]),
 "id": "26",
-"next_id": "27",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
-"type": &"dialogue"
-},
-"27": {
-"character": "Финтан",
-"character_replacements": Array[Dictionary]([]),
-"id": "27",
-"next_id": "28",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
-"type": &"dialogue"
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "24",
+"type": &"goto"
 },
 "28": {
 "character": "Розмерта",
@@ -239,21 +222,21 @@ lines = {
 "next_id": "29",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Монстров?",
+"text": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Монстров?",
+"translation_key": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
 "type": &"dialogue"
 },
 "29": {
 "character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
 "id": "29",
-"next_id": "31",
+"next_id": "30",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
+"text": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
+"translation_key": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
 "type": &"dialogue"
 },
 "3": {
@@ -275,8 +258,44 @@ lines = {
 "next_id_after": "6",
 "type": &"condition"
 },
+"30": {
+"character": "Финтан",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "31",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
+"type": &"dialogue"
+},
 "31": {
+"character": "Розмерта",
+"character_replacements": Array[Dictionary]([]),
 "id": "31",
+"next_id": "32",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Монстров?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Монстров?",
+"type": &"dialogue"
+},
+"32": {
+"character": "Финтан",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "34",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
+"type": &"dialogue"
+},
+"34": {
+"id": "34",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -288,26 +307,33 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "33",
+"next_id": "36",
 "type": &"mutation"
 },
-"33": {
-"id": "33",
+"36": {
+"id": "36",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 },
-"35": {
-"id": "35",
-"next_id": "37",
+"38": {
+"id": "38",
+"next_id": "40",
 "text": "second_part",
 "type": &"title"
 },
-"37": {
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "3",
+"type": &"goto"
+},
+"40": {
 "character": "НПС 2",
 "character_replacements": Array[Dictionary]([]),
-"id": "37",
-"next_id": "39",
+"id": "40",
+"next_id": "42",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Да.",
@@ -315,17 +341,10 @@ lines = {
 "translation_key": "Да.",
 "type": &"dialogue"
 },
-"39": {
-"id": "39",
+"42": {
+"id": "42",
 "is_snippet": false,
 "next_id": "end",
-"type": &"goto"
-},
-"4": {
-"id": "4",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "3",
 "type": &"goto"
 },
 "6": {
@@ -342,9 +361,9 @@ lines = {
 }])
 },
 "id": "6",
-"next_conditional_id": "25",
+"next_conditional_id": "28",
 "next_id": "7",
-"next_id_after": "25",
+"next_id_after": "28",
 "type": &"condition"
 },
 "7": {
@@ -381,9 +400,9 @@ lines = {
 }])
 },
 "id": "7",
-"next_conditional_id": "22",
+"next_conditional_id": "24",
 "next_id": "8",
-"next_id_after": "25",
+"next_id_after": "28",
 "parent_id": "6",
 "type": &"condition"
 },
@@ -437,10 +456,13 @@ if is_quest_active(\"get_materials\"):
 
 			do bonfire_up = true
 			do start_quest(\"return_to_npc_two\")
+			=> END
 		else:
 			Финтан: Продолжай в том же духе!
+			=> END
 	else:
 		Финтан: Как успехи в поиске? Можешь не торопится.
+		=> END
 			
 Розмерта: Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.
 Финтан: Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.

@@ -99,9 +99,6 @@
 [node name="Player" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04045, 0)
 
-[node name="NavigationRegion3D" parent="." index="1"]
-visible = false
-
 [node name="Objects_3d" type="Node3D" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64151, 0.5, 25.7399)
 
@@ -17049,7 +17046,7 @@ transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 
 environment = SubResource("Environment_ruqgi")
 
 [node name="PhantomCamera3D2" parent="." index="9"]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 7.73092, 11.6252)
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 6.2107, 9.62523)
 
 [node name="EqualTotemPuzzles" parent="." index="10" node_paths=PackedStringArray("totems") instance=ExtResource("89_3syj5")]
 transform = Transform3D(-0.999872, 0, -0.0160214, 0, 1, 0, 0.0160214, 0, -0.999872, 2.65273, 0.5, -8.65581)

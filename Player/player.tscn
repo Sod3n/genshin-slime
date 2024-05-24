@@ -3,15 +3,12 @@
 [ext_resource type="Script" path="res://Player/player.gd" id="1_jw4od"]
 [ext_resource type="Texture2D" uid="uid://b77q8fi6wn75u" path="res://Player/MC.png" id="2_vuyvd"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u55ea"]
-radius = 0.42671
-height = 1.76682
+[sub_resource type="BoxShape3D" id="BoxShape3D_0q2q7"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qlmg1"]
-size = Vector3(1.08313, 0.95578, 1.11499)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u55ea"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t5c1t"]
-size = Vector3(3.02933, 2.08997, 2.48172)
+size = Vector3(2.02045, 2.08997, 2.2104)
 
 [sub_resource type="Animation" id="Animation_7jyb6"]
 resource_name = "IDLE"
@@ -68,17 +65,17 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody3D" groups=["player"]]
-wall_min_slide_angle = 0.10472
+wall_min_slide_angle = 0.0523599
+platform_floor_layers = 4294967280
 script = ExtResource("1_jw4od")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.879479, 0)
-shape = SubResource("CapsuleShape3D_u55ea")
-
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0161743, 1.59843, -0.00915527)
-shape = SubResource("BoxShape3D_qlmg1")
-disabled = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_0q2q7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_u55ea")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
@@ -87,7 +84,7 @@ disabled = true
 [node name="InteractableFinder" type="Area3D" parent="TargetMove"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TargetMove/InteractableFinder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0614166, 0.802917, 0.0179901)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0501615, 0.802917, 0.0332002)
 shape = SubResource("BoxShape3D_t5c1t")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]

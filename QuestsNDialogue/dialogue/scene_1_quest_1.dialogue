@@ -14,15 +14,19 @@ if is_quest_completed("get_materials"):
 			Розмерта: Вот, держи.
 			Айне: Я мало что понимаю, но здесь есть рисунки. Три одинаковые части соединяются и объединяются в одну.
 			do start_quest("solve_puzzle")
+			=> END
 		else
 			...
+			=> END
 	Айне: Приветствую тебя, путник. Кто ты?
 	Розмерта: Я Розмерта, а ты - Айне. Мы уже знакомы.
 	Айне: Да?... Я совершенно ничего не могу вспомнить… Лишь обрывки…
 	Розмерта: Ты знаешь как можно разрушить печать на пути к замку?
 	Айне: Печать? Я делала записи при жизни… Помню, что погибла я где-то на уступе… Кажется, это было на востоке.
 	Розмерта: Хорошо, я поищу.
-
+	Айне: И еще, тебе может пригодиться это. Возьми.
+	Вы берёте ключ.
+	do add_item_to_inventory("key")
 	do update_quest("return_to_npc_two")
 	do start_quest("find_note")
 	
@@ -32,6 +36,7 @@ if is_quest_completed("return_to_npc"):
 	Розмерта: Я не могу их прочитать…
 	Айне: Что ж… Ты можешь попробовать найти в городе кого-то, кто тебе поможет.
 	Айне: Где-то на берегу был ключ.
+	=> END
 
 
 if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
@@ -45,6 +50,7 @@ if  not is_quest_active("get_book") and not is_quest_completed("get_book"):
 	Айне: Попробуй найти книги. Они лежат неподалеку.
 
 	do start_quest("get_book")
+	=> END
 else:
 	if is_quest_active("return_to_npc"):
 		Розмерта: Я не могу их прочитать…
@@ -65,8 +71,16 @@ if remove_items("key"):
 	Вы используете ключ и открываете ворота.
 	do town_opened = true
 	do update_quest("get_into_town")
-else:
+else if not is_quest_completed("get_into_town"):
 	Кажется, здесь нужен ключ. Надо поискать в округе.
+=> END
+
+~ open_arena
+if is_quest_completed("get_into_town") and remove_items("key"):
+	Вы используете ключ и открываете ворота.
+	do arena_opened = true
+else:
+	Розмерта: Ворота заперты и я не смогу попасть внутрь. Наверное, оно к лучшему.
 => END
 
 ~ open_castle

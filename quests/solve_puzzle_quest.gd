@@ -10,6 +10,7 @@ func start():
 func update():
 	objective_completed = true
 	QuestSystem.complete_quest(self)
+	complete()
 
 func get_progress() -> String:
 	return ""

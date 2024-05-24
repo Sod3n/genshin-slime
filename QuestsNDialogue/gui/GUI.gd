@@ -21,6 +21,7 @@ func set_current_quest(quest: Quest) -> void:
 	_quest = quest
 	%Control.show()
 
-func finish_quest(_quest: Quest) -> void:
+func finish_quest(quest: Quest) -> void:
 	%Control.hide()
+	_quest = null
 

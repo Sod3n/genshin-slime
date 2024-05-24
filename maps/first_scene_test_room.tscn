@@ -339,7 +339,6 @@ state_number = 3
 
 [node name="MainCamera3D2" parent="." index="15"]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 6, 8)
-current = true
 
 [node name="PhantomCamera3D2" parent="." index="16"]
 transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 1, 6, 8)

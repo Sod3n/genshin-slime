@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_vl0eo")
 id = 8
-quest_name = "Попадите в город."
+quest_name = "Попадите в пригород."
 quest_description = ""
 quest_objective = ""

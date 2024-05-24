@@ -7,8 +7,9 @@ func _ready():
 	Signals.on_puzzle_quest_start.connect(Callable(self, "activate"))
 	Signals.on_puzzle_quest_stop.connect(Callable(self, "deactivate"))
 	self.on_puzzle_satisfie.connect(Callable(self, "_stop_quest"))
-	#deactivate()
+	deactivate()
 
 func _stop_quest():
 	print("stop")
 	Shortcuts.update_quest("solve_puzzle")
+	deactivate()

@@ -5,7 +5,7 @@ func start():
 
 func update():
 	objective_completed = true
-	QuestSystem.complete_quest(self)
+	Shortcuts.complete_quest("find_note")
 
 func get_progress() -> String:
 	return ""

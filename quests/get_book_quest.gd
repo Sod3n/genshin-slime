@@ -13,7 +13,7 @@ func update():
 	else:
 		State.book_count += 1
 		objective_completed = true
-		QuestSystem.complete_quest(self)
+		Shortcuts.complete_quest("get_book")
 		QuestSystem.start_quest(RETURN_TO_NPC)
 
 func get_progress() -> String:

@@ -8,9 +8,8 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_beu55"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mgri7"]
-size = Vector3(0, 0, 0)
 
-[node name="Door" type="Node3D"]
+[node name="Door2" type="Node3D"]
 script = ExtResource("1_r1wuw")
 
 [node name="Opened" type="StaticBody3D" parent="."]

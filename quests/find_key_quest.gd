@@ -7,7 +7,7 @@ func start():
 
 func update():
 	objective_completed = true
-	QuestSystem.complete_quest(self)
+	Shortcuts.complete_quest("find_key")
 	QuestSystem.start_quest(GET_INTO_TOWN)
 	State.is_key_finded = true
 

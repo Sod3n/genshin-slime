@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://QuestsNDialogue/gui/GUI.gd" id="1_6pcfw"]
 [ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="2_v8kms"]
-[ext_resource type="FontFile" uid="uid://brau7w4cqkptj" path="res://fonts/ZTNeueRalewe-Medium.ttf" id="3_3lkx6"]
+[ext_resource type="FontFile" uid="uid://dhatoipprkc7i" path="res://fonts/ZTNeueRalewe-Italic.ttf" id="3_u15rt"]
 
 [node name="GUI" type="CanvasLayer"]
 script = ExtResource("1_6pcfw")
@@ -24,7 +24,7 @@ anchor_bottom = 1.0
 offset_left = -30.0
 offset_top = -30.0
 offset_right = -425.0
-offset_bottom = -130.0
+offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3.5, 3.5)
@@ -39,21 +39,22 @@ patch_margin_bottom = 20
 layout_mode = 0
 offset_left = -5.0
 offset_top = -15.0
-offset_right = 747.0
+offset_right = 576.0
 offset_bottom = 194.0
 rotation = -0.000907544
-scale = Vector2(0.5, 0.5)
 
 [node name="CurrentQuest" type="Label" parent="Control/VBoxContainer"]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(580, 60)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_3lkx6")
-theme_override_font_sizes/font_size = 84
+theme_override_fonts/font = ExtResource("3_u15rt")
+theme_override_font_sizes/font_size = 45
 text = "Текущие задание: %s"
+autowrap_mode = 2
 
 [node name="Progress" type="Label" parent="Control/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_3lkx6")
-theme_override_font_sizes/font_size = 63
+theme_override_fonts/font = ExtResource("3_u15rt")
+theme_override_font_sizes/font_size = 35
 text = "Некоторый прогресс"

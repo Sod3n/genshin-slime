@@ -10,4 +10,4 @@ func _on_button_pressed():
 	t.tween_property(color_rect, "color", Color.BLACK, 2)
 	t.tween_property(audio, "volume_db", -100, 1.5)
 	await t.finished
-	SceneManagment.switch_scene("map_1")
+	SceneManagment.switch_scene("mon")

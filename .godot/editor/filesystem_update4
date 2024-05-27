@@ -39,3 +39,7 @@ res://Puska/puska.gd
 res://QuestsNDialogue/dialogue/balloon.gd
 res://maps/monolog.tscn
 res://maps/Bereg_lvl1_dubl.tscn
+res://maps/monolog.gd
+res://Player/player.gd
+res://scripts/SceneManagment.gd
+res://Menu/MainMenu.gd

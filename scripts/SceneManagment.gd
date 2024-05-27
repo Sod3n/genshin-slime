@@ -5,6 +5,7 @@ signal change_scene(data)
 var maps = {
 	"test" : "res://maps/test_room.tscn",
 	"map_1" : "res://maps/Bereg_lvl1.tscn",
+	"mon" : "res://maps/monolog.tscn",
 	"end" : "res://Menu/EndMenu.tscn"
 }
 

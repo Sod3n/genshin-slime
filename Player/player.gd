@@ -66,7 +66,8 @@ func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var interactables = interactable_finder.get_overlapping_areas()
 		if interactables.size() > 0:
-			interactables[0].action()
+			if interactables[0].has_method("action"):
+				interactables[0].action()
 			input_vector = Vector2.ZERO
 			return
 			

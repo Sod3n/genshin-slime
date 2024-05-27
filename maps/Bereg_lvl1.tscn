@@ -2909,6 +2909,7 @@ script = ExtResource("4_2yy24")
 material = SubResource("ShaderMaterial_qrct1")
 offset_right = 1920.0
 offset_bottom = 1079.0
+mouse_filter = 2
 
 [node name="TestNpc4" parent="." index="2" instance=ExtResource("2_4sw0y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0685308, 1.36687, -21.766)
@@ -5787,7 +5788,6 @@ transform = Transform3D(1.04535, 0, 0.0227688, 0, 1, 0, -0.244434, 0, 0.0973734,
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Node/MeshInstance3D49" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Node/MeshInstance3D49/StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_u362o")
 
 [node name="MeshInstance3D48" type="MeshInstance3D" parent="NavigationRegion3D/Node" index="14"]

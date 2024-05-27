@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://hxme7yq6sofm"]
+[gd_scene load_steps=2 format=3 uid="uid://hxme7yq6sofm"]
+
+[ext_resource type="Script" path="res://maps/monolog.gd" id="1_65qml"]
 
 [node name="Monolog" type="Node3D"]
+script = ExtResource("1_65qml")

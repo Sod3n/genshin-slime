@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal on_end
+
 
 @onready var balloon: Control = $Balloon
 @onready var margin: MarginContainer = $Balloon/Margin
@@ -31,6 +33,7 @@ var dialogue_line: DialogueLine:
 		is_waiting_for_input = false
 
 		if not next_dialogue_line:
+			on_end.emit()
 			queue_free()
 			return
 

@@ -99,7 +99,6 @@ func _ready():
 	add_child(timer)
 	timer.wait_time = 1.0
 	Shortcuts.fade_out.emit()
-	
 
 func catch_player():
 	player.anim_play("IDLE")

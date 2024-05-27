@@ -1,15 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vt0e1"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_m7n4l"]
 
 [resource]
-script = ExtResource("1_vt0e1")
+script = ExtResource("1_m7n4l")
 using_states = PackedStringArray()
 titles = {
-"open_arena": "80",
-"open_castle": "88",
-"open_town": "71",
-"start": "3"
+"monolog": "3",
+"open_arena": "95",
+"open_castle": "103",
+"open_town": "86",
+"start": "18"
 }
 character_names = PackedStringArray("Розмерта", "Айне")
 first_title = "3"
@@ -17,11 +18,187 @@ lines = {
 "1": {
 "id": "1",
 "next_id": "3",
-"text": "start",
+"text": "monolog",
 "type": &"title"
 },
 "10": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "10",
+"next_id": "13",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Возможность поехать у меня все же есть, так что в последний раз вернусь в проклятый город. Тетя успокоится, будем просто созваниваться и все.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Возможность поехать у меня все же есть, так что в последний раз вернусь в проклятый город. Тетя успокоится, будем просто созваниваться и все.",
+"type": &"dialogue"
+},
+"100": {
+"id": "100",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"102": {
+"id": "102",
+"next_id": "103",
+"text": "open_castle",
+"type": &"title"
+},
+"103": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "solve_puzzle"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "103",
+"next_conditional_id": "105",
+"next_id": "104",
+"next_id_after": "105",
+"type": &"condition"
+},
+"104": {
+"id": "104",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "change_scene",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "end"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "105",
+"parent_id": "103",
+"type": &"mutation"
+},
+"105": {
+"id": "105",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"13": {
+"id": "13",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"16": {
+"id": "16",
+"next_id": "18",
+"text": "start",
+"type": &"title"
+},
+"18": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "solve_puzzle"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "18",
+"next_conditional_id": "22",
+"next_id": "19",
+"next_id_after": "22",
+"type": &"condition"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"parent_id": "18",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": &"dialogue"
+},
+"20": {
+"id": "20",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "18",
+"type": &"goto"
+},
+"22": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_completed",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "get_materials"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "22",
+"next_conditional_id": "51",
+"next_id": "23",
+"next_id_after": "51",
+"type": &"condition"
+},
+"23": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "is_quest_active",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "find_note"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "23",
+"next_conditional_id": "37",
+"next_id": "24",
+"next_id_after": "37",
+"parent_id": "22",
+"type": &"condition"
+},
+"24": {
+"condition": {
+"expression": Array[Dictionary]([{
+"function": "remove_items",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "book"
+}])])
+}, {
+"type": "colon"
+}])
+},
+"id": "24",
+"next_conditional_id": "34",
+"next_id": "25",
+"next_id_after": "37",
+"parent_id": "23",
+"type": &"condition"
+},
+"25": {
+"id": "25",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "update_quest",
@@ -33,12 +210,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "11",
-"parent_id": "9",
+"next_id": "26",
+"parent_id": "24",
 "type": &"mutation"
 },
-"11": {
-"id": "11",
+"26": {
+"id": "26",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -52,77 +229,89 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "12",
-"parent_id": "9",
+"next_id": "27",
+"parent_id": "24",
 "type": &"mutation"
 },
-"12": {
+"27": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "12",
-"next_id": "13",
+"id": "27",
+"next_id": "28",
 "notes": "",
-"parent_id": "9",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Я нашла твои записи. Там был какой-то монстр.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я нашла твои записи. Там был какой-то монстр.",
 "type": &"dialogue"
 },
-"13": {
+"28": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "13",
-"next_id": "14",
+"id": "28",
+"next_id": "29",
 "notes": "",
-"parent_id": "9",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Да… монстр…",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Да… монстр…",
 "type": &"dialogue"
 },
-"14": {
+"29": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "15",
+"id": "29",
+"next_id": "30",
 "notes": "",
-"parent_id": "9",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Покажи мне записи.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Покажи мне записи.",
 "type": &"dialogue"
 },
-"15": {
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Привет, дорогая!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Привет, дорогая!",
+"type": &"dialogue"
+},
+"30": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "16",
+"id": "30",
+"next_id": "31",
 "notes": "",
-"parent_id": "9",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Вот, держи.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Вот, держи.",
 "type": &"dialogue"
 },
-"16": {
+"31": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "16",
-"next_id": "17",
+"id": "31",
+"next_id": "32",
 "notes": "",
-"parent_id": "9",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Я мало что понимаю, но здесь есть рисунки. Три одинаковые части соединяются и объединяются в одну.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я мало что понимаю, но здесь есть рисунки. Три одинаковые части соединяются и объединяются в одну.",
 "type": &"dialogue"
 },
-"17": {
-"id": "17",
+"32": {
+"id": "32",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -134,170 +323,163 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "18",
-"parent_id": "9",
+"next_id": "33",
+"parent_id": "24",
 "type": &"mutation"
 },
-"18": {
-"id": "18",
+"33": {
+"id": "33",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "9",
+"parent_id": "24",
 "type": &"goto"
 },
-"19": {
-"id": "19",
-"next_conditional_id": "22",
-"next_id": "20",
-"next_id_after": "22",
-"parent_id": "8",
+"34": {
+"id": "34",
+"next_conditional_id": "37",
+"next_id": "35",
+"next_id_after": "37",
+"parent_id": "23",
 "type": &"condition"
 },
-"20": {
+"35": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "20",
-"next_id": "21",
+"id": "35",
+"next_id": "36",
 "notes": "",
-"parent_id": "19",
+"parent_id": "34",
 "tags": PackedStringArray(),
 "text": "...",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "...",
 "type": &"dialogue"
 },
-"21": {
-"id": "21",
+"36": {
+"id": "36",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "19",
+"parent_id": "34",
 "type": &"goto"
 },
-"22": {
+"37": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "22",
-"next_id": "23",
+"id": "37",
+"next_id": "38",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Приветствую тебя, путник. Кто ты?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Приветствую тебя, путник. Кто ты?",
 "type": &"dialogue"
 },
-"23": {
+"38": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "23",
-"next_id": "24",
+"id": "38",
+"next_id": "39",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Я Розмерта, а ты - Айне. Мы уже знакомы.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я Розмерта, а ты - Айне. Мы уже знакомы.",
 "type": &"dialogue"
 },
-"24": {
+"39": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "24",
-"next_id": "25",
+"id": "39",
+"next_id": "40",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Да?... Я совершенно ничего не могу вспомнить… Лишь обрывки…",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Да?... Я совершенно ничего не могу вспомнить… Лишь обрывки…",
 "type": &"dialogue"
 },
-"25": {
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Как только ты переехала, практически перестала выходить на связь. Знаю, обычно ты забираешь из почты максимум квитанции, но сегодня ты получишь и мое письмо. Надеюсь, оно дойдет вовремя.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Как только ты переехала, практически перестала выходить на связь. Знаю, обычно ты забираешь из почты максимум квитанции, но сегодня ты получишь и мое письмо. Надеюсь, оно дойдет вовремя.",
+"type": &"dialogue"
+},
+"40": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "25",
-"next_id": "26",
+"id": "40",
+"next_id": "41",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Ты знаешь как можно разрушить печать на пути к замку?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ты знаешь как можно разрушить печать на пути к замку?",
 "type": &"dialogue"
 },
-"26": {
+"41": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "26",
-"next_id": "27",
+"id": "41",
+"next_id": "42",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Печать? Я делала записи при жизни… Помню, что погибла я где-то на уступе… Кажется, это было на востоке.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Печать? Я делала записи при жизни… Помню, что погибла я где-то на уступе… Кажется, это было на востоке.",
 "type": &"dialogue"
 },
-"27": {
+"42": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "27",
-"next_id": "28",
+"id": "42",
+"next_id": "43",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Хорошо, я поищу.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Хорошо, я поищу.",
 "type": &"dialogue"
 },
-"28": {
+"43": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "28",
-"next_id": "29",
+"id": "43",
+"next_id": "44",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "И еще, тебе может пригодиться это. Возьми.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "И еще, тебе может пригодиться это. Возьми.",
 "type": &"dialogue"
 },
-"29": {
+"44": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "29",
-"next_id": "30",
+"id": "44",
+"next_id": "45",
 "notes": "",
-"parent_id": "7",
+"parent_id": "22",
 "tags": PackedStringArray(),
 "text": "Вы берёте ключ.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Вы берёте ключ.",
 "type": &"dialogue"
 },
-"3": {
-"condition": {
-"expression": Array[Dictionary]([{
-"function": "is_quest_completed",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "solve_puzzle"
-}])])
-}, {
-"type": "colon"
-}])
-},
-"id": "3",
-"next_conditional_id": "7",
-"next_id": "4",
-"next_id_after": "7",
-"type": &"condition"
-},
-"30": {
-"id": "30",
+"45": {
+"id": "45",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "add_item_to_inventory",
@@ -309,12 +491,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "31",
-"parent_id": "7",
+"next_id": "46",
+"parent_id": "22",
 "type": &"mutation"
 },
-"31": {
-"id": "31",
+"46": {
+"id": "46",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "update_quest",
@@ -326,12 +508,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "32",
-"parent_id": "7",
+"next_id": "47",
+"parent_id": "22",
 "type": &"mutation"
 },
-"32": {
-"id": "32",
+"47": {
+"id": "47",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -343,18 +525,30 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "34",
-"parent_id": "7",
+"next_id": "49",
+"parent_id": "22",
 "type": &"mutation"
 },
-"34": {
-"id": "34",
+"49": {
+"id": "49",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "7",
+"parent_id": "22",
 "type": &"goto"
 },
-"36": {
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Я понимаю, что после того, как узнала все о пропаже родителей, ты не хочешь возвращаться и общаться с кем-либо из старого окружения. Но они были бы рады, если бы на свое восемнадцатилетие ты посетила бы Белтайн. Да, ты не веришь в обряды и мистику, но для твоих родителей это было важно. Я буду ждать тебя дома.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Я понимаю, что после того, как узнала все о пропаже родителей, ты не хочешь возвращаться и общаться с кем-либо из старого окружения. Но они были бы рады, если бы на свое восемнадцатилетие ты посетила бы Белтайн. Да, ты не веришь в обряды и мистику, но для твоих родителей это было важно. Я буду ждать тебя дома.",
+"type": &"dialogue"
+},
+"51": {
 "condition": {
 "expression": Array[Dictionary]([{
 "function": "is_quest_completed",
@@ -367,72 +561,59 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "36",
-"next_conditional_id": "43",
-"next_id": "37",
-"next_id_after": "43",
+"id": "51",
+"next_conditional_id": "58",
+"next_id": "52",
+"next_id_after": "58",
 "type": &"condition"
 },
-"37": {
+"52": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "37",
-"next_id": "38",
+"id": "52",
+"next_id": "53",
 "notes": "",
-"parent_id": "36",
+"parent_id": "51",
 "tags": PackedStringArray(),
 "text": "Я не могу их прочитать…",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я не могу их прочитать…",
 "type": &"dialogue"
 },
-"38": {
+"53": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "38",
-"next_id": "39",
+"id": "53",
+"next_id": "54",
 "notes": "",
-"parent_id": "36",
+"parent_id": "51",
 "tags": PackedStringArray(),
 "text": "Что ж… Ты можешь попробовать найти в городе кого-то, кто тебе поможет.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Что ж… Ты можешь попробовать найти в городе кого-то, кто тебе поможет.",
 "type": &"dialogue"
 },
-"39": {
+"54": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "39",
-"next_id": "40",
+"id": "54",
+"next_id": "55",
 "notes": "",
-"parent_id": "36",
+"parent_id": "51",
 "tags": PackedStringArray(),
 "text": "Где-то на берегу был ключ.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Где-то на берегу был ключ.",
 "type": &"dialogue"
 },
-"4": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "4",
-"next_id": "5",
-"notes": "",
-"parent_id": "3",
-"tags": PackedStringArray(),
-"text": "...",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "...",
-"type": &"dialogue"
-},
-"40": {
-"id": "40",
+"55": {
+"id": "55",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "36",
+"parent_id": "51",
 "type": &"goto"
 },
-"43": {
+"58": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "not"
@@ -459,125 +640,130 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "43",
-"next_conditional_id": "55",
-"next_id": "44",
-"next_id_after": "68",
+"id": "58",
+"next_conditional_id": "70",
+"next_id": "59",
+"next_id_after": "83",
 "type": &"condition"
 },
-"44": {
+"59": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "44",
-"next_id": "45",
+"id": "59",
+"next_id": "60",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Привет. Ты знаешь, что это за место? Я не знаю как очутилась здесь. Ах да, я Розмерта, а как тебя зовут?",
 "type": &"dialogue"
 },
-"45": {
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "С любовью и заботой, твоя тетя.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "С любовью и заботой, твоя тетя.",
+"type": &"dialogue"
+},
+"60": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "45",
-"next_id": "46",
+"id": "60",
+"next_id": "61",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Имя? Айне. Да, Айне. Мои воспоминания слишком спутаны. Это место… место…",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Имя? Айне. Да, Айне. Мои воспоминания слишком спутаны. Это место… место…",
 "type": &"dialogue"
 },
-"46": {
+"61": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "46",
-"next_id": "47",
+"id": "61",
+"next_id": "62",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Слушай, не так важно где мы. Важнее выбраться отсюда. Ты знаешь как выйти?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Слушай, не так важно где мы. Важнее выбраться отсюда. Ты знаешь как выйти?",
 "type": &"dialogue"
 },
-"47": {
+"62": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "47",
-"next_id": "48",
+"id": "62",
+"next_id": "63",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Все, кто сюда попадают, должны выполнить свое предназначение. У каждого есть своя миссия.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Все, кто сюда попадают, должны выполнить свое предназначение. У каждого есть своя миссия.",
 "type": &"dialogue"
 },
-"48": {
+"63": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "48",
-"next_id": "49",
+"id": "63",
+"next_id": "64",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Что?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Что?",
 "type": &"dialogue"
 },
-"49": {
+"64": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "49",
-"next_id": "50",
+"id": "64",
+"next_id": "65",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Я не могу вспомнить подробности, но знаю, что это связано с богами и духами. Тебе нужно найти их и получить ответы.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я не могу вспомнить подробности, но знаю, что это связано с богами и духами. Тебе нужно найти их и получить ответы.",
 "type": &"dialogue"
 },
-"5": {
-"id": "5",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "3",
-"type": &"goto"
-},
-"50": {
+"65": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "50",
-"next_id": "51",
+"id": "65",
+"next_id": "66",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Да и как я тебе помогу? Я не справилась со своей задачей.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Да и как я тебе помогу? Я не справилась со своей задачей.",
 "type": &"dialogue"
 },
-"51": {
+"66": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "51",
-"next_id": "53",
+"id": "66",
+"next_id": "68",
 "notes": "",
-"parent_id": "43",
+"parent_id": "58",
 "tags": PackedStringArray(),
 "text": "Попробуй найти книги. Они лежат неподалеку.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Попробуй найти книги. Они лежат неподалеку.",
 "type": &"dialogue"
 },
-"53": {
-"id": "53",
+"68": {
+"id": "68",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -589,25 +775,25 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "54",
-"parent_id": "43",
+"next_id": "69",
+"parent_id": "58",
 "type": &"mutation"
 },
-"54": {
-"id": "54",
+"69": {
+"id": "69",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "43",
+"parent_id": "58",
 "type": &"goto"
 },
-"55": {
-"id": "55",
-"next_conditional_id": "68",
-"next_id": "56",
-"next_id_after": "68",
+"70": {
+"id": "70",
+"next_conditional_id": "83",
+"next_id": "71",
+"next_id_after": "83",
 "type": &"condition"
 },
-"56": {
+"71": {
 "condition": {
 "expression": Array[Dictionary]([{
 "function": "is_quest_active",
@@ -620,54 +806,54 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "56",
-"next_conditional_id": "64",
-"next_id": "57",
-"next_id_after": "68",
-"parent_id": "55",
+"id": "71",
+"next_conditional_id": "79",
+"next_id": "72",
+"next_id_after": "83",
+"parent_id": "70",
 "type": &"condition"
 },
-"57": {
+"72": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "57",
-"next_id": "58",
+"id": "72",
+"next_id": "73",
 "notes": "",
-"parent_id": "56",
+"parent_id": "71",
 "tags": PackedStringArray(),
 "text": "Я не могу их прочитать…",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я не могу их прочитать…",
 "type": &"dialogue"
 },
-"58": {
+"73": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "58",
-"next_id": "59",
+"id": "73",
+"next_id": "74",
 "notes": "",
-"parent_id": "56",
+"parent_id": "71",
 "tags": PackedStringArray(),
 "text": "Что ж… Ты можешь попробовать найти в городе кого-то, кто тебе поможет.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Что ж… Ты можешь попробовать найти в городе кого-то, кто тебе поможет.",
 "type": &"dialogue"
 },
-"59": {
+"74": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "59",
-"next_id": "61",
+"id": "74",
+"next_id": "76",
 "notes": "",
-"parent_id": "56",
+"parent_id": "71",
 "tags": PackedStringArray(),
 "text": "Где-то на берегу был ключ.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Где-то на берегу был ключ.",
 "type": &"dialogue"
 },
-"61": {
-"id": "61",
+"76": {
+"id": "76",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "remove_items",
@@ -679,12 +865,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "62",
-"parent_id": "56",
+"next_id": "77",
+"parent_id": "71",
 "type": &"mutation"
 },
-"62": {
-"id": "62",
+"77": {
+"id": "77",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "update_quest",
@@ -696,12 +882,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "63",
-"parent_id": "56",
+"next_id": "78",
+"parent_id": "71",
 "type": &"mutation"
 },
-"63": {
-"id": "63",
+"78": {
+"id": "78",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -713,76 +899,69 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "68",
-"parent_id": "56",
+"next_id": "83",
+"parent_id": "71",
 "type": &"mutation"
 },
-"64": {
-"id": "64",
-"next_conditional_id": "68",
-"next_id": "65",
-"next_id_after": "68",
-"parent_id": "55",
+"79": {
+"id": "79",
+"next_conditional_id": "83",
+"next_id": "80",
+"next_id_after": "83",
+"parent_id": "70",
 "type": &"condition"
 },
-"65": {
+"8": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Вновь и вновь прошлое возвращается в мою жизнь. Я не для того поехала учиться в другой город, чтобы вернуться обратно вообще когда-либо еще. Но тетя растила меня, меньшее, чем я могу отплатить ей - это отправиться на чертов праздник.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Вновь и вновь прошлое возвращается в мою жизнь. Я не для того поехала учиться в другой город, чтобы вернуться обратно вообще когда-либо еще. Но тетя растила меня, меньшее, чем я могу отплатить ей - это отправиться на чертов праздник.",
+"type": &"dialogue"
+},
+"80": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "65",
-"next_id": "66",
+"id": "80",
+"next_id": "81",
 "notes": "",
-"parent_id": "64",
+"parent_id": "79",
 "tags": PackedStringArray(),
 "text": "Нашёл книги?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Нашёл книги?",
 "type": &"dialogue"
 },
-"66": {
+"81": {
 "character": "Айне",
 "character_replacements": Array[Dictionary]([]),
-"id": "66",
-"next_id": "68",
+"id": "81",
+"next_id": "83",
 "notes": "",
-"parent_id": "64",
+"parent_id": "79",
 "tags": PackedStringArray(),
 "text": "Ничего, я тебя не тороплю",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ничего, я тебя не тороплю",
 "type": &"dialogue"
 },
-"68": {
-"id": "68",
+"83": {
+"id": "83",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 },
-"7": {
-"condition": {
-"expression": Array[Dictionary]([{
-"function": "is_quest_completed",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "get_materials"
-}])])
-}, {
-"type": "colon"
-}])
-},
-"id": "7",
-"next_conditional_id": "36",
-"next_id": "8",
-"next_id_after": "36",
-"type": &"condition"
-},
-"70": {
-"id": "70",
-"next_id": "71",
+"85": {
+"id": "85",
+"next_id": "86",
 "text": "open_town",
 "type": &"title"
 },
-"71": {
+"86": {
 "condition": {
 "expression": Array[Dictionary]([{
 "function": "remove_items",
@@ -795,27 +974,27 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "71",
-"next_conditional_id": "75",
-"next_id": "72",
-"next_id_after": "77",
+"id": "86",
+"next_conditional_id": "90",
+"next_id": "87",
+"next_id_after": "92",
 "type": &"condition"
 },
-"72": {
+"87": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "72",
-"next_id": "73",
+"id": "87",
+"next_id": "88",
 "notes": "",
-"parent_id": "71",
+"parent_id": "86",
 "tags": PackedStringArray(),
 "text": "Вы используете ключ и открываете ворота.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Вы используете ключ и открываете ворота.",
 "type": &"dialogue"
 },
-"73": {
-"id": "73",
+"88": {
+"id": "88",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -829,12 +1008,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "74",
-"parent_id": "71",
+"next_id": "89",
+"parent_id": "86",
 "type": &"mutation"
 },
-"74": {
-"id": "74",
+"89": {
+"id": "89",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "update_quest",
@@ -846,11 +1025,23 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "77",
-"parent_id": "71",
+"next_id": "92",
+"parent_id": "86",
 "type": &"mutation"
 },
-"75": {
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Когда мне было лет 5, может меньше, я слабо помню, на одном из празднований Белтайна начался пожар. В числе пропавших без вести и мои родители. Почему пропавших без вести? Их тела так и не нашли…",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Когда мне было лет 5, может меньше, я слабо помню, на одном из празднований Белтайна начался пожар. В числе пропавших без вести и мои родители. Почему пропавших без вести? Их тела так и не нашли…",
+"type": &"dialogue"
+},
+"90": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "not"
@@ -865,58 +1056,38 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "75",
-"next_conditional_id": "77",
-"next_id": "76",
-"next_id_after": "77",
+"id": "90",
+"next_conditional_id": "92",
+"next_id": "91",
+"next_id_after": "92",
 "type": &"condition"
 },
-"76": {
+"91": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "76",
-"next_id": "77",
+"id": "91",
+"next_id": "92",
 "notes": "",
-"parent_id": "75",
+"parent_id": "90",
 "tags": PackedStringArray(),
 "text": "Кажется, здесь нужен ключ. Надо поискать в округе.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Кажется, здесь нужен ключ. Надо поискать в округе.",
 "type": &"dialogue"
 },
-"77": {
-"id": "77",
+"92": {
+"id": "92",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 },
-"79": {
-"id": "79",
-"next_id": "80",
+"94": {
+"id": "94",
+"next_id": "95",
 "text": "open_arena",
 "type": &"title"
 },
-"8": {
-"condition": {
-"expression": Array[Dictionary]([{
-"function": "is_quest_active",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "find_note"
-}])])
-}, {
-"type": "colon"
-}])
-},
-"id": "8",
-"next_conditional_id": "22",
-"next_id": "9",
-"next_id_after": "22",
-"parent_id": "7",
-"type": &"condition"
-},
-"80": {
+"95": {
 "condition": {
 "expression": Array[Dictionary]([{
 "function": "is_quest_completed",
@@ -939,27 +1110,27 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "80",
-"next_conditional_id": "83",
-"next_id": "81",
-"next_id_after": "85",
+"id": "95",
+"next_conditional_id": "98",
+"next_id": "96",
+"next_id_after": "100",
 "type": &"condition"
 },
-"81": {
+"96": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "81",
-"next_id": "82",
+"id": "96",
+"next_id": "97",
 "notes": "",
-"parent_id": "80",
+"parent_id": "95",
 "tags": PackedStringArray(),
 "text": "Вы используете ключ и открываете ворота.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Вы используете ключ и открываете ворота.",
 "type": &"dialogue"
 },
-"82": {
-"id": "82",
+"97": {
+"id": "97",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -973,11 +1144,11 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "85",
-"parent_id": "80",
+"next_id": "100",
+"parent_id": "95",
 "type": &"mutation"
 },
-"83": {
+"98": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "not"
@@ -988,101 +1159,42 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "83",
-"next_conditional_id": "85",
-"next_id": "84",
-"next_id_after": "85",
+"id": "98",
+"next_conditional_id": "100",
+"next_id": "99",
+"next_id_after": "100",
 "type": &"condition"
 },
-"84": {
+"99": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "84",
-"next_id": "85",
+"id": "99",
+"next_id": "100",
 "notes": "",
-"parent_id": "83",
+"parent_id": "98",
 "tags": PackedStringArray(),
 "text": "Ворота заперты и я не смогу попасть внутрь. Наверное, оно к лучшему.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ворота заперты и я не смогу попасть внутрь. Наверное, оно к лучшему.",
 "type": &"dialogue"
-},
-"85": {
-"id": "85",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
-},
-"87": {
-"id": "87",
-"next_id": "88",
-"text": "open_castle",
-"type": &"title"
-},
-"88": {
-"condition": {
-"expression": Array[Dictionary]([{
-"function": "is_quest_completed",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "solve_puzzle"
-}])])
-}, {
-"type": "colon"
-}])
-},
-"id": "88",
-"next_conditional_id": "90",
-"next_id": "89",
-"next_id_after": "90",
-"type": &"condition"
-},
-"89": {
-"id": "89",
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "change_scene",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "end"
-}])])
-}]),
-"is_blocking": true
-},
-"next_id": "90",
-"parent_id": "88",
-"type": &"mutation"
-},
-"9": {
-"condition": {
-"expression": Array[Dictionary]([{
-"function": "remove_items",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "book"
-}])])
-}, {
-"type": "colon"
-}])
-},
-"id": "9",
-"next_conditional_id": "19",
-"next_id": "10",
-"next_id_after": "22",
-"parent_id": "8",
-"type": &"condition"
-},
-"90": {
-"id": "90",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
 }
 }
-raw_text = "~ start
+raw_text = "~ monolog
+
+Привет, дорогая!
+Как только ты переехала, практически перестала выходить на связь. Знаю, обычно ты забираешь из почты максимум квитанции, но сегодня ты получишь и мое письмо. Надеюсь, оно дойдет вовремя.
+Я понимаю, что после того, как узнала все о пропаже родителей, ты не хочешь возвращаться и общаться с кем-либо из старого окружения. Но они были бы рады, если бы на свое восемнадцатилетие ты посетила бы Белтайн. Да, ты не веришь в обряды и мистику, но для твоих родителей это было важно. Я буду ждать тебя дома.
+С любовью и заботой, твоя тетя.
+
+Вновь и вновь прошлое возвращается в мою жизнь. Я не для того поехала учиться в другой город, чтобы вернуться обратно вообще когда-либо еще. Но тетя растила меня, меньшее, чем я могу отплатить ей - это отправиться на чертов праздник.
+Когда мне было лет 5, может меньше, я слабо помню, на одном из празднований Белтайна начался пожар. В числе пропавших без вести и мои родители. Почему пропавших без вести? Их тела так и не нашли…
+Возможность поехать у меня все же есть, так что в последний раз вернусь в проклятый город. Тетя успокоится, будем просто созваниваться и все.
+
+
+=> END
+
+
+~ start
 
 if is_quest_completed(\"solve_puzzle\"):
 	...

@@ -1,3 +1,4 @@
+Node
 CollisionShape3D
 Area3D
 Control
@@ -5,7 +6,6 @@ PanelContainer
 ColorRect
 Node3D
 MeshInstance3D
-Node
 NavigationRegion3D
 CSGCombiner3D
 CSGBox3D

@@ -1,4 +1,4 @@
-[gd_scene load_steps=1001 format=3 uid="uid://cgju0ifp8jt1"]
+[gd_scene load_steps=999 format=3 uid="uid://cgju0ifp8jt1"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_r4vuu"]
 [ext_resource type="PackedScene" uid="uid://bk7b6vnk7eoxr" path="res://QuestsNDialogue/NPC/TestNPC.tscn" id="2_4sw0y"]
@@ -12,7 +12,6 @@
 [ext_resource type="Script" path="res://maps/ColorRect2.gd" id="4_2yy24"]
 [ext_resource type="ArrayMesh" uid="uid://creksy7yxffl5" path="res://grap_resurce/3d_model_object_set_1/skala_003.obj" id="4_4vlc8"]
 [ext_resource type="ArrayMesh" uid="uid://2tklc3v6ftvb" path="res://grap_resurce/3d_model_object_set_1/trava_perehod_bolshoj.obj" id="4_10vce"]
-[ext_resource type="Shader" path="res://Shaders/vhs_lowpoly.gdshader" id="5_15p7w"]
 [ext_resource type="Texture2D" uid="uid://nfnnp4740da1" path="res://images/ghost.png" id="5_r1k7p"]
 [ext_resource type="ArrayMesh" uid="uid://bnodpsc41xs54" path="res://grap_resurce/3d_model_object_set_1/bochka_003.obj" id="5_wbtb3"]
 [ext_resource type="Resource" uid="uid://cyf47xeobqsmg" path="res://QuestsNDialogue/dialogue/scene_1_quest_2.dialogue" id="6_83qlv"]
@@ -112,30 +111,6 @@
 [ext_resource type="AudioStream" uid="uid://bgmsl8wojs6gk" path="res://music/LocationTheme.mp3" id="110_ettto"]
 [ext_resource type="AudioStream" uid="uid://dfp056qyjpe8i" path="res://music/BG_Location.mp3" id="111_7lyp4"]
 [ext_resource type="Resource" uid="uid://lcx68510n3m7" path="res://QuestsNDialogue/dialogue/notes.dialogue" id="111_m7lvy"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qrct1"]
-shader = ExtResource("5_15p7w")
-shader_parameter/overlay = false
-shader_parameter/scanlines_opacity = 0.0
-shader_parameter/scanlines_width = 0.0
-shader_parameter/grille_opacity = 0.0
-shader_parameter/resolution = Vector2(640, 480)
-shader_parameter/pixelate = false
-shader_parameter/roll = false
-shader_parameter/roll_speed = 0.0
-shader_parameter/roll_size = 0.0
-shader_parameter/roll_variation = 0.1
-shader_parameter/distort_intensity = 0.0
-shader_parameter/noise_opacity = 0.199
-shader_parameter/noise_speed = 9.0
-shader_parameter/static_noise_intensity = 0.03
-shader_parameter/aberration = 4.75e-08
-shader_parameter/brightness = 1.2
-shader_parameter/discolor = true
-shader_parameter/warp_amount = 0.0
-shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 0.9
-shader_parameter/vignette_opacity = 0.285
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_si5eb"]
 size = Vector3(1.38525, 2.58276, 1)
@@ -2907,12 +2882,6 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("4_2yy24")
-
-[node name="VHS" type="ColorRect" parent="GUI" index="2"]
-material = SubResource("ShaderMaterial_qrct1")
-offset_right = 1920.0
-offset_bottom = 1079.0
-mouse_filter = 2
 
 [node name="TestNpc4" parent="." index="2" instance=ExtResource("2_4sw0y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0685308, 1.36687, -21.766)
@@ -37943,6 +37912,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9278, 0.352849, -12.9234)
 script = ExtResource("96_dfkf3")
 update_quest = ExtResource("107_8c4vy")
 is_destroy_on_pick_up = true
+delete = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="materials/TestItemStick/PickUp" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
@@ -37971,6 +37941,7 @@ transform = Transform3D(0.740535, 0, -0.672018, 0, 1, 0, 0.672018, 0, 0.740535, 
 script = ExtResource("96_dfkf3")
 update_quest = ExtResource("107_8c4vy")
 is_destroy_on_pick_up = true
+delete = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="materials/TestItemStick2/PickUp" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)
@@ -37999,6 +37970,7 @@ transform = Transform3D(0.947456, 0, -0.319885, 0, 1, 0, 0.319885, 0, 0.947456, 
 script = ExtResource("96_dfkf3")
 update_quest = ExtResource("107_8c4vy")
 is_destroy_on_pick_up = true
+delete = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="materials/TestItemStick3/PickUp" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.850647, 0)

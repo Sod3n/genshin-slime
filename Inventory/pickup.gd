@@ -8,7 +8,7 @@ const MainDialogue = preload("res://QuestsNDialogue/dialogue/main.dialogue")
 
 @export var update_quest : Quest
 @export var is_destroy_on_pick_up : bool
-
+@export var delete : bool
 
 func action() -> void:
 	if update_quest != null and not QuestSystem.is_quest_active(update_quest):
@@ -25,6 +25,8 @@ func action() -> void:
 		balloon.start(MainDialogue, "collect_item")
 		if is_destroy_on_pick_up:
 			disable()
+		if delete:
+			queue_free()
 	else:
 		var balloon: Node = Balloon.instantiate()
 		get_tree().current_scene.add_child(balloon)

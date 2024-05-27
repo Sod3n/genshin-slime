@@ -1,9 +1,11 @@
+CanvasLayer
+SubViewport
+ColorRect
 Node
 CollisionShape3D
 Area3D
 Control
 PanelContainer
-ColorRect
 Node3D
 MeshInstance3D
 NavigationRegion3D
@@ -11,4 +13,3 @@ CSGCombiner3D
 CSGBox3D
 AnimatedSprite3D
 StaticBody3D
-PhantomCameraHost

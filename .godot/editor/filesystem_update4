@@ -43,3 +43,4 @@ res://maps/monolog.gd
 res://Player/player.gd
 res://scripts/SceneManagment.gd
 res://Menu/MainMenu.gd
+res://Inventory/pickup.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=960 format=3 uid="uid://cgju0ifp8jt1"]
+[gd_scene load_steps=965 format=3 uid="uid://cgju0ifp8jt1"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_r4vuu"]
 [ext_resource type="PackedScene" uid="uid://bk7b6vnk7eoxr" path="res://QuestsNDialogue/NPC/TestNPC.tscn" id="2_4sw0y"]
@@ -76,17 +76,17 @@
 [ext_resource type="ArrayMesh" uid="uid://dgudie1e6un27" path="res://grap_resurce/3d_model_object_set_2/drova.obj" id="75_0p5qw"]
 [ext_resource type="ArrayMesh" uid="uid://c6lbpdkdfsx4o" path="res://grap_resurce/3d_model_object_set_2/kolodec.obj" id="76_daibd"]
 [ext_resource type="ArrayMesh" uid="uid://dm278kt87gvt" path="res://grap_resurce/3d_model_object_set_2/koster.obj" id="77_2w77u"]
-[ext_resource type="PackedScene" path="res://kusti.tscn" id="77_s0l7h"]
-[ext_resource type="PackedScene" path="res://zabor.tscn" id="78_uybap"]
+[ext_resource type="PackedScene" uid="uid://f7jnunp7e5qk" path="res://kusti.tscn" id="77_s0l7h"]
+[ext_resource type="PackedScene" uid="uid://kulf87mxjd3p" path="res://zabor.tscn" id="78_uybap"]
 [ext_resource type="ArrayMesh" uid="uid://cjjt4mjy6ngo0" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_001.obj" id="79_06wko"]
-[ext_resource type="PackedScene" path="res://trava.tscn" id="79_31ttt"]
+[ext_resource type="PackedScene" uid="uid://drt43i8y2drko" path="res://trava.tscn" id="79_31ttt"]
 [ext_resource type="PackedScene" uid="uid://c322o015mq0uy" path="res://koster_fire_on.tscn" id="79_gp6mg"]
-[ext_resource type="PackedScene" path="res://oduvanchik.tscn" id="80_4kue8"]
+[ext_resource type="PackedScene" uid="uid://wckjg68kqyey" path="res://oduvanchik.tscn" id="80_4kue8"]
 [ext_resource type="ArrayMesh" uid="uid://bf4kstji62ydb" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_002.obj" id="81_vbdn2"]
 [ext_resource type="ArrayMesh" uid="uid://dx460366rf3ha" path="res://grap_resurce/3d_model_object_set_2/obelisk_s_triadoj_003.obj" id="82_5gyyi"]
 [ext_resource type="ArrayMesh" uid="uid://cujq2dfmr3gku" path="res://grap_resurce/3d_model_object_set_2/zabor_001.obj" id="83_iba8v"]
-[ext_resource type="PackedScene" path="res://rostuschij_glaz.tscn" id="86_7nt28"]
-[ext_resource type="PackedScene" path="res://rakushki.tscn" id="87_xmapg"]
+[ext_resource type="PackedScene" uid="uid://do7m2taqg80cb" path="res://rostuschij_glaz.tscn" id="86_7nt28"]
+[ext_resource type="PackedScene" uid="uid://des8oujowhwk8" path="res://rakushki.tscn" id="87_xmapg"]
 [ext_resource type="MeshLibrary" uid="uid://c07qxrvq7q1qa" path="res://grap_resurce/grid_map_objects/grid_map_objects_tilesets.tres" id="88_77k3h"]
 [ext_resource type="Texture2D" uid="uid://cd743hd6wg8w4" path="res://Water/Water.png" id="89_mgbti"]
 [ext_resource type="PackedScene" uid="uid://bwm1vfbuijfpq" path="res://Inventory/TestItem.tscn" id="95_olr31"]
@@ -104,7 +104,10 @@
 [ext_resource type="PackedScene" uid="uid://cvshfbif53gna" path="res://MapTools/collision/door.tscn" id="104_tuxox"]
 [ext_resource type="PackedScene" uid="uid://bpl6dyvou5drb" path="res://MapTools/collision/arena_door.tscn" id="106_r2q1w"]
 [ext_resource type="Resource" uid="uid://bi81snnay1jjn" path="res://quests/get_materials.tres" id="107_8c4vy"]
+[ext_resource type="AudioStream" uid="uid://e5m61jc1k86t" path="res://music/SafeTheme.mp3" id="107_ulxfi"]
+[ext_resource type="Script" path="res://maps/PlayMusic.gd" id="108_7dwqy"]
 [ext_resource type="PackedScene" uid="uid://c14b00yefs25o" path="res://MapTools/collision/bonfire.tscn" id="108_eoie6"]
+[ext_resource type="AudioStream" uid="uid://bragnl8ed7unl" path="res://music/Danger.mp3" id="109_rxj45"]
 [ext_resource type="AudioStream" uid="uid://bgmsl8wojs6gk" path="res://music/LocationTheme.mp3" id="110_ettto"]
 [ext_resource type="AudioStream" uid="uid://dfp056qyjpe8i" path="res://music/BG_Location.mp3" id="111_7lyp4"]
 
@@ -2751,6 +2754,12 @@ data = PackedVector3Array(-0.9798, 1.0716, 0.5464, -1.9777, 1.147, 0.5825, -0.97
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_od2eq"]
 size = Vector3(1, 2.70129, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vn8fb"]
+size = Vector3(1.44456, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ttl0"]
+size = Vector3(6.4975, 3.56396, 6.34192)
 
 [node name="Bereg_lvl1" instance=ExtResource("1_r4vuu")]
 
@@ -37669,18 +37678,51 @@ state = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.0419, 0.470767, -10)
 state_variable = "bonfire_up"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="27"]
+[node name="LocationTheme" type="AudioStreamPlayer" parent="." index="27"]
 unique_name_in_owner = true
 stream = ExtResource("110_ettto")
 autoplay = true
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="28"]
+[node name="DangerTheme" type="AudioStreamPlayer" parent="." index="28"]
+unique_name_in_owner = true
+stream = ExtResource("109_rxj45")
+
+[node name="SafeTheme" type="AudioStreamPlayer" parent="." index="29"]
+unique_name_in_owner = true
+stream = ExtResource("107_ulxfi")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="30"]
 unique_name_in_owner = true
 stream = ExtResource("111_7lyp4")
 autoplay = true
 
-[node name="Checkpoint" type="Node3D" parent="." index="29"]
+[node name="Checkpoint" type="Node3D" parent="." index="31"]
 transform = Transform3D(0.694548, 0.401834, -0.596768, 0, 0.829483, 0.558533, 0.719447, -0.387928, 0.576115, 11.8368, 0.430261, -8.38927)
 
-[node name="ArenaDoor" parent="." index="30" instance=ExtResource("106_r2q1w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.97541)
+[node name="ArenaDoor" parent="." index="32" instance=ExtResource("106_r2q1w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -7.58536)
+
+[node name="PlayDangerMusicTrigger" type="Area3D" parent="." index="33" node_paths=PackedStringArray("theme_to_play", "theme_to_stop", "theme_to_stop2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6056, 2.01638, -9.07035)
+script = ExtResource("108_7dwqy")
+theme_to_play = NodePath("../DangerTheme")
+theme_to_stop = NodePath("../LocationTheme")
+theme_to_stop2 = NodePath("../SafeTheme")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayDangerMusicTrigger" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.138466, 0, 0)
+shape = SubResource("BoxShape3D_vn8fb")
+
+[node name="PlaySafeMusicTrigger" type="Area3D" parent="." index="34" node_paths=PackedStringArray("theme_to_play", "theme_to_stop")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2365, 2.01638, -9.07035)
+script = ExtResource("108_7dwqy")
+theme_to_play = NodePath("../SafeTheme")
+theme_to_stop = NodePath("../DangerTheme")
+only_when_stop = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlaySafeMusicTrigger" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26763, -1.28198, 0.0142212)
+shape = SubResource("BoxShape3D_7ttl0")
+
+[connection signal="body_entered" from="PlayDangerMusicTrigger" to="PlayDangerMusicTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="PlaySafeMusicTrigger" to="PlaySafeMusicTrigger" method="_on_body_entered"]

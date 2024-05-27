@@ -1,3 +1,7 @@
+CollisionShape3D
+Area3D
+Control
+PanelContainer
 ColorRect
 Node3D
 MeshInstance3D
@@ -6,9 +10,5 @@ NavigationRegion3D
 CSGCombiner3D
 CSGBox3D
 AnimatedSprite3D
-CollisionShape3D
 StaticBody3D
 PhantomCameraHost
-AnimationPlayer
-Area3D
-Button

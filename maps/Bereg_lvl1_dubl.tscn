@@ -1,4 +1,4 @@
-[gd_scene load_steps=994 format=3 uid="uid://cuvkrs2w6ajs3"]
+[gd_scene load_steps=994 format=3 uid="uid://ce87i8b5vcpv5"]
 
 [ext_resource type="PackedScene" uid="uid://bsmlerd8sun6a" path="res://maps/__map.tscn" id="1_nkdur"]
 [ext_resource type="PackedScene" uid="uid://dv1cwo11ii0n8" path="res://Inventory/inventory_grid_transfer.tscn" id="2_rd8r3"]

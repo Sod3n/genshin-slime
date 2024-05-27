@@ -37,3 +37,5 @@ res://maps/Bereg_lvl1_music.tscn
 res://maps/PlayMusic.gd
 res://Puska/puska.gd
 res://QuestsNDialogue/dialogue/balloon.gd
+res://maps/monolog.tscn
+res://maps/Bereg_lvl1_dubl.tscn

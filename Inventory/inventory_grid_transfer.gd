@@ -21,12 +21,14 @@ func _ready() -> void:
 
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
-	lbl_info.show()
-	lbl_info.text = item.prototype_id
+	#lbl_info.show()
+	#lbl_info.text = item.prototype_id
+	pass
 
 
 func _on_item_mouse_exited(_item: InventoryItem) -> void:
-	lbl_info.hide()
+	#lbl_info.hide()
+	pass
 
 func _on_btn_sort(ctrl_inventory) -> void:
 	if !ctrl_inventory.inventory.sort():
@@ -48,7 +50,7 @@ func _input(event: InputEvent) -> void:
 	if !(event is InputEventMouseMotion):
 		return
 
-	lbl_info.set_global_position(get_global_mouse_position() + info_offset)
+	#lbl_info.set_global_position(get_global_mouse_position() + info_offset)
 
 
 func _on_gui_input(event):

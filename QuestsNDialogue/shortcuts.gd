@@ -58,6 +58,11 @@ func change_scene(scene : String):
 	await Signal(Shortcuts.faded_in)
 	SceneManagment.switch_scene(scene)
 
+signal set_sound_index(index)
+
+signal start_compfire_sound()
+
+
 signal fade_in()
 signal faded_in()
 signal fade_out()

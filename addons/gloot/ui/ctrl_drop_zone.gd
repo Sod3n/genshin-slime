@@ -1,7 +1,16 @@
 @tool
 extends Control
 
+const CtrlDropZone = preload("res://addons/gloot/ui/ctrl_drop_zone.gd")
+
 signal dragable_dropped(dragable, position)
+
+static var dragable_lost: Signal = (func():
+	if (CtrlDropZone as Object).has_user_signal("dragable_lost"):
+		return (CtrlDropZone as Object).dragable_lost
+	(CtrlDropZone as Object).add_user_signal("dragable_lost")
+	return Signal(CtrlDropZone, "CtrlDropZone")
+).call()
 
 const CtrlDragable = preload("res://addons/gloot/ui/ctrl_dragable.gd")
 
@@ -19,7 +28,10 @@ func is_active() -> bool:
 
 
 func _can_drop_data(at_position: Vector2, data) -> bool:
-	return data is CtrlDragable
+	var can = data is CtrlDragable
+	if not can:
+		dragable_lost.emit()
+	return can
 
 
 func _drop_data(at_position: Vector2, data) -> void:

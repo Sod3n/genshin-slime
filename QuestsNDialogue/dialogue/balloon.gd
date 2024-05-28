@@ -10,8 +10,12 @@ signal on_end
 @onready var responses_menu: VBoxContainer = $Balloon/Margin/VBox/Responses
 @onready var response_template: RichTextLabel = %ResponseTemplate
 
+@export var audio_stream_player : Array[AudioStreamPlayer]
+
 # The action to press to skip typing.
 @export var skip_action: StringName = &"ui_cancel"
+
+var sound_index = 0
 
 ## The dialogue resource
 var resource: DialogueResource
@@ -73,6 +77,7 @@ var dialogue_line: DialogueLine:
 		if not dialogue_line.text.is_empty():
 			is_waiting_for_input = true
 			dialogue_label.type_out()
+			audio_stream_player[sound_index].play()
 			await dialogue_label.finished_typing
 
 		# Wait for input
@@ -92,12 +97,21 @@ var dialogue_line: DialogueLine:
 		return dialogue_line
 
 
+
+
 func _ready() -> void:
+	Shortcuts.set_sound_index.connect(set_sound_index)
 	response_template.hide()
 	balloon.hide()
-
+	dialogue_label.finished_typing.connect(_finish_audio_stream_player)
+	dialogue_label.skipped_typing.connect(_finish_audio_stream_player)
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 
+func set_sound_index(index):
+	sound_index = index
+
+func _finish_audio_stream_player():
+	audio_stream_player[sound_index].stop()
 
 func _unhandled_input(_event: InputEvent) -> void:
 	# Only the balloon is allowed to handle input while it's showing

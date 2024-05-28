@@ -1,3 +1,5 @@
+AudioStreamPlayer3D
+AudioStreamPlayer
 CanvasLayer
 SubViewport
 ColorRect
@@ -11,5 +13,3 @@ MeshInstance3D
 NavigationRegion3D
 CSGCombiner3D
 CSGBox3D
-AnimatedSprite3D
-StaticBody3D

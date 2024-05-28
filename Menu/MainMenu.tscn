@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bmj5mnu4yyl1k"]
+[gd_scene load_steps=7 format=3 uid="uid://bmj5mnu4yyl1k"]
 
 [ext_resource type="Script" path="res://Menu/MainMenu.gd" id="1_jsnjr"]
 [ext_resource type="Texture2D" uid="uid://chtou72tmiymp" path="res://Menu/menu.png" id="2_u1xl5"]
 [ext_resource type="FontFile" uid="uid://dv7jb8as17oqs" path="res://fonts/Laptev_Brush.otf" id="3_a0ptb"]
 [ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="4_tsfig"]
 [ext_resource type="AudioStream" uid="uid://ygisnxymqvoe" path="res://Menu/MainTheme.mp3" id="5_sv1g7"]
+[ext_resource type="AudioStream" uid="uid://ctxh84l1o4x3q" path="res://music/SFX_Menu_Accept.mp3" id="6_n0q4h"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -111,5 +112,8 @@ color = Color(0, 0, 0, 0)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_sv1g7")
 autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_n0q4h")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

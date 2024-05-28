@@ -5,32 +5,42 @@ if is_quest_completed("get_materials"):
 
 if is_quest_active("get_materials"):
 	if get_quest("get_materials").update_objectives(remove_items("stick"), remove_items("candle")):
+		do set_sound_index.emit(0)
 		Вы отдаёте часть материалов.
 		do update_quest("get_materials")
 		if is_quest_completed("get_materials"):
+			do bonfire_up = true
+			do start_compfire_sound.emit()
+			do set_sound_index.emit(1)
 			Финтан: Благодарю тебя за старания. На западе от нас есть печать, сдерживающая существ.
 			Финтан: Она же не дает никому проникнуть в замок.
 			Финтан: Сломав печать, у тебя будет время пройти внутрь. Удачи тебе в твоем путешествии.
+			do set_sound_index.emit(0)
 			Розмерта: Но я не знаю как сломать печать.
+			do set_sound_index.emit(1)
 			Финтан: С этим я тебе не помогу. Может быть еще кто-то остался вне дома на берегу.
+			do set_sound_index.emit(0)
 			Розмерта: Спасибо.
 
-			do bonfire_up = true
 			do start_quest("return_to_npc_two")
 			=> END
 		else:
+			do set_sound_index.emit(1)
 			Финтан: Продолжай в том же духе!
 			=> END
 	else:
+		do set_sound_index.emit(1)
 		Финтан: Как успехи в поиске? Можешь не торопится.
 		=> END
-			
+do set_sound_index.emit(0)
 Розмерта: Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.
+do set_sound_index.emit(1)
 Финтан: Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.
 Финтан: Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.
+do set_sound_index.emit(0)
 Розмерта: Монстров?
+do set_sound_index.emit(1)
 Финтан: Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.
-
 do start_quest("get_materials")
 
 => END

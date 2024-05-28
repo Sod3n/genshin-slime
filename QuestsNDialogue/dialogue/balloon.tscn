@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://QuestsNDialogue/dialogue/balloon.gd" id="1_4u26j"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://dg0uis02e6rug" path="res://images/UI/dialogue.png" id="2_v7dc7"]
 [ext_resource type="FontFile" uid="uid://dv7jb8as17oqs" path="res://fonts/Laptev_Brush.otf" id="4_bg32g"]
+[ext_resource type="AudioStream" uid="uid://ejbns3ahejkj" path="res://music/SFX_NPC_Talk.mp3" id="5_ngirr"]
+[ext_resource type="AudioStream" uid="uid://tchex3vs648t" path="res://music/SFX_NPC_Talk1.mp3" id="6_6kom8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5d24i"]
 content_margin_left = 40.0
@@ -19,9 +21,10 @@ content_margin_right = 5.0
 content_margin_bottom = 5.0
 draw_center = false
 
-[node name="ExampleBalloon" type="CanvasLayer"]
+[node name="ExampleBalloon" type="CanvasLayer" node_paths=PackedStringArray("audio_stream_player")]
 layer = 100
 script = ExtResource("1_4u26j")
+audio_stream_player = [NodePath("Balloon/AudioStreamPlayer"), NodePath("Balloon/AudioStreamPlayer2")]
 
 [node name="Balloon" type="Control" parent="."]
 layout_mode = 3
@@ -123,5 +126,11 @@ scroll_active = false
 shortcut_keys_enabled = false
 meta_underlined = false
 hint_underlined = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Balloon"]
+stream = ExtResource("5_ngirr")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Balloon"]
+stream = ExtResource("6_6kom8")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

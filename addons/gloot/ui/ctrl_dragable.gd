@@ -21,6 +21,7 @@ static var dragable_dropped: Signal = (func():
 	return Signal(CtrlDragable, "dragable_dropped")
 ).call()
 
+
 signal grabbed(position)
 signal dropped(zone, position)
 
@@ -56,6 +57,7 @@ func _get_drag_data(at_position: Vector2):
 	sub_preview.position = -get_grab_offset()
 	preview.add_child(sub_preview)
 	set_drag_preview(preview)
+	print("previwe")
 	return self
 
 

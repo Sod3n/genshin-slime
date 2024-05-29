@@ -5,8 +5,6 @@ const info_offset: Vector2 = Vector2(20, 0)
 @onready var ctrl_inventory_left := %CtrlInventoryGridLeft
 
 @onready var inventory_grid_left = %InventoryGridLeft
-@onready var lbl_info = %LblInfo
-
 
 func _ready() -> void:
 	ctrl_inventory_left.item_mouse_entered.connect(_on_item_mouse_entered)

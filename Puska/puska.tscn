@@ -58,7 +58,6 @@ shape = SubResource("CapsuleShape3D_075yj")
 path_desired_distance = 0.1
 target_desired_distance = 0.1
 radius = 0.2
-debug_enabled = true
 
 [node name="move_point" type="Node" parent="."]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwuedvfjxjmwf"]
 
-[ext_resource type="Material" uid="uid://7vctm0o5bnrc" path="res://grap_resurce/materials/material_lol.tres" id="1_we6ts"]
+[ext_resource type="Material" uid="uid://w6fiyxd5nujo" path="res://grap_resurce/materials/material_lol.tres" id="1_we6ts"]
 [ext_resource type="ArrayMesh" uid="uid://bq72r3l53moqb" path="res://grap_resurce/3d_model_object_set_1/rostuschij_glaz_003.obj" id="2_310b6"]
 
 [node name="RostuschijGlaz003" type="MeshInstance3D"]

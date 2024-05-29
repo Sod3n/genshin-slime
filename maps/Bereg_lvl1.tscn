@@ -38229,7 +38229,6 @@ autoplay = true
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.9507, 0.679888, -10.0047)
 stream = ExtResource("109_rn28w")
-volume_db = -10.0
 script = ExtResource("110_op3cl")
 
 [node name="Checkpoint" type="Node3D" parent="." index="30"]
@@ -38259,7 +38258,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26763, -1.28198, 0.0142212
 shape = SubResource("BoxShape3D_hw86x")
 
 [node name="ArenaDoor" parent="." index="33" instance=ExtResource("106_r2q1w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.96507)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5513, 1.499, -8.98975)
 
 [node name="Node" type="Node" parent="." index="34"]
 

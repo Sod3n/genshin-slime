@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_eb2sm"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_sv8sp"]
 
 [resource]
-script = ExtResource("1_eb2sm")
+script = ExtResource("1_sv8sp")
 using_states = PackedStringArray()
 titles = {
-"second_part": "50",
+"second_part": "49",
 "start": "3"
 }
 character_names = PackedStringArray("Финтан", "Розмерта", "НПС 2")
@@ -49,9 +49,9 @@ lines = {
 }])
 },
 "id": "11",
-"next_conditional_id": "27",
+"next_conditional_id": "26",
 "next_id": "12",
-"next_id_after": "35",
+"next_id_after": "34",
 "parent_id": "7",
 "type": &"condition"
 },
@@ -123,9 +123,9 @@ lines = {
 "notes": "",
 "parent_id": "11",
 "tags": PackedStringArray(),
-"text": "Благодарю тебя за старания. На западе от нас есть печать, сдерживающая существ.",
+"text": "Благодарю тебя за старания. На востоке от нас есть печать, сдерживающая существ.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Благодарю тебя за старания. На западе от нас есть печать, сдерживающая существ.",
+"translation_key": "Благодарю тебя за старания. На востоке от нас есть печать, сдерживающая существ.",
 "type": &"dialogue"
 },
 "16": {
@@ -247,9 +247,26 @@ lines = {
 "type": &"mutation"
 },
 "23": {
+"id": "23",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "start_quest",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "return_to_n"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "24",
+"parent_id": "11",
+"type": &"mutation"
+},
+"24": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "23",
+"id": "24",
 "next_id": "25",
 "notes": "",
 "parent_id": "11",
@@ -261,38 +278,21 @@ lines = {
 },
 "25": {
 "id": "25",
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "start_quest",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "return_to_npc_two"
-}])])
-}]),
-"is_blocking": true
-},
-"next_id": "26",
-"parent_id": "11",
-"type": &"mutation"
-},
-"26": {
-"id": "26",
 "is_snippet": false,
 "next_id": "end",
 "parent_id": "11",
 "type": &"goto"
 },
-"27": {
-"id": "27",
-"next_conditional_id": "35",
-"next_id": "28",
-"next_id_after": "35",
+"26": {
+"id": "26",
+"next_conditional_id": "34",
+"next_id": "27",
+"next_id_after": "34",
 "parent_id": "7",
 "type": &"condition"
 },
-"28": {
-"id": "28",
+"27": {
+"id": "27",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -309,22 +309,29 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "29",
-"parent_id": "27",
+"next_id": "28",
+"parent_id": "26",
 "type": &"mutation"
 },
-"29": {
+"28": {
 "character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
-"id": "29",
-"next_id": "30",
+"id": "28",
+"next_id": "29",
 "notes": "",
-"parent_id": "27",
+"parent_id": "26",
 "tags": PackedStringArray(),
 "text": "Продолжай в том же духе!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Продолжай в том же духе!",
 "type": &"dialogue"
+},
+"29": {
+"id": "29",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "26",
+"type": &"goto"
 },
 "3": {
 "condition": {
@@ -347,21 +354,14 @@ lines = {
 },
 "30": {
 "id": "30",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "27",
-"type": &"goto"
-},
-"31": {
-"id": "31",
-"next_conditional_id": "35",
-"next_id": "32",
-"next_id_after": "35",
+"next_conditional_id": "34",
+"next_id": "31",
+"next_id_after": "34",
 "parent_id": "6",
 "type": &"condition"
 },
-"32": {
-"id": "32",
+"31": {
+"id": "31",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -378,32 +378,32 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "33",
-"parent_id": "31",
+"next_id": "32",
+"parent_id": "30",
 "type": &"mutation"
 },
-"33": {
+"32": {
 "character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
-"id": "33",
-"next_id": "34",
+"id": "32",
+"next_id": "33",
 "notes": "",
-"parent_id": "31",
+"parent_id": "30",
 "tags": PackedStringArray(),
 "text": "Как успехи в поиске? Можешь не торопится.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Как успехи в поиске? Можешь не торопится.",
 "type": &"dialogue"
 },
-"34": {
-"id": "34",
+"33": {
+"id": "33",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "31",
+"parent_id": "30",
 "type": &"goto"
 },
-"35": {
-"id": "35",
+"34": {
+"id": "34",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -420,14 +420,14 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "36",
+"next_id": "35",
 "type": &"mutation"
 },
-"36": {
+"35": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "36",
-"next_id": "37",
+"id": "35",
+"next_id": "36",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
@@ -435,8 +435,8 @@ lines = {
 "translation_key": "Здравствуйте. Я Розмерта. Я не знаю как попала сюда и ищу выход.",
 "type": &"dialogue"
 },
-"37": {
-"id": "37",
+"36": {
+"id": "36",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -453,8 +453,20 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "38",
+"next_id": "37",
 "type": &"mutation"
+},
+"37": {
+"character": "Финтан",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
+"type": &"dialogue"
 },
 "38": {
 "character": "Финтан",
@@ -463,22 +475,31 @@ lines = {
 "next_id": "39",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Приветствую, Розмерта. Я Финтан. Сейчас важнее обезопасить себя.",
-"type": &"dialogue"
-},
-"39": {
-"character": "Финтан",
-"character_replacements": Array[Dictionary]([]),
-"id": "39",
-"next_id": "40",
-"notes": "",
-"tags": PackedStringArray(),
 "text": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Я охраняю город, но костер почти потух. Если не будет огня, на город нападет еще больше монстров.",
 "type": &"dialogue"
+},
+"39": {
+"id": "39",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "set_sound_index"
+}, {
+"type": "dot"
+}, {
+"function": "emit",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "40",
+"type": &"mutation"
 },
 "4": {
 "id": "4",
@@ -488,31 +509,10 @@ lines = {
 "type": &"goto"
 },
 "40": {
-"id": "40",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "set_sound_index"
-}, {
-"type": "dot"
-}, {
-"function": "emit",
-"type": &"function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "number",
-"value": 0
-}])])
-}]),
-"is_blocking": true
-},
-"next_id": "41",
-"type": &"mutation"
-},
-"41": {
 "character": "Розмерта",
 "character_replacements": Array[Dictionary]([]),
-"id": "41",
-"next_id": "42",
+"id": "40",
+"next_id": "41",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Монстров?",
@@ -520,8 +520,8 @@ lines = {
 "translation_key": "Монстров?",
 "type": &"dialogue"
 },
-"42": {
-"id": "42",
+"41": {
+"id": "41",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -538,14 +538,14 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "43",
+"next_id": "42",
 "type": &"mutation"
 },
-"43": {
+"42": {
 "character": "Финтан",
 "character_replacements": Array[Dictionary]([]),
-"id": "43",
-"next_id": "44",
+"id": "42",
+"next_id": "43",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
@@ -553,8 +553,8 @@ lines = {
 "translation_key": "Нет времени объяснять. Помоги мне собрать материалы для священного огня, а я скажу тебе, как пройти в замок.",
 "type": &"dialogue"
 },
-"44": {
-"id": "44",
+"43": {
+"id": "43",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "start_quest",
@@ -566,26 +566,26 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "46",
+"next_id": "45",
 "type": &"mutation"
 },
-"46": {
-"id": "46",
+"45": {
+"id": "45",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 },
-"48": {
-"id": "48",
-"next_id": "50",
+"47": {
+"id": "47",
+"next_id": "49",
 "text": "second_part",
 "type": &"title"
 },
-"50": {
+"49": {
 "character": "НПС 2",
 "character_replacements": Array[Dictionary]([]),
-"id": "50",
-"next_id": "52",
+"id": "49",
+"next_id": "51",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Да.",
@@ -593,8 +593,8 @@ lines = {
 "translation_key": "Да.",
 "type": &"dialogue"
 },
-"52": {
-"id": "52",
+"51": {
+"id": "51",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
@@ -613,9 +613,9 @@ lines = {
 }])
 },
 "id": "6",
-"next_conditional_id": "35",
+"next_conditional_id": "34",
 "next_id": "7",
-"next_id_after": "35",
+"next_id_after": "34",
 "type": &"condition"
 },
 "7": {
@@ -652,9 +652,9 @@ lines = {
 }])
 },
 "id": "7",
-"next_conditional_id": "31",
+"next_conditional_id": "30",
 "next_id": "8",
-"next_id_after": "35",
+"next_id_after": "34",
 "parent_id": "6",
 "type": &"condition"
 },
@@ -708,7 +708,7 @@ if is_quest_active(\"get_materials\"):
 			do bonfire_up = true
 			do start_compfire_sound.emit()
 			do set_sound_index.emit(1)
-			Финтан: Благодарю тебя за старания. На западе от нас есть печать, сдерживающая существ.
+			Финтан: Благодарю тебя за старания. На востоке от нас есть печать, сдерживающая существ.
 			Финтан: Она же не дает никому проникнуть в замок.
 			Финтан: Сломав печать, у тебя будет время пройти внутрь. Удачи тебе в твоем путешествии.
 			do set_sound_index.emit(0)
@@ -716,9 +716,8 @@ if is_quest_active(\"get_materials\"):
 			do set_sound_index.emit(1)
 			Финтан: С этим я тебе не помогу. Может быть еще кто-то остался вне дома на берегу.
 			do set_sound_index.emit(0)
+			do start_quest(\"return_to_n\")
 			Розмерта: Спасибо.
-
-			do start_quest(\"return_to_npc_two\")
 			=> END
 		else:
 			do set_sound_index.emit(1)

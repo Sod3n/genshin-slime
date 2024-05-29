@@ -5,6 +5,9 @@ const ITEM_DEFINITIONS_GRID = preload("res://tests/data/item_definitions_grid.tr
 
 func get_quest(quest_name: String) -> Quest:
 	var quest: Quest = ResourceLoader.load(QUEST_PATH % quest_name, "Quest")
+	push_warning(quest, quest_name)
+	if not quest:
+		quest = ResourceLoader.load(QUEST_PATH % quest_name, "Quest")
 	return quest
 
 func start_quest(quest_name: String) -> void:

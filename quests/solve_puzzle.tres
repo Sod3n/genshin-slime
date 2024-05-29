@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_cjor7")
 id = 0
-quest_name = "Проверить тотемы"
+quest_name = "Разгадайте тайну обелисков"
 quest_description = ""
 quest_objective = ""

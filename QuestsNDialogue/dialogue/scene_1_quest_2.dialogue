@@ -12,7 +12,7 @@ if is_quest_active("get_materials"):
 			do bonfire_up = true
 			do start_compfire_sound.emit()
 			do set_sound_index.emit(1)
-			Финтан: Благодарю тебя за старания. На западе от нас есть печать, сдерживающая существ.
+			Финтан: Благодарю тебя за старания. На востоке от нас есть печать, сдерживающая существ.
 			Финтан: Она же не дает никому проникнуть в замок.
 			Финтан: Сломав печать, у тебя будет время пройти внутрь. Удачи тебе в твоем путешествии.
 			do set_sound_index.emit(0)
@@ -20,9 +20,8 @@ if is_quest_active("get_materials"):
 			do set_sound_index.emit(1)
 			Финтан: С этим я тебе не помогу. Может быть еще кто-то остался вне дома на берегу.
 			do set_sound_index.emit(0)
+			do start_quest("return_to_n")
 			Розмерта: Спасибо.
-
-			do start_quest("return_to_npc_two")
 			=> END
 		else:
 			do set_sound_index.emit(1)

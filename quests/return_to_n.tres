@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dph8ogtjiw0ka"]
+
+[ext_resource type="Script" path="res://quests/return_to_n_quest.gd" id="1_p1fw6"]
+
+[resource]
+script = ExtResource("1_p1fw6")
+id = 20
+quest_name = "Нужно снова вернуться к Айне"
+quest_description = "Nathan'd like to have an apple. Help him to find one."
+quest_objective = ""

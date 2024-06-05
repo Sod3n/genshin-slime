@@ -21,3 +21,15 @@ light_color = Color(1, 0.470588, 1, 1)
 light_energy = 1.246
 spot_range = 6.2607
 spot_angle = 46.791
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+operation = 2
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.66625, 0, 7.10712)
+radius = 3.68718
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.87692, 0.7006, 8.56627)
+operation = 2
+size = Vector3(1, 5.7605, 1)
